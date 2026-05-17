@@ -1,0 +1,818 @@
+﻿alias,alias_normalized,canonical_country_region,ip_zone,match_note,demand_region_cn,demand_region_code,demand_rate_cny_per_kg,demand_minimum_cny,demand_review_status
+United States - Other Areas (美国其他地区),united states - other areas (美国其他地区),美国其他地区,2,Dropdown display label,美国和波多黎各,US_PR,0.0,1.8,OK
+United States - Western Region (美国西部),united states - western region (美国西部),U.S. (Western Region) 美国西部,1,Dropdown display label,美国和波多黎各,US_PR,0.0,1.8,OK
+USA,usa,美国其他地区,2,Manual default: non-western US unless ZIP/state specifies western region,美国和波多黎各,US_PR,0.0,1.8,OK
+US,us,美国其他地区,2,Manual default: non-western US unless ZIP/state specifies western region,美国和波多黎各,US_PR,0.0,1.8,OK
+U.S.,u.s.,美国其他地区,2,Manual default: non-western US unless ZIP/state specifies western region,美国和波多黎各,US_PR,0.0,1.8,OK
+United States,united states,美国其他地区,2,Manual default: non-western US unless ZIP/state specifies western region,美国和波多黎各,US_PR,0.0,1.8,OK
+United States of America,united states of america,美国其他地区,2,Manual default: non-western US unless ZIP/state specifies western region,美国和波多黎各,US_PR,0.0,1.8,OK
+America,america,美国其他地区,2,Manual default: non-western US unless ZIP/state specifies western region,美国和波多黎各,US_PR,0.0,1.8,OK
+美国,美国,美国其他地区,2,Manual default: non-western US unless ZIP/state specifies western region,美国和波多黎各,US_PR,0.0,1.8,OK
+美国其他地区,美国其他地区,美国其他地区,2,PDF page 24,美国和波多黎各,US_PR,0.0,1.8,OK
+U.S. Western Region,u.s. western region,U.S. (Western Region) 美国西部,1,Manual western ZIP region alias,美国和波多黎各,US_PR,0.0,1.8,OK
+US Western,us western,U.S. (Western Region) 美国西部,1,Manual western ZIP region alias,美国和波多黎各,US_PR,0.0,1.8,OK
+美国西部,美国西部,U.S. (Western Region) 美国西部,1,Manual western ZIP region alias,美国和波多黎各,US_PR,0.0,1.8,OK
+美国西部地区,美国西部地区,U.S. (Western Region) 美国西部,1,Manual western ZIP region alias,美国和波多黎各,US_PR,0.0,1.8,OK
+UK,uk,United Kingdom (Great Britain),K,Manual common alias,欧洲区,EUROPE,8.0,1.8,OK
+英国,英国,United Kingdom (Great Britain),K,Manual common alias,欧洲区,EUROPE,8.0,1.8,OK
+Great Britain,great britain,United Kingdom (Great Britain),K,Manual common alias,欧洲区,EUROPE,8.0,1.8,OK
+Philippines,philippines,Phillipines,S,Manual spelling alias for PDF label Phillipines,亚洲区,ASIA,0.0,1.8,OK
+菲律宾,菲律宾,Phillipines,S,Manual Chinese alias for PDF label Phillipines,亚洲区,ASIA,0.0,1.8,OK
+Afghanistan (阿富汗),afghanistan (阿富汗),Afghanistan 阿富汗,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Afghanistan,afghanistan,Afghanistan 阿富汗,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+阿富汗,阿富汗,Afghanistan 阿富汗,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Afghanistan 阿富汗,afghanistan 阿富汗,Afghanistan 阿富汗,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Albania (阿尔巴尼亚),albania (阿尔巴尼亚),Albania 阿尔巴尼亚,H,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Albania,albania,Albania 阿尔巴尼亚,H,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+阿尔巴尼亚,阿尔巴尼亚,Albania 阿尔巴尼亚,H,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Albania 阿尔巴尼亚,albania 阿尔巴尼亚,Albania 阿尔巴尼亚,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Algeria (阿尔及利亚),algeria (阿尔及利亚),Algeria 阿尔及利亚,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Algeria,algeria,Algeria 阿尔及利亚,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+阿尔及利亚,阿尔及利亚,Algeria 阿尔及利亚,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Algeria 阿尔及利亚,algeria 阿尔及利亚,Algeria 阿尔及利亚,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+American Samoa (美属萨摩亚岛),american samoa (美属萨摩亚岛),American Samoa 美属萨摩亚岛,G,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+American Samoa,american samoa,American Samoa 美属萨摩亚岛,G,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+美属萨摩亚岛,美属萨摩亚岛,American Samoa 美属萨摩亚岛,G,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+American Samoa 美属萨摩亚岛,american samoa 美属萨摩亚岛,American Samoa 美属萨摩亚岛,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Andorra (安道尔),andorra (安道尔),Andorra 安道尔,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Andorra,andorra,Andorra 安道尔,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+安道尔,安道尔,Andorra 安道尔,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Andorra 安道尔,andorra 安道尔,Andorra 安道尔,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Angola (安哥拉),angola (安哥拉),Angola 安哥拉,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Angola,angola,Angola 安哥拉,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+安哥拉,安哥拉,Angola 安哥拉,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Angola 安哥拉,angola 安哥拉,Angola 安哥拉,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Anguilla (安圭拉),anguilla (安圭拉),Anguilla 安圭拉,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Anguilla,anguilla,Anguilla 安圭拉,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+安圭拉,安圭拉,Anguilla 安圭拉,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Anguilla 安圭拉,anguilla 安圭拉,Anguilla 安圭拉,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Antigua & Barbuda,antigua & barbuda,Antigua & Barbuda,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+Argentina (阿根廷),argentina (阿根廷),Argentina 阿根廷,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Argentina,argentina,Argentina 阿根廷,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+阿根廷,阿根廷,Argentina 阿根廷,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Argentina 阿根廷,argentina 阿根廷,Argentina 阿根廷,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Armenia (亚美尼亚),armenia (亚美尼亚),Armenia 亚美尼亚,H,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Armenia,armenia,Armenia 亚美尼亚,H,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+亚美尼亚,亚美尼亚,Armenia 亚美尼亚,H,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Armenia 亚美尼亚,armenia 亚美尼亚,Armenia 亚美尼亚,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Aruba (阿鲁巴),aruba (阿鲁巴),Aruba 阿鲁巴,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Aruba,aruba,Aruba 阿鲁巴,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+阿鲁巴,阿鲁巴,Aruba 阿鲁巴,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Aruba 阿鲁巴,aruba 阿鲁巴,Aruba 阿鲁巴,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Australia (澳大利亚),australia (澳大利亚),Australia 澳大利亚,U,Dropdown display label,澳大利亚、新西兰,AUNZ,0.0,1.8,OK
+Australia,australia,Australia 澳大利亚,U,From PDF country/region English label,澳大利亚、新西兰,AUNZ,0.0,1.8,OK
+澳大利亚,澳大利亚,Australia 澳大利亚,U,From PDF country/region Chinese label,澳大利亚、新西兰,AUNZ,0.0,1.8,OK
+Australia 澳大利亚,australia 澳大利亚,Australia 澳大利亚,U,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Austria (奥地利),austria (奥地利),Austria 奥地利,M,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Austria,austria,Austria 奥地利,M,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+奥地利,奥地利,Austria 奥地利,M,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Austria 奥地利,austria 奥地利,Austria 奥地利,M,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Azerbaijan (阿塞拜疆),azerbaijan (阿塞拜疆),Azerbaijan 阿塞拜疆,H,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Azerbaijan,azerbaijan,Azerbaijan 阿塞拜疆,H,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+阿塞拜疆,阿塞拜疆,Azerbaijan 阿塞拜疆,H,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Azerbaijan 阿塞拜疆,azerbaijan 阿塞拜疆,Azerbaijan 阿塞拜疆,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Bahama,bahama,Bahama,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+Bahrain (巴林),bahrain (巴林),Bahrain 巴林,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Bahrain,bahrain,Bahrain 巴林,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+巴林,巴林,Bahrain 巴林,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Bahrain 巴林,bahrain 巴林,Bahrain 巴林,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Bangladesh (孟加拉国),bangladesh (孟加拉国),Bangladesh 孟加拉国,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Bangladesh,bangladesh,Bangladesh 孟加拉国,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+孟加拉国,孟加拉国,Bangladesh 孟加拉国,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Bangladesh 孟加拉国,bangladesh 孟加拉国,Bangladesh 孟加拉国,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Barbados (巴巴多斯),barbados (巴巴多斯),Barbados 巴巴多斯,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Barbados,barbados,Barbados 巴巴多斯,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+巴巴多斯,巴巴多斯,Barbados 巴巴多斯,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Barbados 巴巴多斯,barbados 巴巴多斯,Barbados 巴巴多斯,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Belarus (白俄罗斯),belarus (白俄罗斯),Belarus 白俄罗斯,H,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Belarus,belarus,Belarus 白俄罗斯,H,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+白俄罗斯,白俄罗斯,Belarus 白俄罗斯,H,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Belarus 白俄罗斯,belarus 白俄罗斯,Belarus 白俄罗斯,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Belgium (比利时),belgium (比利时),Belgium 比利时,K,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Belgium,belgium,Belgium 比利时,K,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+比利时,比利时,Belgium 比利时,K,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Belgium 比利时,belgium 比利时,Belgium 比利时,K,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Belize (伯利兹),belize (伯利兹),Belize 伯利兹,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Belize,belize,Belize 伯利兹,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+伯利兹,伯利兹,Belize 伯利兹,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Belize 伯利兹,belize 伯利兹,Belize 伯利兹,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Benin (贝宁),benin (贝宁),Benin 贝宁,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Benin,benin,Benin 贝宁,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+贝宁,贝宁,Benin 贝宁,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Benin 贝宁,benin 贝宁,Benin 贝宁,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Bermuda (百慕大),bermuda (百慕大),Bermuda 百慕大,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Bermuda,bermuda,Bermuda 百慕大,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+百慕大,百慕大,Bermuda 百慕大,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Bermuda 百慕大,bermuda 百慕大,Bermuda 百慕大,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Bhutan (不丹),bhutan (不丹),Bhutan 不丹,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Bhutan,bhutan,Bhutan 不丹,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+不丹,不丹,Bhutan 不丹,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Bhutan 不丹,bhutan 不丹,Bhutan 不丹,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Bolivia (玻利维亚),bolivia (玻利维亚),Bolivia 玻利维亚,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Bolivia,bolivia,Bolivia 玻利维亚,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+玻利维亚,玻利维亚,Bolivia 玻利维亚,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Bolivia 玻利维亚,bolivia 玻利维亚,Bolivia 玻利维亚,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Bonaire (博奈尔),bonaire (博奈尔),Bonaire 博奈尔,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Bonaire,bonaire,Bonaire 博奈尔,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+博奈尔,博奈尔,Bonaire 博奈尔,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Bonaire 博奈尔,bonaire 博奈尔,Bonaire 博奈尔,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Bosnia-Herzegovina Bosnia- Herzegovina (波斯尼亚和黑塞哥维那),bosnia-herzegovina bosnia- herzegovina (波斯尼亚和黑塞哥维那),Bosnia-Herzegovina Bosnia- Herzegovina 波斯尼亚和黑塞哥维那,H,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Bosnia-Herzegovina Bosnia- Herzegovina,bosnia-herzegovina bosnia- herzegovina,Bosnia-Herzegovina Bosnia- Herzegovina 波斯尼亚和黑塞哥维那,H,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+波斯尼亚和黑塞哥维那,波斯尼亚和黑塞哥维那,Bosnia-Herzegovina Bosnia- Herzegovina 波斯尼亚和黑塞哥维那,H,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Bosnia-Herzegovina Bosnia- Herzegovina 波斯尼亚和黑塞哥维那,bosnia-herzegovina bosnia- herzegovina 波斯尼亚和黑塞哥维那,Bosnia-Herzegovina Bosnia- Herzegovina 波斯尼亚和黑塞哥维那,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Botswana (博茨瓦纳),botswana (博茨瓦纳),Botswana 博茨瓦纳,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Botswana,botswana,Botswana 博茨瓦纳,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+博茨瓦纳,博茨瓦纳,Botswana 博茨瓦纳,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Botswana 博茨瓦纳,botswana 博茨瓦纳,Botswana 博茨瓦纳,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Brazil (巴西),brazil (巴西),Brazil 巴西,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Brazil,brazil,Brazil 巴西,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+巴西,巴西,Brazil 巴西,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Brazil 巴西,brazil 巴西,Brazil 巴西,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+British Virgin Islands (英属维尔京群岛),british virgin islands (英属维尔京群岛),British Virgin Islands 英属维尔京群岛,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+British Virgin Islands,british virgin islands,British Virgin Islands 英属维尔京群岛,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+英属维尔京群岛,英属维尔京群岛,British Virgin Islands 英属维尔京群岛,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+British Virgin Islands 英属维尔京群岛,british virgin islands 英属维尔京群岛,British Virgin Islands 英属维尔京群岛,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Brunei (文莱),brunei (文莱),Brunei 文莱,E,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Brunei,brunei,Brunei 文莱,E,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+文莱,文莱,Brunei 文莱,E,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Brunei 文莱,brunei 文莱,Brunei 文莱,E,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Bulgaria (保加利亚),bulgaria (保加利亚),Bulgaria 保加利亚,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Bulgaria,bulgaria,Bulgaria 保加利亚,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+保加利亚,保加利亚,Bulgaria 保加利亚,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Bulgaria 保加利亚,bulgaria 保加利亚,Bulgaria 保加利亚,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Burkina Faso (布基纳法索),burkina faso (布基纳法索),Burkina Faso 布基纳法索,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Burkina Faso,burkina faso,Burkina Faso 布基纳法索,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+布基纳法索,布基纳法索,Burkina Faso 布基纳法索,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Burkina Faso 布基纳法索,burkina faso 布基纳法索,Burkina Faso 布基纳法索,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Burundi (布隆迪),burundi (布隆迪),Burundi 布隆迪,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Burundi,burundi,Burundi 布隆迪,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+布隆迪,布隆迪,Burundi 布隆迪,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Burundi 布隆迪,burundi 布隆迪,Burundi 布隆迪,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Cambodia (柬埔寨),cambodia (柬埔寨),Cambodia 柬埔寨,E,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Cambodia,cambodia,Cambodia 柬埔寨,E,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+柬埔寨,柬埔寨,Cambodia 柬埔寨,E,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Cambodia 柬埔寨,cambodia 柬埔寨,Cambodia 柬埔寨,E,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Cameroon (喀麦隆),cameroon (喀麦隆),Cameroon 喀麦隆,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Cameroon,cameroon,Cameroon 喀麦隆,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+喀麦隆,喀麦隆,Cameroon 喀麦隆,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Cameroon 喀麦隆,cameroon 喀麦隆,Cameroon 喀麦隆,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Canada (加拿大),canada (加拿大),Canada 加拿大,N,Dropdown display label,加拿大,CANADA,0.0,1.8,OK
+Canada,canada,Canada 加拿大,N,From PDF country/region English label,加拿大,CANADA,0.0,1.8,OK
+加拿大,加拿大,Canada 加拿大,N,From PDF country/region Chinese label,加拿大,CANADA,0.0,1.8,OK
+Canada 加拿大,canada 加拿大,Canada 加拿大,N,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Cape Verde (佛得角),cape verde (佛得角),Cape Verde 佛得角,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Cape Verde,cape verde,Cape Verde 佛得角,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+佛得角,佛得角,Cape Verde 佛得角,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Cape Verde 佛得角,cape verde 佛得角,Cape Verde 佛得角,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Cayman Islands (开曼群岛),cayman islands (开曼群岛),Cayman Islands 开曼群岛,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Cayman Islands,cayman islands,Cayman Islands 开曼群岛,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+开曼群岛,开曼群岛,Cayman Islands 开曼群岛,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Cayman Islands 开曼群岛,cayman islands 开曼群岛,Cayman Islands 开曼群岛,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Chad (乍得),chad (乍得),Chad 乍得,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Chad,chad,Chad 乍得,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+乍得,乍得,Chad 乍得,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Chad 乍得,chad 乍得,Chad 乍得,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Chile (智利),chile (智利),Chile 智利,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Chile,chile,Chile 智利,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+智利,智利,Chile 智利,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Chile 智利,chile 智利,Chile 智利,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Colombia (哥伦比亚),colombia (哥伦比亚),Colombia 哥伦比亚,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Colombia,colombia,Colombia 哥伦比亚,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+哥伦比亚,哥伦比亚,Colombia 哥伦比亚,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Colombia 哥伦比亚,colombia 哥伦比亚,Colombia 哥伦比亚,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Congo (刚果),congo (刚果),Congo 刚果,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Congo,congo,Congo 刚果,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+刚果,刚果,Congo 刚果,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Congo 刚果,congo 刚果,Congo 刚果,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Cook Islands (库克群岛),cook islands (库克群岛),Cook Islands 库克群岛,G,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Cook Islands,cook islands,Cook Islands 库克群岛,G,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+库克群岛,库克群岛,Cook Islands 库克群岛,G,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Cook Islands 库克群岛,cook islands 库克群岛,Cook Islands 库克群岛,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Costa Rica (哥斯达黎加),costa rica (哥斯达黎加),Costa Rica 哥斯达黎加,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Costa Rica,costa rica,Costa Rica 哥斯达黎加,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+哥斯达黎加,哥斯达黎加,Costa Rica 哥斯达黎加,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Costa Rica 哥斯达黎加,costa rica 哥斯达黎加,Costa Rica 哥斯达黎加,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Croatia (克罗地亚),croatia (克罗地亚),Croatia 克罗地亚,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Croatia,croatia,Croatia 克罗地亚,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+克罗地亚,克罗地亚,Croatia 克罗地亚,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Croatia 克罗地亚,croatia 克罗地亚,Croatia 克罗地亚,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Curacao (库拉索),curacao (库拉索),Curacao 库拉索,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Curacao,curacao,Curacao 库拉索,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+库拉索,库拉索,Curacao 库拉索,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Curacao 库拉索,curacao 库拉索,Curacao 库拉索,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Cyprus (塞浦路斯),cyprus (塞浦路斯),Cyprus 塞浦路斯,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Cyprus,cyprus,Cyprus 塞浦路斯,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+塞浦路斯,塞浦路斯,Cyprus 塞浦路斯,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Cyprus 塞浦路斯,cyprus 塞浦路斯,Cyprus 塞浦路斯,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Czech Republic (捷克共和国),czech republic (捷克共和国),Czech Republic 捷克共和国,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Czech Republic,czech republic,Czech Republic 捷克共和国,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+捷克共和国,捷克共和国,Czech Republic 捷克共和国,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Czech Republic 捷克共和国,czech republic 捷克共和国,Czech Republic 捷克共和国,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Côte D'ivoire (Ivory Coast),côte d'ivoire (ivory coast),Côte D'ivoire (Ivory Coast),H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Côte D'ivoire,côte d'ivoire,Côte D'ivoire (Ivory Coast),H,English label without parenthetical,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Democratic Republic of the Congo (刚果民主共和国),democratic republic of the congo (刚果民主共和国),Democratic Republic of the Congo 刚果民主共和国,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Democratic Republic of the Congo,democratic republic of the congo,Democratic Republic of the Congo 刚果民主共和国,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+刚果民主共和国,刚果民主共和国,Democratic Republic of the Congo 刚果民主共和国,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Democratic Republic of the Congo 刚果民主共和国,democratic republic of the congo 刚果民主共和国,Democratic Republic of the Congo 刚果民主共和国,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Denmark (丹麦),denmark (丹麦),Denmark 丹麦,M,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Denmark,denmark,Denmark 丹麦,M,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+丹麦,丹麦,Denmark 丹麦,M,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Denmark 丹麦,denmark 丹麦,Denmark 丹麦,M,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Djibouti (吉布提),djibouti (吉布提),Djibouti 吉布提,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Djibouti,djibouti,Djibouti 吉布提,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+吉布提,吉布提,Djibouti 吉布提,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Djibouti 吉布提,djibouti 吉布提,Djibouti 吉布提,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Dominica (多米尼加),dominica (多米尼加),Dominica 多米尼加,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Dominica,dominica,Dominica 多米尼加,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+多米尼加,多米尼加,Dominica 多米尼加,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Dominica 多米尼加,dominica 多米尼加,Dominica 多米尼加,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Dominican Republic (多米尼加共和国),dominican republic (多米尼加共和国),Dominican Republic 多米尼加共和国,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Dominican Republic,dominican republic,Dominican Republic 多米尼加共和国,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+多米尼加共和国,多米尼加共和国,Dominican Republic 多米尼加共和国,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Dominican Republic 多米尼加共和国,dominican republic 多米尼加共和国,Dominican Republic 多米尼加共和国,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+East Timor,east timor,East Timor,G,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+Ecuador (厄瓜多尔),ecuador (厄瓜多尔),Ecuador 厄瓜多尔,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Ecuador,ecuador,Ecuador 厄瓜多尔,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+厄瓜多尔,厄瓜多尔,Ecuador 厄瓜多尔,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Ecuador 厄瓜多尔,ecuador 厄瓜多尔,Ecuador 厄瓜多尔,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Egypt (埃及),egypt (埃及),Egypt 埃及,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Egypt,egypt,Egypt 埃及,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+埃及,埃及,Egypt 埃及,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Egypt 埃及,egypt 埃及,Egypt 埃及,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+El Salvador (萨尔瓦多),el salvador (萨尔瓦多),El Salvador 萨尔瓦多,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+El Salvador,el salvador,El Salvador 萨尔瓦多,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+萨尔瓦多,萨尔瓦多,El Salvador 萨尔瓦多,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+El Salvador 萨尔瓦多,el salvador 萨尔瓦多,El Salvador 萨尔瓦多,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Eritrea (厄立特里亚),eritrea (厄立特里亚),Eritrea 厄立特里亚,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Eritrea,eritrea,Eritrea 厄立特里亚,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+厄立特里亚,厄立特里亚,Eritrea 厄立特里亚,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Eritrea 厄立特里亚,eritrea 厄立特里亚,Eritrea 厄立特里亚,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Estonia (爱沙尼亚),estonia (爱沙尼亚),Estonia 爱沙尼亚,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Estonia,estonia,Estonia 爱沙尼亚,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+爱沙尼亚,爱沙尼亚,Estonia 爱沙尼亚,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Estonia 爱沙尼亚,estonia 爱沙尼亚,Estonia 爱沙尼亚,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Ethiopia (埃塞俄比亚),ethiopia (埃塞俄比亚),Ethiopia 埃塞俄比亚,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Ethiopia,ethiopia,Ethiopia 埃塞俄比亚,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+埃塞俄比亚,埃塞俄比亚,Ethiopia 埃塞俄比亚,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Ethiopia 埃塞俄比亚,ethiopia 埃塞俄比亚,Ethiopia 埃塞俄比亚,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Faeroe Islands (法罗群岛),faeroe islands (法罗群岛),Faeroe Islands 法罗群岛,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Faeroe Islands,faeroe islands,Faeroe Islands 法罗群岛,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+法罗群岛,法罗群岛,Faeroe Islands 法罗群岛,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Faeroe Islands 法罗群岛,faeroe islands 法罗群岛,Faeroe Islands 法罗群岛,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Fiji (斐济),fiji (斐济),Fiji 斐济,G,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Fiji,fiji,Fiji 斐济,G,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+斐济,斐济,Fiji 斐济,G,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Fiji 斐济,fiji 斐济,Fiji 斐济,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Finland (芬兰),finland (芬兰),Finland 芬兰,M,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Finland,finland,Finland 芬兰,M,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+芬兰,芬兰,Finland 芬兰,M,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Finland 芬兰,finland 芬兰,Finland 芬兰,M,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+France (法国),france (法国),France 法国,K,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+France,france,France 法国,K,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+法国,法国,France 法国,K,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+France 法国,france 法国,France 法国,K,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+French Guiana (法属圭亚纳),french guiana (法属圭亚纳),French Guiana 法属圭亚纳,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+French Guiana,french guiana,French Guiana 法属圭亚纳,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+法属圭亚纳,法属圭亚纳,French Guiana 法属圭亚纳,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+French Guiana 法属圭亚纳,french guiana 法属圭亚纳,French Guiana 法属圭亚纳,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+French Polynesia (法属玻利尼西亚),french polynesia (法属玻利尼西亚),French Polynesia 法属玻利尼西亚,G,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+French Polynesia,french polynesia,French Polynesia 法属玻利尼西亚,G,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+法属玻利尼西亚,法属玻利尼西亚,French Polynesia 法属玻利尼西亚,G,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+French Polynesia 法属玻利尼西亚,french polynesia 法属玻利尼西亚,French Polynesia 法属玻利尼西亚,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Gabon (加蓬),gabon (加蓬),Gabon 加蓬,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Gabon,gabon,Gabon 加蓬,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+加蓬,加蓬,Gabon 加蓬,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Gabon 加蓬,gabon 加蓬,Gabon 加蓬,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Gambia (冈比亚),gambia (冈比亚),Gambia 冈比亚,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Gambia,gambia,Gambia 冈比亚,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+冈比亚,冈比亚,Gambia 冈比亚,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Gambia 冈比亚,gambia 冈比亚,Gambia 冈比亚,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Georgia (格鲁吉亚),georgia (格鲁吉亚),Georgia 格鲁吉亚,H,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Georgia,georgia,Georgia 格鲁吉亚,H,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+格鲁吉亚,格鲁吉亚,Georgia 格鲁吉亚,H,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Georgia 格鲁吉亚,georgia 格鲁吉亚,Georgia 格鲁吉亚,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Germany (德国),germany (德国),Germany 德国,K,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Germany,germany,Germany 德国,K,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+德国,德国,Germany 德国,K,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Germany 德国,germany 德国,Germany 德国,K,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Ghana (加纳),ghana (加纳),Ghana 加纳,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Ghana,ghana,Ghana 加纳,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+加纳,加纳,Ghana 加纳,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Ghana 加纳,ghana 加纳,Ghana 加纳,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Gibraltar (直布罗陀),gibraltar (直布罗陀),Gibraltar 直布罗陀,H,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Gibraltar,gibraltar,Gibraltar 直布罗陀,H,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+直布罗陀,直布罗陀,Gibraltar 直布罗陀,H,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Gibraltar 直布罗陀,gibraltar 直布罗陀,Gibraltar 直布罗陀,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Greece (希腊),greece (希腊),Greece 希腊,M,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Greece,greece,Greece 希腊,M,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+希腊,希腊,Greece 希腊,M,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Greece 希腊,greece 希腊,Greece 希腊,M,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Greenland (格陵兰),greenland (格陵兰),Greenland 格陵兰,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Greenland,greenland,Greenland 格陵兰,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+格陵兰,格陵兰,Greenland 格陵兰,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Greenland 格陵兰,greenland 格陵兰,Greenland 格陵兰,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Grenada,grenada,Grenada,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+Guadeloupe,guadeloupe,Guadeloupe,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+Guam (关岛),guam (关岛),Guam 关岛,E,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Guam,guam,Guam 关岛,E,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+关岛,关岛,Guam 关岛,E,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Guam 关岛,guam 关岛,Guam 关岛,E,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Guatemala (危地马拉),guatemala (危地马拉),Guatemala 危地马拉,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Guatemala,guatemala,Guatemala 危地马拉,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+危地马拉,危地马拉,Guatemala 危地马拉,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Guatemala 危地马拉,guatemala 危地马拉,Guatemala 危地马拉,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Guinea (几内亚),guinea (几内亚),Guinea 几内亚,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Guinea,guinea,Guinea 几内亚,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+几内亚,几内亚,Guinea 几内亚,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Guinea 几内亚,guinea 几内亚,Guinea 几内亚,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Guyana (圭亚那),guyana (圭亚那),Guyana 圭亚那,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Guyana,guyana,Guyana 圭亚那,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+圭亚那,圭亚那,Guyana 圭亚那,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Guyana 圭亚那,guyana 圭亚那,Guyana 圭亚那,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Haiti (海地),haiti (海地),Haiti 海地,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Haiti,haiti,Haiti 海地,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+海地,海地,Haiti 海地,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Haiti 海地,haiti 海地,Haiti 海地,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Honduras (洪都拉斯),honduras (洪都拉斯),Honduras 洪都拉斯,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Honduras,honduras,Honduras 洪都拉斯,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+洪都拉斯,洪都拉斯,Honduras 洪都拉斯,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Honduras 洪都拉斯,honduras 洪都拉斯,Honduras 洪都拉斯,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+"Hong Kong SAR, China (中国香港特别行政区)","hong kong sar, china (中国香港特别行政区)","Hong Kong SAR, China 中国香港特别行政区",V,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+"Hong Kong SAR, China","hong kong sar, china","Hong Kong SAR, China 中国香港特别行政区",V,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+中国香港特别行政区,中国香港特别行政区,"Hong Kong SAR, China 中国香港特别行政区",V,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+"Hong Kong SAR, China 中国香港特别行政区","hong kong sar, china 中国香港特别行政区","Hong Kong SAR, China 中国香港特别行政区",V,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Hungary (匈牙利),hungary (匈牙利),Hungary 匈牙利,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Hungary,hungary,Hungary 匈牙利,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+匈牙利,匈牙利,Hungary 匈牙利,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Hungary 匈牙利,hungary 匈牙利,Hungary 匈牙利,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Iceland (冰岛),iceland (冰岛),Iceland 冰岛,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Iceland,iceland,Iceland 冰岛,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+冰岛,冰岛,Iceland 冰岛,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Iceland 冰岛,iceland 冰岛,Iceland 冰岛,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+India (印度),india (印度),India 印度,O,Dropdown display label,印度,INDIA,0.0,1.8,OK
+India,india,India 印度,O,From PDF country/region English label,印度,INDIA,0.0,1.8,OK
+印度,印度,India 印度,O,From PDF country/region Chinese label,印度,INDIA,0.0,1.8,OK
+India 印度,india 印度,India 印度,O,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Indonesia (印度尼西亚),indonesia (印度尼西亚),Indonesia 印度尼西亚,T,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Indonesia,indonesia,Indonesia 印度尼西亚,T,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+印度尼西亚,印度尼西亚,Indonesia 印度尼西亚,T,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Indonesia 印度尼西亚,indonesia 印度尼西亚,Indonesia 印度尼西亚,T,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Iraq (伊拉克),iraq (伊拉克),Iraq 伊拉克,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Iraq,iraq,Iraq 伊拉克,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+伊拉克,伊拉克,Iraq 伊拉克,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Iraq 伊拉克,iraq 伊拉克,Iraq 伊拉克,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Ireland (爱尔兰),ireland (爱尔兰),Ireland 爱尔兰,M,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Ireland,ireland,Ireland 爱尔兰,M,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+爱尔兰,爱尔兰,Ireland 爱尔兰,M,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Ireland 爱尔兰,ireland 爱尔兰,Ireland 爱尔兰,M,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Israel (以色列),israel (以色列),Israel 以色列,F,Dropdown display label,以色列,ISRAEL,24.0,1.8,OK
+Israel,israel,Israel 以色列,F,From PDF country/region English label,以色列,ISRAEL,24.0,1.8,OK
+以色列,以色列,Israel 以色列,F,From PDF country/region Chinese label,以色列,ISRAEL,24.0,1.8,OK
+Israel 以色列,israel 以色列,Israel 以色列,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Italy (意大利),italy (意大利),Italy 意大利,K,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Italy,italy,Italy 意大利,K,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+意大利,意大利,Italy 意大利,K,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Italy 意大利,italy 意大利,Italy 意大利,K,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Jamaica (牙买加),jamaica (牙买加),Jamaica 牙买加,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Jamaica,jamaica,Jamaica 牙买加,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+牙买加,牙买加,Jamaica 牙买加,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Jamaica 牙买加,jamaica 牙买加,Jamaica 牙买加,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Japan (日本),japan (日本),Japan 日本,P,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Japan,japan,Japan 日本,P,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+日本,日本,Japan 日本,P,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Japan 日本,japan 日本,Japan 日本,P,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Jordan (约旦),jordan (约旦),Jordan 约旦,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Jordan,jordan,Jordan 约旦,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+约旦,约旦,Jordan 约旦,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Jordan 约旦,jordan 约旦,Jordan 约旦,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Kazakhstan (哈萨克斯坦),kazakhstan (哈萨克斯坦),Kazakhstan 哈萨克斯坦,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Kazakhstan,kazakhstan,Kazakhstan 哈萨克斯坦,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+哈萨克斯坦,哈萨克斯坦,Kazakhstan 哈萨克斯坦,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Kazakhstan 哈萨克斯坦,kazakhstan 哈萨克斯坦,Kazakhstan 哈萨克斯坦,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Kenya (肯尼亚),kenya (肯尼亚),Kenya 肯尼亚,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Kenya,kenya,Kenya 肯尼亚,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+肯尼亚,肯尼亚,Kenya 肯尼亚,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Kenya 肯尼亚,kenya 肯尼亚,Kenya 肯尼亚,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Kuwait (科威特),kuwait (科威特),Kuwait 科威特,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Kuwait,kuwait,Kuwait 科威特,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+科威特,科威特,Kuwait 科威特,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Kuwait 科威特,kuwait 科威特,Kuwait 科威特,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Kyrgyzstan (吉尔吉斯斯坦),kyrgyzstan (吉尔吉斯斯坦),Kyrgyzstan 吉尔吉斯斯坦,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Kyrgyzstan,kyrgyzstan,Kyrgyzstan 吉尔吉斯斯坦,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+吉尔吉斯斯坦,吉尔吉斯斯坦,Kyrgyzstan 吉尔吉斯斯坦,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Kyrgyzstan 吉尔吉斯斯坦,kyrgyzstan 吉尔吉斯斯坦,Kyrgyzstan 吉尔吉斯斯坦,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Laos (老挝),laos (老挝),Laos 老挝,E,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Laos,laos,Laos 老挝,E,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+老挝,老挝,Laos 老挝,E,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Laos 老挝,laos 老挝,Laos 老挝,E,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Latvia (拉脱维亚),latvia (拉脱维亚),Latvia 拉脱维亚,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Latvia,latvia,Latvia 拉脱维亚,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+拉脱维亚,拉脱维亚,Latvia 拉脱维亚,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Latvia 拉脱维亚,latvia 拉脱维亚,Latvia 拉脱维亚,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Lebanon (黎巴嫩),lebanon (黎巴嫩),Lebanon 黎巴嫩,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Lebanon,lebanon,Lebanon 黎巴嫩,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+黎巴嫩,黎巴嫩,Lebanon 黎巴嫩,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Lebanon 黎巴嫩,lebanon 黎巴嫩,Lebanon 黎巴嫩,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Lesotho (莱索托),lesotho (莱索托),Lesotho 莱索托,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Lesotho,lesotho,Lesotho 莱索托,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+莱索托,莱索托,Lesotho 莱索托,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Lesotho 莱索托,lesotho 莱索托,Lesotho 莱索托,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Liberia (利比里亚),liberia (利比里亚),Liberia 利比里亚,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Liberia,liberia,Liberia 利比里亚,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+利比里亚,利比里亚,Liberia 利比里亚,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Liberia 利比里亚,liberia 利比里亚,Liberia 利比里亚,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Libya (利比亚),libya (利比亚),Libya 利比亚,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Libya,libya,Libya 利比亚,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+利比亚,利比亚,Libya 利比亚,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Libya 利比亚,libya 利比亚,Libya 利比亚,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Liechtenstein (列支敦士登),liechtenstein (列支敦士登),Liechtenstein 列支敦士登,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Liechtenstein,liechtenstein,Liechtenstein 列支敦士登,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+列支敦士登,列支敦士登,Liechtenstein 列支敦士登,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Liechtenstein 列支敦士登,liechtenstein 列支敦士登,Liechtenstein 列支敦士登,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Lithuania (立陶宛),lithuania (立陶宛),Lithuania 立陶宛,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Lithuania,lithuania,Lithuania 立陶宛,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+立陶宛,立陶宛,Lithuania 立陶宛,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Lithuania 立陶宛,lithuania 立陶宛,Lithuania 立陶宛,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Luxembourg (卢森堡),luxembourg (卢森堡),Luxembourg 卢森堡,M,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Luxembourg,luxembourg,Luxembourg 卢森堡,M,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+卢森堡,卢森堡,Luxembourg 卢森堡,M,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Luxembourg 卢森堡,luxembourg 卢森堡,Luxembourg 卢森堡,M,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+"Macau SAR, China (中国澳门特别行政区)","macau sar, china (中国澳门特别行政区)","Macau SAR, China 中国澳门特别行政区",A,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+"Macau SAR, China","macau sar, china","Macau SAR, China 中国澳门特别行政区",A,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+中国澳门特别行政区,中国澳门特别行政区,"Macau SAR, China 中国澳门特别行政区",A,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+"Macau SAR, China 中国澳门特别行政区","macau sar, china 中国澳门特别行政区","Macau SAR, China 中国澳门特别行政区",A,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Macedonia (马其顿),macedonia (马其顿),Macedonia 马其顿,H,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Macedonia,macedonia,Macedonia 马其顿,H,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+马其顿,马其顿,Macedonia 马其顿,H,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Macedonia 马其顿,macedonia 马其顿,Macedonia 马其顿,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Madagascar (马达加斯加),madagascar (马达加斯加),Madagascar 马达加斯加,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Madagascar,madagascar,Madagascar 马达加斯加,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+马达加斯加,马达加斯加,Madagascar 马达加斯加,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Madagascar 马达加斯加,madagascar 马达加斯加,Madagascar 马达加斯加,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Malawi (马拉维),malawi (马拉维),Malawi 马拉维,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Malawi,malawi,Malawi 马拉维,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+马拉维,马拉维,Malawi 马拉维,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Malawi 马拉维,malawi 马拉维,Malawi 马拉维,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Malaysia (马来西亚),malaysia (马来西亚),Malaysia 马来西亚,Q,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Malaysia,malaysia,Malaysia 马来西亚,Q,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+马来西亚,马来西亚,Malaysia 马来西亚,Q,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Malaysia 马来西亚,malaysia 马来西亚,Malaysia 马来西亚,Q,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Maldives (马尔代夫),maldives (马尔代夫),Maldives 马尔代夫,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Maldives,maldives,Maldives 马尔代夫,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+马尔代夫,马尔代夫,Maldives 马尔代夫,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Maldives 马尔代夫,maldives 马尔代夫,Maldives 马尔代夫,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Mali (马里),mali (马里),Mali 马里,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Mali,mali,Mali 马里,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+马里,马里,Mali 马里,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Mali 马里,mali 马里,Mali 马里,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Malta (马耳他),malta (马耳他),Malta 马耳他,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Malta,malta,Malta 马耳他,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+马耳他,马耳他,Malta 马耳他,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Malta 马耳他,malta 马耳他,Malta 马耳他,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Marshall Islands (马绍尔群岛),marshall islands (马绍尔群岛),Marshall Islands 马绍尔群岛,G,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Marshall Islands,marshall islands,Marshall Islands 马绍尔群岛,G,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+马绍尔群岛,马绍尔群岛,Marshall Islands 马绍尔群岛,G,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Marshall Islands 马绍尔群岛,marshall islands 马绍尔群岛,Marshall Islands 马绍尔群岛,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Martinique (马提尼克),martinique (马提尼克),Martinique 马提尼克,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Martinique,martinique,Martinique 马提尼克,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+马提尼克,马提尼克,Martinique 马提尼克,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Martinique 马提尼克,martinique 马提尼克,Martinique 马提尼克,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Mauritania (毛里塔尼亚),mauritania (毛里塔尼亚),Mauritania 毛里塔尼亚,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Mauritania,mauritania,Mauritania 毛里塔尼亚,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+毛里塔尼亚,毛里塔尼亚,Mauritania 毛里塔尼亚,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Mauritania 毛里塔尼亚,mauritania 毛里塔尼亚,Mauritania 毛里塔尼亚,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Mauritius (毛里求斯),mauritius (毛里求斯),Mauritius 毛里求斯,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Mauritius,mauritius,Mauritius 毛里求斯,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+毛里求斯,毛里求斯,Mauritius 毛里求斯,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Mauritius 毛里求斯,mauritius 毛里求斯,Mauritius 毛里求斯,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Mexico (墨西哥),mexico (墨西哥),Mexico 墨西哥,N,Dropdown display label,墨西哥,MEXICO,0.0,1.8,OK
+Mexico,mexico,Mexico 墨西哥,N,From PDF country/region English label,墨西哥,MEXICO,0.0,1.8,OK
+墨西哥,墨西哥,Mexico 墨西哥,N,From PDF country/region Chinese label,墨西哥,MEXICO,0.0,1.8,OK
+Mexico 墨西哥,mexico 墨西哥,Mexico 墨西哥,N,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Micronesia (密克罗尼西亚),micronesia (密克罗尼西亚),Micronesia 密克罗尼西亚,G,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Micronesia,micronesia,Micronesia 密克罗尼西亚,G,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+密克罗尼西亚,密克罗尼西亚,Micronesia 密克罗尼西亚,G,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Micronesia 密克罗尼西亚,micronesia 密克罗尼西亚,Micronesia 密克罗尼西亚,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Monaco (摩纳哥),monaco (摩纳哥),Monaco 摩纳哥,M,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Monaco,monaco,Monaco 摩纳哥,M,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+摩纳哥,摩纳哥,Monaco 摩纳哥,M,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Monaco 摩纳哥,monaco 摩纳哥,Monaco 摩纳哥,M,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Mongolia (蒙古),mongolia (蒙古),Mongolia 蒙古,D,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Mongolia,mongolia,Mongolia 蒙古,D,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+蒙古,蒙古,Mongolia 蒙古,D,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Mongolia 蒙古,mongolia 蒙古,Mongolia 蒙古,D,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Monserrat,monserrat,Monserrat,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+Montenegro,montenegro,Montenegro,H,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+Morocco (摩洛哥),morocco (摩洛哥),Morocco 摩洛哥,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Morocco,morocco,Morocco 摩洛哥,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+摩洛哥,摩洛哥,Morocco 摩洛哥,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Morocco 摩洛哥,morocco 摩洛哥,Morocco 摩洛哥,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Mozambique (莫桑比克),mozambique (莫桑比克),Mozambique 莫桑比克,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Mozambique,mozambique,Mozambique 莫桑比克,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+莫桑比克,莫桑比克,Mozambique 莫桑比克,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Mozambique 莫桑比克,mozambique 莫桑比克,Mozambique 莫桑比克,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Namibia (纳米比亚),namibia (纳米比亚),Namibia 纳米比亚,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Namibia,namibia,Namibia 纳米比亚,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+纳米比亚,纳米比亚,Namibia 纳米比亚,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Namibia 纳米比亚,namibia 纳米比亚,Namibia 纳米比亚,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Nepal (尼泊尔),nepal (尼泊尔),Nepal 尼泊尔,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Nepal,nepal,Nepal 尼泊尔,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+尼泊尔,尼泊尔,Nepal 尼泊尔,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Nepal 尼泊尔,nepal 尼泊尔,Nepal 尼泊尔,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Netherlands (荷兰),netherlands (荷兰),Netherlands 荷兰,K,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Netherlands,netherlands,Netherlands 荷兰,K,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+荷兰,荷兰,Netherlands 荷兰,K,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Netherlands 荷兰,netherlands 荷兰,Netherlands 荷兰,K,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Netherlands Antilles,netherlands antilles,Netherlands Antilles,G,From PDF country/region English label,Need Review,Need Review,,1.8,Need Review
+New Caledonia (新喀里多尼亚),new caledonia (新喀里多尼亚),New Caledonia 新喀里多尼亚,G,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+New Caledonia,new caledonia,New Caledonia 新喀里多尼亚,G,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+新喀里多尼亚,新喀里多尼亚,New Caledonia 新喀里多尼亚,G,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+New Caledonia 新喀里多尼亚,new caledonia 新喀里多尼亚,New Caledonia 新喀里多尼亚,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+New Zealand (新西兰),new zealand (新西兰),New Zealand 新西兰,U,Dropdown display label,澳大利亚、新西兰,AUNZ,0.0,1.8,OK
+New Zealand,new zealand,New Zealand 新西兰,U,From PDF country/region English label,澳大利亚、新西兰,AUNZ,0.0,1.8,OK
+新西兰,新西兰,New Zealand 新西兰,U,From PDF country/region Chinese label,澳大利亚、新西兰,AUNZ,0.0,1.8,OK
+New Zealand 新西兰,new zealand 新西兰,New Zealand 新西兰,U,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Nicaragua (尼加拉瓜),nicaragua (尼加拉瓜),Nicaragua 尼加拉瓜,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Nicaragua,nicaragua,Nicaragua 尼加拉瓜,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+尼加拉瓜,尼加拉瓜,Nicaragua 尼加拉瓜,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Nicaragua 尼加拉瓜,nicaragua 尼加拉瓜,Nicaragua 尼加拉瓜,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Niger (尼日尔),niger (尼日尔),Niger 尼日尔,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Niger,niger,Niger 尼日尔,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+尼日尔,尼日尔,Niger 尼日尔,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Niger 尼日尔,niger 尼日尔,Niger 尼日尔,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Nigeria (尼日利亚),nigeria (尼日利亚),Nigeria 尼日利亚,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Nigeria,nigeria,Nigeria 尼日利亚,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+尼日利亚,尼日利亚,Nigeria 尼日利亚,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Nigeria 尼日利亚,nigeria 尼日利亚,Nigeria 尼日利亚,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Northern Mariana Islands (北马利安群岛),northern mariana islands (北马利安群岛),Northern Mariana Islands 北马利安群岛,G,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Northern Mariana Islands,northern mariana islands,Northern Mariana Islands 北马利安群岛,G,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+北马利安群岛,北马利安群岛,Northern Mariana Islands 北马利安群岛,G,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Northern Mariana Islands 北马利安群岛,northern mariana islands 北马利安群岛,Northern Mariana Islands 北马利安群岛,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Norway (挪威),norway (挪威),Norway 挪威,M,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Norway,norway,Norway 挪威,M,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+挪威,挪威,Norway 挪威,M,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Norway 挪威,norway 挪威,Norway 挪威,M,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Oman (阿曼),oman (阿曼),Oman 阿曼,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Oman,oman,Oman 阿曼,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+阿曼,阿曼,Oman 阿曼,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Oman 阿曼,oman 阿曼,Oman 阿曼,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Pakistan (巴基斯坦),pakistan (巴基斯坦),Pakistan 巴基斯坦,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Pakistan,pakistan,Pakistan 巴基斯坦,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+巴基斯坦,巴基斯坦,Pakistan 巴基斯坦,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Pakistan 巴基斯坦,pakistan 巴基斯坦,Pakistan 巴基斯坦,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Palau (帕劳),palau (帕劳),Palau 帕劳,G,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Palau,palau,Palau 帕劳,G,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+帕劳,帕劳,Palau 帕劳,G,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Palau 帕劳,palau 帕劳,Palau 帕劳,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Palestine Autonomous (巴勒斯坦自治区),palestine autonomous (巴勒斯坦自治区),Palestine Autonomous 巴勒斯坦自治区,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Palestine Autonomous,palestine autonomous,Palestine Autonomous 巴勒斯坦自治区,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+巴勒斯坦自治区,巴勒斯坦自治区,Palestine Autonomous 巴勒斯坦自治区,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Palestine Autonomous 巴勒斯坦自治区,palestine autonomous 巴勒斯坦自治区,Palestine Autonomous 巴勒斯坦自治区,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Panama (巴拿马),panama (巴拿马),Panama 巴拿马,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Panama,panama,Panama 巴拿马,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+巴拿马,巴拿马,Panama 巴拿马,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Panama 巴拿马,panama 巴拿马,Panama 巴拿马,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Papua New Guinea (巴布亚新几内亚),papua new guinea (巴布亚新几内亚),Papua New Guinea 巴布亚新几内亚,G,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Papua New Guinea,papua new guinea,Papua New Guinea 巴布亚新几内亚,G,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+巴布亚新几内亚,巴布亚新几内亚,Papua New Guinea 巴布亚新几内亚,G,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Papua New Guinea 巴布亚新几内亚,papua new guinea 巴布亚新几内亚,Papua New Guinea 巴布亚新几内亚,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Paraguay (巴拉圭),paraguay (巴拉圭),Paraguay 巴拉圭,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Paraguay,paraguay,Paraguay 巴拉圭,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+巴拉圭,巴拉圭,Paraguay 巴拉圭,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Paraguay 巴拉圭,paraguay 巴拉圭,Paraguay 巴拉圭,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Peru (秘鲁),peru (秘鲁),Peru 秘鲁,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Peru,peru,Peru 秘鲁,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+秘鲁,秘鲁,Peru 秘鲁,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Peru 秘鲁,peru 秘鲁,Peru 秘鲁,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Phillipines,phillipines,Phillipines,S,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+Poland (波兰),poland (波兰),Poland 波兰,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Poland,poland,Poland 波兰,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+波兰,波兰,Poland 波兰,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Poland 波兰,poland 波兰,Poland 波兰,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Portugal (葡萄牙),portugal (葡萄牙),Portugal 葡萄牙,M,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Portugal,portugal,Portugal 葡萄牙,M,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+葡萄牙,葡萄牙,Portugal 葡萄牙,M,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Portugal 葡萄牙,portugal 葡萄牙,Portugal 葡萄牙,M,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Puerto Rico (波多黎各),puerto rico (波多黎各),Puerto Rico 波多黎各,2,Dropdown display label,美国和波多黎各,US_PR,0.0,1.8,OK
+Puerto Rico,puerto rico,Puerto Rico 波多黎各,2,From PDF country/region English label,美国和波多黎各,US_PR,0.0,1.8,OK
+波多黎各,波多黎各,Puerto Rico 波多黎各,2,From PDF country/region Chinese label,美国和波多黎各,US_PR,0.0,1.8,OK
+Puerto Rico 波多黎各,puerto rico 波多黎各,Puerto Rico 波多黎各,2,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Qatar (卡塔尔),qatar (卡塔尔),Qatar 卡塔尔,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Qatar,qatar,Qatar 卡塔尔,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+卡塔尔,卡塔尔,Qatar 卡塔尔,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Qatar 卡塔尔,qatar 卡塔尔,Qatar 卡塔尔,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Republic of Moldova,republic of moldova,Republic of Moldova,H,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+Romania (罗马尼亚),romania (罗马尼亚),Romania 罗马尼亚,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Romania,romania,Romania 罗马尼亚,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+罗马尼亚,罗马尼亚,Romania 罗马尼亚,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Romania 罗马尼亚,romania 罗马尼亚,Romania 罗马尼亚,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Russian Federation,russian federation,Russian Federation,M,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+Rwanda (卢旺达),rwanda (卢旺达),Rwanda 卢旺达,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Rwanda,rwanda,Rwanda 卢旺达,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+卢旺达,卢旺达,Rwanda 卢旺达,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Rwanda 卢旺达,rwanda 卢旺达,Rwanda 卢旺达,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Réunion,réunion,Réunion,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Saint Lucia (圣路西亚岛),saint lucia (圣路西亚岛),Saint Lucia 圣路西亚岛,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Saint Lucia,saint lucia,Saint Lucia 圣路西亚岛,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+圣路西亚岛,圣路西亚岛,Saint Lucia 圣路西亚岛,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Saint Lucia 圣路西亚岛,saint lucia 圣路西亚岛,Saint Lucia 圣路西亚岛,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Samoa (萨摩亚),samoa (萨摩亚),Samoa 萨摩亚,G,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Samoa,samoa,Samoa 萨摩亚,G,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+萨摩亚,萨摩亚,Samoa 萨摩亚,G,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Samoa 萨摩亚,samoa 萨摩亚,Samoa 萨摩亚,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Saudi Arabia (沙特阿拉伯),saudi arabia (沙特阿拉伯),Saudi Arabia 沙特阿拉伯,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Saudi Arabia,saudi arabia,Saudi Arabia 沙特阿拉伯,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+沙特阿拉伯,沙特阿拉伯,Saudi Arabia 沙特阿拉伯,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Saudi Arabia 沙特阿拉伯,saudi arabia 沙特阿拉伯,Saudi Arabia 沙特阿拉伯,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Senegal (塞内加尔),senegal (塞内加尔),Senegal 塞内加尔,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Senegal,senegal,Senegal 塞内加尔,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+塞内加尔,塞内加尔,Senegal 塞内加尔,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Senegal 塞内加尔,senegal 塞内加尔,Senegal 塞内加尔,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Serbia (塞尔维亚),serbia (塞尔维亚),Serbia 塞尔维亚,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Serbia,serbia,Serbia 塞尔维亚,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+塞尔维亚,塞尔维亚,Serbia 塞尔维亚,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Serbia 塞尔维亚,serbia 塞尔维亚,Serbia 塞尔维亚,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Seychelles (塞舌尔),seychelles (塞舌尔),Seychelles 塞舌尔,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Seychelles,seychelles,Seychelles 塞舌尔,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+塞舌尔,塞舌尔,Seychelles 塞舌尔,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Seychelles 塞舌尔,seychelles 塞舌尔,Seychelles 塞舌尔,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Singapore (新加坡),singapore (新加坡),Singapore 新加坡,Y,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Singapore,singapore,Singapore 新加坡,Y,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+新加坡,新加坡,Singapore 新加坡,Y,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Singapore 新加坡,singapore 新加坡,Singapore 新加坡,Y,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Slovakia (斯洛伐克),slovakia (斯洛伐克),Slovakia 斯洛伐克,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Slovakia,slovakia,Slovakia 斯洛伐克,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+斯洛伐克,斯洛伐克,Slovakia 斯洛伐克,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Slovakia 斯洛伐克,slovakia 斯洛伐克,Slovakia 斯洛伐克,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Slovenia (斯洛文尼亚),slovenia (斯洛文尼亚),Slovenia 斯洛文尼亚,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Slovenia,slovenia,Slovenia 斯洛文尼亚,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+斯洛文尼亚,斯洛文尼亚,Slovenia 斯洛文尼亚,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Slovenia 斯洛文尼亚,slovenia 斯洛文尼亚,Slovenia 斯洛文尼亚,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+South Africa (南非),south africa (南非),South Africa 南非,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+South Africa,south africa,South Africa 南非,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+南非,南非,South Africa 南非,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+South Africa 南非,south africa 南非,South Africa 南非,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+South Korea (韩国),south korea (韩国),South Korea 韩国,Z,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+South Korea,south korea,South Korea 韩国,Z,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+韩国,韩国,South Korea 韩国,Z,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+South Korea 韩国,south korea 韩国,South Korea 韩国,Z,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Spain (西班牙),spain (西班牙),Spain 西班牙,K,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Spain,spain,Spain 西班牙,K,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+西班牙,西班牙,Spain 西班牙,K,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Spain 西班牙,spain 西班牙,Spain 西班牙,K,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Sri Lanka (斯里兰卡),sri lanka (斯里兰卡),Sri Lanka 斯里兰卡,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Sri Lanka,sri lanka,Sri Lanka 斯里兰卡,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+斯里兰卡,斯里兰卡,Sri Lanka 斯里兰卡,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Sri Lanka 斯里兰卡,sri lanka 斯里兰卡,Sri Lanka 斯里兰卡,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+St. Kitts and Nevis,st. kitts and nevis,St. Kitts and Nevis,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+St. Maarten (荷属圣马丁),st. maarten (荷属圣马丁),St. Maarten 荷属圣马丁,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+St. Maarten,st. maarten,St. Maarten 荷属圣马丁,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+荷属圣马丁,荷属圣马丁,St. Maarten 荷属圣马丁,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+St. Maarten 荷属圣马丁,st. maarten 荷属圣马丁,St. Maarten 荷属圣马丁,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+St. Martin (法属圣马丁),st. martin (法属圣马丁),St. Martin 法属圣马丁,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+St. Martin,st. martin,St. Martin 法属圣马丁,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+法属圣马丁,法属圣马丁,St. Martin 法属圣马丁,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+St. Martin 法属圣马丁,st. martin 法属圣马丁,St. Martin 法属圣马丁,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+St. Vincent & the Grenadines (圣文森特岛和格林纳丁斯),st. vincent & the grenadines (圣文森特岛和格林纳丁斯),St. Vincent & the Grenadines 圣文森特岛和格林纳丁斯,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+St. Vincent & the Grenadines,st. vincent & the grenadines,St. Vincent & the Grenadines 圣文森特岛和格林纳丁斯,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+圣文森特岛和格林纳丁斯,圣文森特岛和格林纳丁斯,St. Vincent & the Grenadines 圣文森特岛和格林纳丁斯,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+St. Vincent & the Grenadines 圣文森特岛和格林纳丁斯,st. vincent & the grenadines 圣文森特岛和格林纳丁斯,St. Vincent & the Grenadines 圣文森特岛和格林纳丁斯,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Suriname (苏里南),suriname (苏里南),Suriname 苏里南,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Suriname,suriname,Suriname 苏里南,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+苏里南,苏里南,Suriname 苏里南,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Suriname 苏里南,suriname 苏里南,Suriname 苏里南,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Swaziland (斯威士兰),swaziland (斯威士兰),Swaziland 斯威士兰,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Swaziland,swaziland,Swaziland 斯威士兰,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+斯威士兰,斯威士兰,Swaziland 斯威士兰,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Swaziland 斯威士兰,swaziland 斯威士兰,Swaziland 斯威士兰,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Sweden (瑞典),sweden (瑞典),Sweden 瑞典,M,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Sweden,sweden,Sweden 瑞典,M,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+瑞典,瑞典,Sweden 瑞典,M,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Sweden 瑞典,sweden 瑞典,Sweden 瑞典,M,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Switzerland (瑞士),switzerland (瑞士),Switzerland 瑞士,M,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Switzerland,switzerland,Switzerland 瑞士,M,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+瑞士,瑞士,Switzerland 瑞士,M,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Switzerland 瑞士,switzerland 瑞士,Switzerland 瑞士,M,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Syrian Arab Republic (叙利亚),syrian arab republic (叙利亚),Syrian Arab Republic 叙利亚,H,Dropdown display label,Need Review,Need Review,,1.8,Need Review
+Syrian Arab Republic,syrian arab republic,Syrian Arab Republic 叙利亚,H,From PDF country/region English label,Need Review,Need Review,,1.8,Need Review
+叙利亚,叙利亚,Syrian Arab Republic 叙利亚,H,From PDF country/region Chinese label,Need Review,Need Review,,1.8,Need Review
+Syrian Arab Republic 叙利亚,syrian arab republic 叙利亚,Syrian Arab Republic 叙利亚,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+"Taiwan, China (中国台湾)","taiwan, china (中国台湾)","Taiwan, China 中国台湾",X,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+"Taiwan, China","taiwan, china","Taiwan, China 中国台湾",X,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+中国台湾,中国台湾,"Taiwan, China 中国台湾",X,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+"Taiwan, China 中国台湾","taiwan, china 中国台湾","Taiwan, China 中国台湾",X,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Thailand (泰国),thailand (泰国),Thailand 泰国,R,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Thailand,thailand,Thailand 泰国,R,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+泰国,泰国,Thailand 泰国,R,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Thailand 泰国,thailand 泰国,Thailand 泰国,R,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Togo (多哥),togo (多哥),Togo 多哥,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Togo,togo,Togo 多哥,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+多哥,多哥,Togo 多哥,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Togo 多哥,togo 多哥,Togo 多哥,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Tonga,tonga,Tonga,G,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+Trinidad & Tobago (特立尼达和多巴哥),trinidad & tobago (特立尼达和多巴哥),Trinidad & Tobago 特立尼达和多巴哥,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Trinidad & Tobago,trinidad & tobago,Trinidad & Tobago 特立尼达和多巴哥,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+特立尼达和多巴哥,特立尼达和多巴哥,Trinidad & Tobago 特立尼达和多巴哥,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Trinidad & Tobago 特立尼达和多巴哥,trinidad & tobago 特立尼达和多巴哥,Trinidad & Tobago 特立尼达和多巴哥,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Tunisia (突尼斯),tunisia (突尼斯),Tunisia 突尼斯,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Tunisia,tunisia,Tunisia 突尼斯,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+突尼斯,突尼斯,Tunisia 突尼斯,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Tunisia 突尼斯,tunisia 突尼斯,Tunisia 突尼斯,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Turkey (土耳其),turkey (土耳其),Turkey 土耳其,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Turkey,turkey,Turkey 土耳其,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+土耳其,土耳其,Turkey 土耳其,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Turkey 土耳其,turkey 土耳其,Turkey 土耳其,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Turks & Caicos Islands (特克斯和凯克斯群岛),turks & caicos islands (特克斯和凯克斯群岛),Turks & Caicos Islands 特克斯和凯克斯群岛,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Turks & Caicos Islands,turks & caicos islands,Turks & Caicos Islands 特克斯和凯克斯群岛,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+特克斯和凯克斯群岛,特克斯和凯克斯群岛,Turks & Caicos Islands 特克斯和凯克斯群岛,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Turks & Caicos Islands 特克斯和凯克斯群岛,turks & caicos islands 特克斯和凯克斯群岛,Turks & Caicos Islands 特克斯和凯克斯群岛,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Colorado 80000-81699 (科罗拉多 80000-81699),colorado 80000-81699 (科罗拉多 80000-81699),Colorado 80000-81699 科罗拉多 80000-81699,1,Dropdown display label,美国和波多黎各,US_PR,0.0,1.8,OK
+Colorado 80000-81699,colorado 80000-81699,Colorado 80000-81699 科罗拉多 80000-81699,1,From PDF country/region English label,美国和波多黎各,US_PR,0.0,1.8,OK
+科罗拉多 80000-81699,科罗拉多 80000-81699,Colorado 80000-81699 科罗拉多 80000-81699,1,From PDF country/region Chinese label,美国和波多黎各,US_PR,0.0,1.8,OK
+Colorado 80000-81699 科罗拉多 80000-81699,colorado 80000-81699 科罗拉多 80000-81699,Colorado 80000-81699 科罗拉多 80000-81699,1,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Idaho 83200-83999 (爱达荷州 83200-83999),idaho 83200-83999 (爱达荷州 83200-83999),Idaho 83200-83999 爱达荷州 83200-83999,1,Dropdown display label,美国和波多黎各,US_PR,0.0,1.8,OK
+Idaho 83200-83999,idaho 83200-83999,Idaho 83200-83999 爱达荷州 83200-83999,1,From PDF country/region English label,美国和波多黎各,US_PR,0.0,1.8,OK
+爱达荷州 83200-83999,爱达荷州 83200-83999,Idaho 83200-83999 爱达荷州 83200-83999,1,From PDF country/region Chinese label,美国和波多黎各,US_PR,0.0,1.8,OK
+Idaho 83200-83999 爱达荷州 83200-83999,idaho 83200-83999 爱达荷州 83200-83999,Idaho 83200-83999 爱达荷州 83200-83999,1,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Utah 84000-84799 (犹他州 84000-84799),utah 84000-84799 (犹他州 84000-84799),Utah 84000-84799 犹他州 84000-84799,1,Dropdown display label,美国和波多黎各,US_PR,0.0,1.8,OK
+Utah 84000-84799,utah 84000-84799,Utah 84000-84799 犹他州 84000-84799,1,From PDF country/region English label,美国和波多黎各,US_PR,0.0,1.8,OK
+犹他州 84000-84799,犹他州 84000-84799,Utah 84000-84799 犹他州 84000-84799,1,From PDF country/region Chinese label,美国和波多黎各,US_PR,0.0,1.8,OK
+Utah 84000-84799 犹他州 84000-84799,utah 84000-84799 犹他州 84000-84799,Utah 84000-84799 犹他州 84000-84799,1,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Arizona 85000-86599 (亚利桑那州 85000-86599),arizona 85000-86599 (亚利桑那州 85000-86599),Arizona 85000-86599 亚利桑那州 85000-86599,1,Dropdown display label,美国和波多黎各,US_PR,0.0,1.8,OK
+Arizona 85000-86599,arizona 85000-86599,Arizona 85000-86599 亚利桑那州 85000-86599,1,From PDF country/region English label,美国和波多黎各,US_PR,0.0,1.8,OK
+亚利桑那州 85000-86599,亚利桑那州 85000-86599,Arizona 85000-86599 亚利桑那州 85000-86599,1,From PDF country/region Chinese label,美国和波多黎各,US_PR,0.0,1.8,OK
+Arizona 85000-86599 亚利桑那州 85000-86599,arizona 85000-86599 亚利桑那州 85000-86599,Arizona 85000-86599 亚利桑那州 85000-86599,1,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Nevada 89000-89899 (内华达州 89000-89899),nevada 89000-89899 (内华达州 89000-89899),Nevada 89000-89899 内华达州 89000-89899,1,Dropdown display label,美国和波多黎各,US_PR,0.0,1.8,OK
+Nevada 89000-89899,nevada 89000-89899,Nevada 89000-89899 内华达州 89000-89899,1,From PDF country/region English label,美国和波多黎各,US_PR,0.0,1.8,OK
+内华达州 89000-89899,内华达州 89000-89899,Nevada 89000-89899 内华达州 89000-89899,1,From PDF country/region Chinese label,美国和波多黎各,US_PR,0.0,1.8,OK
+Nevada 89000-89899 内华达州 89000-89899,nevada 89000-89899 内华达州 89000-89899,Nevada 89000-89899 内华达州 89000-89899,1,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+California 90000-96699 (加利福尼亚州 90000-96699),california 90000-96699 (加利福尼亚州 90000-96699),California 90000-96699 加利福尼亚州 90000-96699,1,Dropdown display label,美国和波多黎各,US_PR,0.0,1.8,OK
+California 90000-96699,california 90000-96699,California 90000-96699 加利福尼亚州 90000-96699,1,From PDF country/region English label,美国和波多黎各,US_PR,0.0,1.8,OK
+加利福尼亚州 90000-96699,加利福尼亚州 90000-96699,California 90000-96699 加利福尼亚州 90000-96699,1,From PDF country/region Chinese label,美国和波多黎各,US_PR,0.0,1.8,OK
+California 90000-96699 加利福尼亚州 90000-96699,california 90000-96699 加利福尼亚州 90000-96699,California 90000-96699 加利福尼亚州 90000-96699,1,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Oregon 97000-97999 (俄勒冈州 97000-97999),oregon 97000-97999 (俄勒冈州 97000-97999),Oregon 97000-97999 俄勒冈州 97000-97999,1,Dropdown display label,美国和波多黎各,US_PR,0.0,1.8,OK
+Oregon 97000-97999,oregon 97000-97999,Oregon 97000-97999 俄勒冈州 97000-97999,1,From PDF country/region English label,美国和波多黎各,US_PR,0.0,1.8,OK
+俄勒冈州 97000-97999,俄勒冈州 97000-97999,Oregon 97000-97999 俄勒冈州 97000-97999,1,From PDF country/region Chinese label,美国和波多黎各,US_PR,0.0,1.8,OK
+Oregon 97000-97999 俄勒冈州 97000-97999,oregon 97000-97999 俄勒冈州 97000-97999,Oregon 97000-97999 俄勒冈州 97000-97999,1,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Washington 98000-99499 (华盛顿州 98000-99499),washington 98000-99499 (华盛顿州 98000-99499),Washington 98000-99499 华盛顿州 98000-99499,1,Dropdown display label,美国和波多黎各,US_PR,0.0,1.8,OK
+Washington 98000-99499,washington 98000-99499,Washington 98000-99499 华盛顿州 98000-99499,1,From PDF country/region English label,美国和波多黎各,US_PR,0.0,1.8,OK
+华盛顿州 98000-99499,华盛顿州 98000-99499,Washington 98000-99499 华盛顿州 98000-99499,1,From PDF country/region Chinese label,美国和波多黎各,US_PR,0.0,1.8,OK
+Washington 98000-99499 华盛顿州 98000-99499,washington 98000-99499 华盛顿州 98000-99499,Washington 98000-99499 华盛顿州 98000-99499,1,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+U.S. Virgin Islands (美属维尔京群岛),u.s. virgin islands (美属维尔京群岛),U.S. Virgin Islands 美属维尔京群岛,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+U.S. Virgin Islands,u.s. virgin islands,U.S. Virgin Islands 美属维尔京群岛,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+美属维尔京群岛,美属维尔京群岛,U.S. Virgin Islands 美属维尔京群岛,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+U.S. Virgin Islands 美属维尔京群岛,u.s. virgin islands 美属维尔京群岛,U.S. Virgin Islands 美属维尔京群岛,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Uganda (乌干达),uganda (乌干达),Uganda 乌干达,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Uganda,uganda,Uganda 乌干达,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+乌干达,乌干达,Uganda 乌干达,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Uganda 乌干达,uganda 乌干达,Uganda 乌干达,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Ukraine (乌克兰),ukraine (乌克兰),Ukraine 乌克兰,F,Dropdown display label,欧洲区,EUROPE,8.0,1.8,OK
+Ukraine,ukraine,Ukraine 乌克兰,F,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+乌克兰,乌克兰,Ukraine 乌克兰,F,From PDF country/region Chinese label,欧洲区,EUROPE,8.0,1.8,OK
+Ukraine 乌克兰,ukraine 乌克兰,Ukraine 乌克兰,F,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+United Arab Emirates (阿拉伯联合酋长国),united arab emirates (阿拉伯联合酋长国),United Arab Emirates 阿拉伯联合酋长国,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+United Arab Emirates,united arab emirates,United Arab Emirates 阿拉伯联合酋长国,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+阿拉伯联合酋长国,阿拉伯联合酋长国,United Arab Emirates 阿拉伯联合酋长国,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+United Arab Emirates 阿拉伯联合酋长国,united arab emirates 阿拉伯联合酋长国,United Arab Emirates 阿拉伯联合酋长国,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+United Kingdom (Great Britain),united kingdom (great britain),United Kingdom (Great Britain),K,From PDF country/region English label,欧洲区,EUROPE,8.0,1.8,OK
+United Kingdom,united kingdom,United Kingdom (Great Britain),K,English label without parenthetical,欧洲区,EUROPE,8.0,1.8,OK
+United Republic of Tanzania (坦桑尼亚),united republic of tanzania (坦桑尼亚),United Republic of Tanzania 坦桑尼亚,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+United Republic of Tanzania,united republic of tanzania,United Republic of Tanzania 坦桑尼亚,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+坦桑尼亚,坦桑尼亚,United Republic of Tanzania 坦桑尼亚,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+United Republic of Tanzania 坦桑尼亚,united republic of tanzania 坦桑尼亚,United Republic of Tanzania 坦桑尼亚,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Uruguay (乌拉圭),uruguay (乌拉圭),Uruguay 乌拉圭,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Uruguay,uruguay,Uruguay 乌拉圭,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+乌拉圭,乌拉圭,Uruguay 乌拉圭,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Uruguay 乌拉圭,uruguay 乌拉圭,Uruguay 乌拉圭,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Uzbekistan,uzbekistan,Uzbekistan,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Vanuatu (瓦努阿图),vanuatu (瓦努阿图),Vanuatu 瓦努阿图,G,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Vanuatu,vanuatu,Vanuatu 瓦努阿图,G,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+瓦努阿图,瓦努阿图,Vanuatu 瓦努阿图,G,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Vanuatu 瓦努阿图,vanuatu 瓦努阿图,Vanuatu 瓦努阿图,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Venezuela (委内瑞拉),venezuela (委内瑞拉),Venezuela 委内瑞拉,G,Dropdown display label,拉丁美洲区,LAC,0.0,1.8,OK
+Venezuela,venezuela,Venezuela 委内瑞拉,G,From PDF country/region English label,拉丁美洲区,LAC,0.0,1.8,OK
+委内瑞拉,委内瑞拉,Venezuela 委内瑞拉,G,From PDF country/region Chinese label,拉丁美洲区,LAC,0.0,1.8,OK
+Venezuela 委内瑞拉,venezuela 委内瑞拉,Venezuela 委内瑞拉,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Vietnam (越南),vietnam (越南),Vietnam 越南,B,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Vietnam,vietnam,Vietnam 越南,B,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+越南,越南,Vietnam 越南,B,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Vietnam 越南,vietnam 越南,Vietnam 越南,B,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Wallis & Futuna (瓦利斯群岛和富图那群岛),wallis & futuna (瓦利斯群岛和富图那群岛),Wallis & Futuna 瓦利斯群岛和富图那群岛,G,Dropdown display label,亚洲区,ASIA,0.0,1.8,OK
+Wallis & Futuna,wallis & futuna,Wallis & Futuna 瓦利斯群岛和富图那群岛,G,From PDF country/region English label,亚洲区,ASIA,0.0,1.8,OK
+瓦利斯群岛和富图那群岛,瓦利斯群岛和富图那群岛,Wallis & Futuna 瓦利斯群岛和富图那群岛,G,From PDF country/region Chinese label,亚洲区,ASIA,0.0,1.8,OK
+Wallis & Futuna 瓦利斯群岛和富图那群岛,wallis & futuna 瓦利斯群岛和富图那群岛,Wallis & Futuna 瓦利斯群岛和富图那群岛,G,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Yemen (也门),yemen (也门),Yemen 也门,H,Dropdown display label,Need Review,Need Review,,1.8,Need Review
+Yemen,yemen,Yemen 也门,H,From PDF country/region English label,Need Review,Need Review,,1.8,Need Review
+也门,也门,Yemen 也门,H,From PDF country/region Chinese label,Need Review,Need Review,,1.8,Need Review
+Yemen 也门,yemen 也门,Yemen 也门,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Zambia (赞比亚),zambia (赞比亚),Zambia 赞比亚,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Zambia,zambia,Zambia 赞比亚,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+赞比亚,赞比亚,Zambia 赞比亚,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Zambia 赞比亚,zambia 赞比亚,Zambia 赞比亚,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+Zimbabwe (津巴布韦),zimbabwe (津巴布韦),Zimbabwe 津巴布韦,H,Dropdown display label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Zimbabwe,zimbabwe,Zimbabwe 津巴布韦,H,From PDF country/region English label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+津巴布韦,津巴布韦,Zimbabwe 津巴布韦,H,From PDF country/region Chinese label,中东/印度次大陆/非洲区,MEISA,11.2,1.8,OK
+Zimbabwe 津巴布韦,zimbabwe 津巴布韦,Zimbabwe 津巴布韦,H,From PDF combined label,Need Review,Need Review,,1.8,Need Review
+U.S. (Western Region),u.s. (western region),U.S. (Western Region) 美国西部,1,From PDF country/region English label,美国和波多黎各,US_PR,0.0,1.8,OK
+U.S. (Western Region) 美国西部,u.s. (western region) 美国西部,U.S. (Western Region) 美国西部,1,From PDF combined label,美国和波多黎各,US_PR,0.0,1.8,OK
+U.S.,u.s.,U.S. (Western Region) 美国西部,1,English label without parenthetical,美国和波多黎各,US_PR,0.0,1.8,OK

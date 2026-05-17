@@ -1,0 +1,13 @@
+﻿test_case_id,country_input,matched_country,ip_zone,weight_kg,pdf_page,pdf_value,excel_value,pass_fail,notes
+TC-001,USA / United States / 美国,美国其他地区,2,,24,美国其他地区 IP Zone 2; U.S. Western Region IP Zone 1,Default alias maps to Zone 2,PASS,默认美国其他地区；明确美国西部或后续邮编规则才进 Zone 1
+TC-002,Germany / 德国,Germany 德国,K,,21,IP Zone K,K,PASS,
+TC-003,Japan / 日本,Japan 日本,P,,22,IP Zone P,P,PASS,
+TC-004,Singapore / 新加坡,Singapore 新加坡,Y,,23,IP Zone Y,Y,PASS,
+TC-005,United States default Zone 2,美国其他地区,2,10.0,7,812.56,812.56,PASS,IP 包裹固定费率，非 IPE/IE；需求附加费按 2026-04-13 PDF，美国和波多黎各为 0
+TC-006,Australia / 澳大利亚,Australia 澳大利亚,U,20.5,8,1128.24,1128.24,PASS,0.5-20.5kg 固定费率末档
+TC-007,Germany / 德国,Germany 德国,K,21.0,9,39.92,39.92,PASS,21kg+ 切换为实际重量 × 每公斤费率
+TC-008,Singapore / 新加坡,Singapore 新加坡,Y,500.0,10,20.2,20.2,PASS,500-999kg 每公斤费率
+TC-009,Formula default,美国其他地区,2,10.0,7-10; Demand Surcharge 2026-04-13,Base 812.56; USA/Puerto Rico demand 0/kg; fuel 48%; redundancy 1.1; exchange 6.8,194.54,PASS,Final USD = (Base CNY + Demand Surcharge CNY) × (1 + Fuel Rate) × Redundancy / Exchange Rate
+TC-010,美国其他地区,美国其他地区,2,10.0,FedEx Demand Surcharge 2026-04-13,USA and Puerto Rico RMB 0/kg; minimum RMB 1.8/shipment when surcharge applies,0.0,PASS,需求附加费按 kg 加到基础运费，再乘燃油和冗余；费率为 0 时需求附加费为 0。
+TC-011,德国,德国,K,10.0,FedEx Demand Surcharge 2026-04-13,Europe RMB 8.0/kg; minimum RMB 1.8/shipment when surcharge applies,8.0,PASS,独立于 IP Zone 的旺季区域匹配。
+TC-012,Old workbook country table,Anguilla / Antigua & Barbuda,G,,20,"Two separate rows, both IP Zone G",Old country_zone_ip_raw newline-zone rows: 14,PASS_WITH_NOTE,V1 费率表准确；V1 国家表有粘连风险，V2 已重建

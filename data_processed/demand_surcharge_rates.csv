@@ -1,0 +1,11 @@
+﻿demand_region_code,demand_region_cn,demand_region_en,priority_rate_cny_per_kg,minimum_cny_per_shipment,source,source_url,effective_date,notes
+AUNZ,澳大利亚、新西兰,Australia and New Zealand,0.0,1.8,FEDEX需求附加费-2026.4.13日生效至另行通知.pdf,,2026-04-13,Export shipments from Chinese Mainland only.
+ASIA,亚洲区,Asia,0.0,1.8,FEDEX需求附加费-2026.4.13日生效至另行通知.pdf,,2026-04-13,Region footnote 1 in the 2026-04-13 demand surcharge PDF.
+US_PR,美国和波多黎各,United States of America and Puerto Rico,0.0,1.8,FEDEX需求附加费-2026.4.13日生效至另行通知.pdf,,2026-04-13,Export shipments from Chinese Mainland only.
+CANADA,加拿大,Canada,0.0,1.8,FEDEX需求附加费-2026.4.13日生效至另行通知.pdf,,2026-04-13,Export shipments from Chinese Mainland only.
+ISRAEL,以色列,Israel,24.0,1.8,FEDEX需求附加费-2026.4.13日生效至另行通知.pdf,,2026-04-13,Export shipments from Chinese Mainland only.
+EUROPE,欧洲区,Europe,8.0,1.8,FEDEX需求附加费-2026.4.13日生效至另行通知.pdf,,2026-04-13,Region footnote 2 in the 2026-04-13 demand surcharge PDF.
+INDIA,印度,India,0.0,1.8,FEDEX需求附加费-2026.4.13日生效至另行通知.pdf,,2026-04-13,Export shipments from Chinese Mainland only.
+MEISA,中东/印度次大陆/非洲区,"Middle East, Indian Subcontinent and Africa",11.2,1.8,FEDEX需求附加费-2026.4.13日生效至另行通知.pdf,,2026-04-13,Region footnote 3 in the 2026-04-13 demand surcharge PDF.
+MEXICO,墨西哥,Mexico,0.0,1.8,FEDEX需求附加费-2026.4.13日生效至另行通知.pdf,,2026-04-13,Export shipments from Chinese Mainland only.
+LAC,拉丁美洲区,Latin America,0.0,1.8,FEDEX需求附加费-2026.4.13日生效至另行通知.pdf,,2026-04-13,Region footnote 4 in the 2026-04-13 demand surcharge PDF.
