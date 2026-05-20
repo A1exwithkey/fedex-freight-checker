@@ -3,7 +3,7 @@
 ## V2.6.0-web-polish-2026-05-20 - 2026-05-20
 
 - 网页计算接入 `demand_surcharge_latest.csv`，旺季附加费更新为 2026-05-11 版本。
-- 新增 `data_processed/rate_config.json` 和 `scripts/05_update_fuel_config.py`，燃油费改为配置化更新，当前 FedEx 燃油费率为 50.25%，加 5% 冗余后默认 55.25%。
+- 新增 `data_processed/rate_config.json` 和 `scripts/05_update_fuel_config.py`，燃油费改为配置化更新，当前 FedEx 燃油费率为 48.75%，加 5% 冗余后默认 53.75%。
 - 更新通知补充 V1 / V1.1 版本说明。
 - 页面整体上移，反馈留言文案精简，基础运费计算表格数值统一两位小数。
 - 新增 `scripts/04_extract_demand_surcharge_pdf.py`，用于从本地 FedEx 旺季附加费 PDF 提取中国大陆出口费率摘要。

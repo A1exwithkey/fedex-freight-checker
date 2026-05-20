@@ -3,11 +3,11 @@
   "ip_rate_effective_date": "2026-01-05",
   "seasonal_surcharge_effective_date": "2026-05-11",
   "fuel_effective_label": "2026-05-18 起",
-  "fedex_fuel_rate": 0.5025,
+  "fedex_fuel_rate": 0.4875,
   "fuel_buffer_rate": 0.05,
-  "default_fuel_rate": 0.5525,
+  "default_fuel_rate": 0.5375,
   "fuel_source_url": "https://www.fedex.com/en-cn/shipping/surcharges.html",
   "fuel_table_url": "https://www.fedex.com/content/dam/fedex/international/rates/fedex-fuel-table-may-2026-apac.pdf",
-  "fuel_update_method": "FedEx fuel table effective May 18, 2026.",
+  "fuel_update_method": "FedEx fuel table effective May 18, 2026; official rate corrected to 48.75%, then +5% buffer.",
   "updated_at": "2026-05-20"
 }

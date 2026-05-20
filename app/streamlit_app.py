@@ -321,7 +321,6 @@ def main() -> None:
     with feedback_col:
         with st.popover("反馈留言"):
             st.caption("可以直接留言。")
-            st.text_input("管理员码", type="password", key="admin_delete_key", placeholder="管理员删除留言时填写")
             feedback_text = st.text_area("留言内容", key="feedback_text", height=90, placeholder="例如：某个国家匹配不对、某票价格需要复核...")
             if st.button("发送留言", key="send_feedback"):
                 if feedback_text.strip():
@@ -414,10 +413,6 @@ def main() -> None:
         base_cny, rate_type, lookup_weight = calculate_base(weight_kg, zone, fixed, per_kg)
         if demand_rate is not None:
             demand_surcharge_cny = max(weight_kg * demand_rate, demand_minimum) if demand_rate > 0 else 0.0
-            st.caption(
-                f"自动带出：{matched_country} | IP Zone {zone} | "
-                f"旺季附加费大区 {demand_region} | 旺季附加费 {demand_surcharge_cny:,.2f} CNY"
-            )
 
     if base_cny is None or demand_rate is None:
         st.warning("Need Review：国家/地区、重量或旺季附加费区域未匹配。")
