@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-05-20T19:15:43",
+  "fuel": {
+    "page_fetch": {
+      "url": "https://www.fedex.com/en-cn/shipping/surcharges.html",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html",
+      "error": null
+    },
+    "page_blocked": true,
+    "page_title": "FedEx | System Down",
+    "page_note": "FedEx returned a System Down page to the script request.",
+    "fuel_pdf_url": "https://www.fedex.com/content/dam/fedex/international/rates/fedex-fuel-table-may-2026-apac.pdf",
+    "current_surcharge_percent_from_page": null,
+    "current_surcharge_status": "Need Review - page text exposes the fuel table PDF, but not a reliable current weekly surcharge row.",
+    "pdf_fetch": {
+      "url": "https://www.fedex.com/content/dam/fedex/international/rates/fedex-fuel-table-may-2026-apac.pdf",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html",
+      "error": null
+    },
+    "pdf_parse_error": "Downloaded content is not a PDF.",
+    "pdf_content_sample": "\n\n \n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">\n<HTML><HEAD><TITLE>FedEx | System Down</TITLE>\n<META "
+  },
+  "demand_surcharge": {
+    "page_fetch": {
+      "url": "https://www.fedex.com/en-cn/shipping/surcharges/demand-surcharge.html",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html",
+      "error": null
+    },
+    "page_blocked": true,
+    "page_title": "FedEx | System Down",
+    "page_note": "FedEx returned a System Down page to the script request.",
+    "demand_pdf_url": "https://www.fedex.com/content/dam/fedex/international/rates/fedex-ds-2026-may9-638-en-cn.pdf",
+    "pdf_fetch": {
+      "url": "https://www.fedex.com/content/dam/fedex/international/rates/fedex-ds-2026-may9-638-en-cn.pdf",
+      "ok": true,
+      "status": 200,
+      "content_type": "text/html",
+      "error": null
+    },
+    "pdf_parse_error": "Downloaded content is not a PDF.",
+    "pdf_content_sample": "\n\n \n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">\n<HTML><HEAD><TITLE>FedEx | System Down</TITLE>\n<META "
+  }
+}

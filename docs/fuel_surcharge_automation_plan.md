@@ -4,10 +4,20 @@
 
 FedEx 燃油附加费自动更新可行，但不建议只靠普通 `curl` 抓网页正文。FedEx 页面会对部分脚本请求返回拦截页，稳定方案应该优先抓官方 PDF 表，其次用浏览器自动化兜底。
 
+2026-05-20 实测：
+
+- `scripts/03_probe_fedex_surcharges.py` 可以发起请求并写出结构化 JSON。
+- 普通 Python HTTP 请求访问 FedEx 燃油费页面、旺季附加费页面和对应 PDF 时，FedEx 返回 `FedEx | System Down` HTML，而不是有效业务页面或 PDF。
+- 因此首版自动化不能只依赖 `urllib` / `requests`。需要增加浏览器抓取、人工确认或第三方稳定抓取环境。
+- `data_processed/fedex_surcharge_probe.json` 保留本次探测结果，作为后续排查依据。
+
 ## 官方来源
 
 - FedEx 中国燃油附加费页面：`https://www.fedex.com/zh-cn/shipping/surcharges.html`
+- FedEx 中国燃油附加费英文页面：`https://www.fedex.com/en-cn/shipping/surcharges.html`
 - 2026 年 5 月 APAC 燃油费表：`https://www.fedex.com/content/dam/fedex/international/rates/fedex-fuel-table-may-2026-apac.pdf`
+- FedEx 中国旺季附加费页面：`https://www.fedex.com/en-cn/shipping/surcharges/demand-surcharge.html`
+- 2026 年 5 月旺季附加费 PDF：`https://www.fedex.com/content/dam/fedex/international/rates/fedex-ds-2026-may9-638-en-cn.pdf`
 
 官方页面说明：
 
@@ -65,10 +75,11 @@ FedEx 燃油附加费自动更新可行，但不建议只靠普通 `curl` 抓网
 
 ## 建议执行顺序
 
-1. 先做本地脚本 `scripts/03_fetch_fuel_surcharge.py`。
-2. 稳定解析 PDF 后，再接 GitHub Actions。
-3. 如果网页部署在 Cloudflare，再把燃油结果迁到 KV 或 D1。
-4. 网页读取云端 JSON，不再硬编码 48%。
+1. 先用 `scripts/03_probe_fedex_surcharges.py` 做探测和日志留存。
+2. 加一个浏览器抓取版本，验证是否能绕过 `FedEx | System Down`。
+3. 稳定解析 PDF 后，再接 GitHub Actions。
+4. 如果网页部署在 Cloudflare，再把燃油结果迁到 KV 或 D1。
+5. 网页读取云端 JSON，不再硬编码 48%。
 
 ## 失败处理
 
