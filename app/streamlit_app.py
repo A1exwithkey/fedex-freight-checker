@@ -19,6 +19,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = PROJECT_ROOT / "data_processed"
 LOG_DIR = PROJECT_ROOT / "logs"
 USAGE_LOG = LOG_DIR / "usage_events.csv"
+FEEDBACK_LOG = LOG_DIR / "feedback_messages.csv"
 USAGE_COLUMNS = [
     "timestamp",
     "session_id",
@@ -29,10 +30,11 @@ USAGE_COLUMNS = [
     "weight_kg",
     "final_usd",
 ]
+FEEDBACK_COLUMNS = ["message_id", "timestamp", "session_id", "message", "likes", "is_deleted"]
 
-TOOL_VERSION = "2026-05-17"
+TOOL_VERSION = "2026-05-20"
 IP_RATE_EFFECTIVE_DATE = "2026-01-05"
-DEMAND_EFFECTIVE_DATE = "2026-04-13"
+SEASONAL_SURCHARGE_EFFECTIVE_DATE = "2026-04-13"
 FEDEX_FUEL_SOURCE_URL = "https://www.fedex.com/zh-cn/shipping/surcharges.html"
 FEDEX_FUEL_TABLE_URL = "https://www.fedex.com/content/dam/fedex/international/rates/fedex-fuel-table-may-2026-apac.pdf"
 FEDEX_FUEL_EFFECTIVE_LABEL = "2026-04-06 至 2026-05-17"
@@ -41,7 +43,6 @@ FUEL_BUFFER_RATE = 0.05
 DEFAULT_FUEL_RATE = FEDEX_FUEL_RATE + FUEL_BUFFER_RATE
 DEFAULT_MARKUP = 1.1
 DEFAULT_EXCHANGE_RATE = 6.8
-FEEDBACK_EMAIL = "ethan.du@microsensor.cn"
 
 
 @st.cache_data
@@ -63,6 +64,10 @@ def ensure_session_id() -> str:
     if "session_id" not in st.session_state:
         st.session_state["session_id"] = str(uuid.uuid4())
     return st.session_state["session_id"]
+
+
+def mark_user_edited_input() -> None:
+    st.session_state["has_user_edited_input"] = True
 
 
 def read_usage_events() -> pd.DataFrame:
@@ -96,6 +101,65 @@ def log_usage_event(event_type: str, **details: object) -> None:
     )
     events = pd.concat([read_usage_events(), pd.DataFrame([row], columns=USAGE_COLUMNS)], ignore_index=True)
     events.to_csv(USAGE_LOG, index=False, encoding="utf-8-sig")
+
+
+def read_feedback_messages() -> pd.DataFrame:
+    if not FEEDBACK_LOG.exists():
+        return pd.DataFrame(columns=FEEDBACK_COLUMNS)
+
+    rows = []
+    with FEEDBACK_LOG.open("r", encoding="utf-8-sig", newline="") as file:
+        reader = csv.DictReader(file)
+        for value in reader:
+            row = {column: value.get(column, "") for column in FEEDBACK_COLUMNS}
+            rows.append(row)
+    feedback = pd.DataFrame(rows, columns=FEEDBACK_COLUMNS)
+    if not feedback.empty:
+        feedback["likes"] = pd.to_numeric(feedback["likes"], errors="coerce").fillna(0).astype(int)
+        feedback["is_deleted"] = feedback["is_deleted"].astype(str)
+    return feedback
+
+
+def save_feedback_messages(feedback: pd.DataFrame) -> None:
+    LOG_DIR.mkdir(exist_ok=True)
+    feedback.to_csv(FEEDBACK_LOG, index=False, encoding="utf-8-sig")
+
+
+def add_feedback_message(message: str) -> None:
+    feedback = read_feedback_messages()
+    row = {
+        "message_id": str(uuid.uuid4()),
+        "timestamp": datetime.now().isoformat(timespec="seconds"),
+        "session_id": ensure_session_id(),
+        "message": message.strip(),
+        "likes": 0,
+        "is_deleted": "false",
+    }
+    updated = pd.concat([feedback, pd.DataFrame([row], columns=FEEDBACK_COLUMNS)], ignore_index=True)
+    save_feedback_messages(updated)
+
+
+def like_feedback_message(message_id: str) -> None:
+    feedback = read_feedback_messages()
+    if feedback.empty:
+        return
+    liked_key = f"liked_{message_id}"
+    if st.session_state.get(liked_key):
+        return
+    feedback.loc[feedback["message_id"] == message_id, "likes"] = (
+        pd.to_numeric(feedback.loc[feedback["message_id"] == message_id, "likes"], errors="coerce").fillna(0).astype(int) + 1
+    )
+    save_feedback_messages(feedback)
+    st.session_state[liked_key] = True
+
+
+def delete_own_feedback_message(message_id: str) -> None:
+    feedback = read_feedback_messages()
+    if feedback.empty:
+        return
+    own_message = (feedback["message_id"] == message_id) & (feedback["session_id"] == ensure_session_id())
+    feedback.loc[own_message, "is_deleted"] = "true"
+    save_feedback_messages(feedback)
 
 
 def load_usage_summary() -> tuple[dict[str, int], pd.DataFrame]:
@@ -156,10 +220,12 @@ def find_dropdown_index(country_input: str, aliases: pd.DataFrame, dropdown: lis
 
 
 def mark_dropdown_active() -> None:
+    mark_user_edited_input()
     st.session_state["country_source"] = "dropdown"
 
 
 def mark_manual_active(aliases: pd.DataFrame, dropdown: list[str]) -> None:
+    mark_user_edited_input()
     manual_country = st.session_state.get("manual_country", "").strip()
     if not manual_country:
         st.session_state["country_source"] = "dropdown"
@@ -223,19 +289,43 @@ def main() -> None:
         st.title("FedEx IP 运费核价助手")
     with notice_col:
         with st.popover("更新通知"):
-            st.markdown("5月17日发布第一个版本")
+            st.markdown("5月20日更新：文案统一为旺季附加费，试算次数改为用户实际修改输入后记录。")
     with feedback_col:
         with st.popover("反馈留言"):
-            st.caption(f"如发现国家匹配、费率或计算结果需要复核，请邮件反馈至：{FEEDBACK_EMAIL}")
-            st.link_button("发送邮件", f"mailto:{FEEDBACK_EMAIL}?subject=FedEx%20IP%20%E8%BF%90%E8%B4%B9%E6%A0%B8%E4%BB%B7%E5%8A%A9%E6%89%8B%E5%8F%8D%E9%A6%88")
+            st.caption("可以直接留言。临时留言保存在当前云端运行环境，长期版后续会接 Google Sheet 或数据库。")
+            feedback_text = st.text_area("留言内容", key="feedback_text", height=90, placeholder="例如：某个国家匹配不对、某票价格需要复核...")
+            if st.button("发送留言", key="send_feedback"):
+                if feedback_text.strip():
+                    add_feedback_message(feedback_text)
+                    st.success("已发送")
+                    st.rerun()
+                else:
+                    st.warning("请先填写留言内容。")
+
+            feedback = read_feedback_messages()
+            active_feedback = feedback[feedback["is_deleted"].ne("true")].tail(5).sort_index(ascending=False)
+            if active_feedback.empty:
+                st.caption("暂无留言。")
+            else:
+                st.caption("最近留言")
+                for _, message in active_feedback.iterrows():
+                    st.markdown(f"**{message['message']}**")
+                    st.caption(f"{message['timestamp']} · 点赞 {int(message['likes'])}")
+                    button_cols = st.columns([1, 1.6])
+                    if button_cols[0].button("点赞", key=f"like_{message['message_id']}"):
+                        like_feedback_message(str(message["message_id"]))
+                        st.rerun()
+                    if message["session_id"] == session_id:
+                        if button_cols[1].button("删除自己的留言", key=f"delete_{message['message_id']}"):
+                            delete_own_feedback_message(str(message["message_id"]))
+                            st.rerun()
     st.caption(
-        f"工具版本 {TOOL_VERSION} | IP 协议价 {IP_RATE_EFFECTIVE_DATE} | "
-        f"需求附加费 {DEMAND_EFFECTIVE_DATE} | 燃油费 FedEx 48% + 5%冗余 = 53% | "
-        f"燃油来源：FedEx 中国燃油附加费页面；当前采用 {FEDEX_FUEL_EFFECTIVE_LABEL} 版本，"
-        f"官网 {FEDEX_FUEL_RATE:.0%}，本工具按官网 +5% 冗余计算"
+        f"网址版本 {TOOL_VERSION} | IP 协议价 {IP_RATE_EFFECTIVE_DATE} | "
+        f"旺季附加费 {SEASONAL_SURCHARGE_EFFECTIVE_DATE} | 燃油费 {FEDEX_FUEL_EFFECTIVE_LABEL} | "
+        f"燃油附加费率 FedEx {FEDEX_FUEL_RATE:.0%} + 5%冗余 = {DEFAULT_FUEL_RATE:.0%}"
     )
     st.caption(
-        "本工具仅用于内部运费快速预估，计算结果不作为最终结算依据；协议价、附加费、汇率及最终报价口径需经相关负责人确认，"
+        "本工具仅用于内部运费快速预估，计算结果不作为最终结算依据；超过 68kg、偏远地区、特殊处理、税费及其他特殊案例需单独复核，"
         "实际费用以 FedEx 账单和公司正式报价流程为准。"
     )
 
@@ -265,13 +355,27 @@ def main() -> None:
 
         col3, col4, col5, col6 = st.columns(4)
         with col3:
-            weight_kg = st.number_input("实际重量 kg", min_value=0.5, value=10.0, step=0.5)
+            weight_kg = st.number_input("实际重量 kg", min_value=0.5, value=10.0, step=0.5, on_change=mark_user_edited_input)
         with col4:
-            fuel_rate = st.number_input("燃油附加费率（官网+5%）", min_value=0.0, value=DEFAULT_FUEL_RATE, step=0.01, format="%.2f")
+            fuel_rate = st.number_input(
+                "燃油附加费率（官网+5%）",
+                min_value=0.0,
+                value=DEFAULT_FUEL_RATE,
+                step=0.01,
+                format="%.2f",
+                on_change=mark_user_edited_input,
+            )
         with col5:
-            markup = st.number_input("冗余系数", min_value=1.0, value=DEFAULT_MARKUP, step=0.01, format="%.2f")
+            markup = st.number_input("冗余系数", min_value=1.0, value=DEFAULT_MARKUP, step=0.01, format="%.2f", on_change=mark_user_edited_input)
         with col6:
-            exchange_rate = st.number_input("汇率 CNY/USD", min_value=0.01, value=DEFAULT_EXCHANGE_RATE, step=0.01, format="%.2f")
+            exchange_rate = st.number_input(
+                "汇率 CNY/USD",
+                min_value=0.01,
+                value=DEFAULT_EXCHANGE_RATE,
+                step=0.01,
+                format="%.2f",
+                on_change=mark_user_edited_input,
+            )
 
         country_source = st.session_state.get("country_source", "dropdown")
         country_input = manual_country.strip() if country_source == "manual" and manual_country.strip() else selected_country
@@ -283,7 +387,7 @@ def main() -> None:
             demand_surcharge_cny = max(weight_kg * demand_rate, demand_minimum) if demand_rate > 0 else 0.0
             st.caption(
                 f"自动带出：{matched_country} | IP Zone {zone} | "
-                f"需求附加费大区 {demand_region} | 需求附加费 {demand_surcharge_cny:,.2f} CNY"
+                f"旺季附加费大区 {demand_region} | 旺季附加费 {demand_surcharge_cny:,.2f} CNY"
             )
 
     if base_cny is None or demand_rate is None:
@@ -295,7 +399,7 @@ def main() -> None:
     final_cny = (freight_before_fuel + fuel_cny) * markup
     final_usd = final_cny / exchange_rate
     quote_signature = f"{session_id}|{country_input}|{weight_kg}|{fuel_rate}|{markup}|{exchange_rate}|{final_usd:.2f}"
-    if st.session_state.get("last_quote_signature") != quote_signature:
+    if st.session_state.get("has_user_edited_input") and st.session_state.get("last_quote_signature") != quote_signature:
         log_usage_event(
             "quote",
             country_input=country_input,
@@ -313,35 +417,38 @@ def main() -> None:
         result_cols[1].metric("最终 CNY", f"{final_cny:,.2f}")
         result_cols[2].metric("基础运费 CNY", f"{base_cny:,.2f}")
         result_cols[3].metric("燃油附加费 CNY", f"{fuel_cny:,.2f}")
-        result_cols[4].metric("需求附加费 CNY", f"{demand_surcharge_cny:,.2f}")
+        result_cols[4].metric("旺季附加费 CNY", f"{demand_surcharge_cny:,.2f}")
         st.caption(
-            "报价公式：最终 USD = (基础运费 CNY + 需求附加费 CNY) × "
+            "报价公式：最终 USD = (基础运费 CNY + 旺季附加费 CNY) × "
             "(1 + 燃油附加费率) × 冗余系数 ÷ 汇率"
         )
 
     with st.container(border=True):
         st.subheader("基础运费计算")
+        base_calc_df = pd.DataFrame(
+            [
+                {
+                    "国家/地区": matched_country,
+                    "IP 分区": zone,
+                    "基础运费算法": rate_type,
+                    "查表重量": lookup_weight,
+                    "基础运费 CNY": round(base_cny, 2),
+                    "旺季附加费大区": demand_region,
+                    "旺季费率 CNY/kg": demand_rate,
+                    "最低收费 CNY/票": demand_minimum,
+                    "状态": "OK",
+                }
+            ]
+        )
         st.dataframe(
-            pd.DataFrame(
-                [
-                    {
-                        "国家/地区": matched_country,
-                        "IP 分区": zone,
-                        "基础运费算法": rate_type,
-                        "查表重量": lookup_weight,
-                        "基础运费 CNY": round(base_cny, 2),
-                        "需求附加费大区": demand_region,
-                        "需求费率 CNY/kg": demand_rate,
-                        "最低收费 CNY/票": demand_minimum,
-                        "状态": "OK",
-                    }
-                ]
+            base_calc_df.style.set_properties(**{"text-align": "left"}).set_table_styles(
+                [{"selector": "th", "props": [("text-align", "left")]}]
             ),
             width="stretch",
             hide_index=True,
         )
 
-    st.caption("范围：仅中国大陆 FedEx 国际出口 IP 包裹；不含 IPE、IE、进口、第三方支付、重货、快递封、快递袋、税费、偏远地区附加费和特殊处理费。")
+    st.caption("范围：仅中国大陆 FedEx 国际出口 IP 包裹；不含 IPE、IE、进口、第三方支付、快递封、快递袋、税费、偏远地区附加费和特殊处理费。")
     summary, recent_events = load_usage_summary()
     st.markdown(
         f"""
