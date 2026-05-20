@@ -1,0 +1,11 @@
+﻿demand_region_code,demand_region_cn,demand_region_en,priority_rate_cny_per_kg,minimum_cny_per_shipment,source_pdf,effective_date,notes
+AUNZ,澳大利亚、新西兰,"Australia, New Zealand",0.0,1.8,fedex-ds-2026-may9-638-en-cn.pdf,"May 11, 2026",China Mainland export shipments only. ImportOne and G3P columns are excluded.
+ASIA,亚洲区,Asia,0.0,1.8,fedex-ds-2026-may9-638-en-cn.pdf,"May 11, 2026",China Mainland export shipments only. ImportOne and G3P columns are excluded.
+US_PR,美国和波多黎各,United States of America (USA) and Puerto Rico,4.0,1.8,fedex-ds-2026-may9-638-en-cn.pdf,"May 11, 2026",China Mainland export shipments only. ImportOne and G3P columns are excluded.
+CANADA,加拿大,Canada,4.0,1.8,fedex-ds-2026-may9-638-en-cn.pdf,"May 11, 2026",China Mainland export shipments only. ImportOne and G3P columns are excluded.
+ISRAEL,以色列,Israel,8.0,1.8,fedex-ds-2026-may9-638-en-cn.pdf,"May 11, 2026",China Mainland export shipments only. ImportOne and G3P columns are excluded.
+EUROPE,欧洲区,Europe,8.0,1.8,fedex-ds-2026-may9-638-en-cn.pdf,"May 11, 2026",China Mainland export shipments only. ImportOne and G3P columns are excluded.
+INDIA,印度,India,0.0,1.8,fedex-ds-2026-may9-638-en-cn.pdf,"May 11, 2026",China Mainland export shipments only. ImportOne and G3P columns are excluded.
+MEISA,中东/印度次大陆/非洲区,"Middle East, Indian Subcontinent and Africa",11.2,1.8,fedex-ds-2026-may9-638-en-cn.pdf,"May 11, 2026",China Mainland export shipments only. ImportOne and G3P columns are excluded.
+MEXICO,墨西哥,Mexico,4.0,1.8,fedex-ds-2026-may9-638-en-cn.pdf,"May 11, 2026",China Mainland export shipments only. ImportOne and G3P columns are excluded.
+LAC,拉丁美洲区,Latin America,4.0,1.8,fedex-ds-2026-may9-638-en-cn.pdf,"May 11, 2026",China Mainland export shipments only. ImportOne and G3P columns are excluded.

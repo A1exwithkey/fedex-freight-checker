@@ -2,6 +2,7 @@
 
 ## V2.6.0-web-polish-2026-05-20 - 2026-05-20
 
+- 新增 `scripts/04_extract_demand_surcharge_pdf.py`，用于从本地 FedEx 旺季附加费 PDF 提取中国大陆出口费率摘要。
 - 新增 `scripts/03_probe_fedex_surcharges.py`，用于探测 FedEx 燃油费和旺季附加费页面、PDF 链接和版本日期。
 - 网页版本更新为 `2026-05-20`。
 - 页面文案统一将“需求附加费”改为“旺季附加费”。

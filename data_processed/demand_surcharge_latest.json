@@ -1,0 +1,109 @@
+{
+  "source_pdf": "fedex-ds-2026-may9-638-en-cn.pdf",
+  "effective_date": "May 11, 2026",
+  "minimum_cny_per_shipment": 1.8,
+  "review_status": "OK",
+  "missing_region_codes": [],
+  "rates": [
+    {
+      "demand_region_code": "AUNZ",
+      "demand_region_cn": "澳大利亚、新西兰",
+      "demand_region_en": "Australia, New Zealand",
+      "priority_rate_cny_per_kg": 0.0,
+      "minimum_cny_per_shipment": 1.8,
+      "source_pdf": "fedex-ds-2026-may9-638-en-cn.pdf",
+      "effective_date": "May 11, 2026",
+      "notes": "China Mainland export shipments only. ImportOne and G3P columns are excluded."
+    },
+    {
+      "demand_region_code": "ASIA",
+      "demand_region_cn": "亚洲区",
+      "demand_region_en": "Asia",
+      "priority_rate_cny_per_kg": 0.0,
+      "minimum_cny_per_shipment": 1.8,
+      "source_pdf": "fedex-ds-2026-may9-638-en-cn.pdf",
+      "effective_date": "May 11, 2026",
+      "notes": "China Mainland export shipments only. ImportOne and G3P columns are excluded."
+    },
+    {
+      "demand_region_code": "US_PR",
+      "demand_region_cn": "美国和波多黎各",
+      "demand_region_en": "United States of America (USA) and Puerto Rico",
+      "priority_rate_cny_per_kg": 4.0,
+      "minimum_cny_per_shipment": 1.8,
+      "source_pdf": "fedex-ds-2026-may9-638-en-cn.pdf",
+      "effective_date": "May 11, 2026",
+      "notes": "China Mainland export shipments only. ImportOne and G3P columns are excluded."
+    },
+    {
+      "demand_region_code": "CANADA",
+      "demand_region_cn": "加拿大",
+      "demand_region_en": "Canada",
+      "priority_rate_cny_per_kg": 4.0,
+      "minimum_cny_per_shipment": 1.8,
+      "source_pdf": "fedex-ds-2026-may9-638-en-cn.pdf",
+      "effective_date": "May 11, 2026",
+      "notes": "China Mainland export shipments only. ImportOne and G3P columns are excluded."
+    },
+    {
+      "demand_region_code": "ISRAEL",
+      "demand_region_cn": "以色列",
+      "demand_region_en": "Israel",
+      "priority_rate_cny_per_kg": 8.0,
+      "minimum_cny_per_shipment": 1.8,
+      "source_pdf": "fedex-ds-2026-may9-638-en-cn.pdf",
+      "effective_date": "May 11, 2026",
+      "notes": "China Mainland export shipments only. ImportOne and G3P columns are excluded."
+    },
+    {
+      "demand_region_code": "EUROPE",
+      "demand_region_cn": "欧洲区",
+      "demand_region_en": "Europe",
+      "priority_rate_cny_per_kg": 8.0,
+      "minimum_cny_per_shipment": 1.8,
+      "source_pdf": "fedex-ds-2026-may9-638-en-cn.pdf",
+      "effective_date": "May 11, 2026",
+      "notes": "China Mainland export shipments only. ImportOne and G3P columns are excluded."
+    },
+    {
+      "demand_region_code": "INDIA",
+      "demand_region_cn": "印度",
+      "demand_region_en": "India",
+      "priority_rate_cny_per_kg": 0.0,
+      "minimum_cny_per_shipment": 1.8,
+      "source_pdf": "fedex-ds-2026-may9-638-en-cn.pdf",
+      "effective_date": "May 11, 2026",
+      "notes": "China Mainland export shipments only. ImportOne and G3P columns are excluded."
+    },
+    {
+      "demand_region_code": "MEISA",
+      "demand_region_cn": "中东/印度次大陆/非洲区",
+      "demand_region_en": "Middle East, Indian Subcontinent and Africa",
+      "priority_rate_cny_per_kg": 11.2,
+      "minimum_cny_per_shipment": 1.8,
+      "source_pdf": "fedex-ds-2026-may9-638-en-cn.pdf",
+      "effective_date": "May 11, 2026",
+      "notes": "China Mainland export shipments only. ImportOne and G3P columns are excluded."
+    },
+    {
+      "demand_region_code": "MEXICO",
+      "demand_region_cn": "墨西哥",
+      "demand_region_en": "Mexico",
+      "priority_rate_cny_per_kg": 4.0,
+      "minimum_cny_per_shipment": 1.8,
+      "source_pdf": "fedex-ds-2026-may9-638-en-cn.pdf",
+      "effective_date": "May 11, 2026",
+      "notes": "China Mainland export shipments only. ImportOne and G3P columns are excluded."
+    },
+    {
+      "demand_region_code": "LAC",
+      "demand_region_cn": "拉丁美洲区",
+      "demand_region_en": "Latin America",
+      "priority_rate_cny_per_kg": 4.0,
+      "minimum_cny_per_shipment": 1.8,
+      "source_pdf": "fedex-ds-2026-may9-638-en-cn.pdf",
+      "effective_date": "May 11, 2026",
+      "notes": "China Mainland export shipments only. ImportOne and G3P columns are excluded."
+    }
+  ]
+}
