@@ -122,7 +122,7 @@ def render_v2_styles() -> None:
             }
             .v2-note {
                 color: var(--muted);
-                font-size: 12.5px;
+                font-size: 10.5px;
                 line-height: 1.6;
                 margin: 0 0 14px;
             }
@@ -512,7 +512,6 @@ def main() -> None:
             )
     with feedback_col:
         with st.popover("反馈留言"):
-            st.caption("可以直接留言。")
             feedback_text = st.text_area("留言内容", key="feedback_text", height=90, placeholder="例如：某个国家匹配不对、某票价格需要复核...")
             if st.button("发送留言", key="send_feedback"):
                 if feedback_text.strip():
