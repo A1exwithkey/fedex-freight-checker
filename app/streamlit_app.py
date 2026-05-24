@@ -341,7 +341,7 @@ def calculate_base(weight_kg: float, zone: str, fixed: pd.DataFrame, per_kg: pd.
 
 def main() -> None:
     st.set_page_config(page_title="FedEx IP 运费核价助手", layout="wide")
-    rate_config = apply_live_fuel_config(load_rate_config())
+    rate_config = load_rate_config()
     st.markdown(
         """
         <style>
