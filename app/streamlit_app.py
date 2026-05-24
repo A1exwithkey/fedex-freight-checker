@@ -9,8 +9,6 @@ from __future__ import annotations
 import csv
 import json
 import uuid
-import urllib.error
-import urllib.request
 from datetime import datetime
 from pathlib import Path
 
@@ -38,60 +36,11 @@ FEEDBACK_COLUMNS = ["message_id", "timestamp", "session_id", "message", "likes",
 
 DEFAULT_MARKUP = 1.1
 DEFAULT_EXCHANGE_RATE = 6.8
-FUEL_AUTO_TIMEOUT_SECONDS = 1.2
 
 
 @st.cache_data
 def load_rate_config() -> dict:
     return json.loads(RATE_CONFIG.read_text(encoding="utf-8"))
-
-
-@st.cache_data(ttl=300)
-def fetch_live_fuel_config(endpoint: str) -> dict:
-    request = urllib.request.Request(
-        endpoint,
-        headers={"User-Agent": "fedex-freight-checker/1.0"},
-    )
-    with urllib.request.urlopen(request, timeout=FUEL_AUTO_TIMEOUT_SECONDS) as response:
-        payload = json.loads(response.read().decode("utf-8"))
-    if payload.get("status") != "OK":
-        raise ValueError("Fuel auto endpoint did not return OK.")
-    return payload
-
-
-def apply_live_fuel_config(rate_config: dict) -> dict:
-    updated = dict(rate_config)
-    endpoint = str(updated.get("fuel_auto_update_url", "")).strip()
-    if not endpoint:
-        updated["fuel_live_status"] = "Fallback"
-        return updated
-
-    try:
-        payload = fetch_live_fuel_config(endpoint)
-    except (urllib.error.URLError, TimeoutError, ValueError, json.JSONDecodeError):
-        updated["fuel_live_status"] = "Fallback"
-        return updated
-
-    if payload.get("status") != "OK":
-        updated["fuel_live_status"] = "Need Review"
-        return updated
-
-    fedex_percent = payload.get("fedex_fuel_rate_percent")
-    tool_percent = payload.get("tool_fuel_rate_percent")
-    buffer_percent = payload.get("fuel_buffer_percent")
-    if fedex_percent is None or tool_percent is None or buffer_percent is None:
-        updated["fuel_live_status"] = "Need Review"
-        return updated
-
-    updated["fedex_fuel_rate"] = float(fedex_percent) / 100
-    updated["fuel_buffer_rate"] = float(buffer_percent) / 100
-    updated["default_fuel_rate"] = float(tool_percent) / 100
-    updated["fuel_effective_label"] = payload.get("fedex_apply_week", {}).get("label", updated["fuel_effective_label"])
-    updated["fuel_update_method"] = "Auto from EIA weekly USGC price + FedEx official fuel table."
-    updated["fuel_live_status"] = "Auto"
-    updated["fuel_live_checked_at"] = payload.get("checked_at_utc", "")
-    updated["fuel_cache_status"] = payload.get("cache_status", "")
-    return updated
 
 
 @st.cache_data
@@ -130,22 +79,11 @@ def mark_user_edited_input() -> None:
     st.session_state["has_user_edited_input"] = True
 
 
+@st.cache_data(ttl=5)
 def read_usage_events() -> pd.DataFrame:
     if not USAGE_LOG.exists():
         return pd.DataFrame(columns=USAGE_COLUMNS)
-
-    rows = []
-    with USAGE_LOG.open("r", encoding="utf-8-sig", newline="") as file:
-        reader = csv.reader(file)
-        next(reader, None)
-        for values in reader:
-            if not values:
-                continue
-            row = {column: "" for column in USAGE_COLUMNS}
-            for index, value in enumerate(values[: len(USAGE_COLUMNS)]):
-                row[USAGE_COLUMNS[index]] = value
-            rows.append(row)
-    return pd.DataFrame(rows, columns=USAGE_COLUMNS)
+    return pd.read_csv(USAGE_LOG, dtype=str).fillna("")
 
 
 def log_usage_event(event_type: str, **details: object) -> None:
@@ -159,21 +97,19 @@ def log_usage_event(event_type: str, **details: object) -> None:
             **details,
         }
     )
-    events = pd.concat([read_usage_events(), pd.DataFrame([row], columns=USAGE_COLUMNS)], ignore_index=True)
-    events.to_csv(USAGE_LOG, index=False, encoding="utf-8-sig")
+    write_header = not USAGE_LOG.exists()
+    with USAGE_LOG.open("a", encoding="utf-8-sig", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=USAGE_COLUMNS)
+        if write_header:
+            writer.writeheader()
+        writer.writerow(row)
 
 
+@st.cache_data(ttl=2)
 def read_feedback_messages() -> pd.DataFrame:
     if not FEEDBACK_LOG.exists():
         return pd.DataFrame(columns=FEEDBACK_COLUMNS)
-
-    rows = []
-    with FEEDBACK_LOG.open("r", encoding="utf-8-sig", newline="") as file:
-        reader = csv.DictReader(file)
-        for value in reader:
-            row = {column: value.get(column, "") for column in FEEDBACK_COLUMNS}
-            rows.append(row)
-    feedback = pd.DataFrame(rows, columns=FEEDBACK_COLUMNS)
+    feedback = pd.read_csv(FEEDBACK_LOG, dtype=str).fillna("")
     if not feedback.empty:
         feedback["likes"] = pd.to_numeric(feedback["likes"], errors="coerce").fillna(0).astype(int)
         feedback["is_deleted"] = feedback["is_deleted"].astype(str)

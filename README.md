@@ -1,6 +1,6 @@
 # fedex-freight-checker / 运费核价助手
 
-当前版本：V2.5.0-local-web-trial-2026-05-17
+当前版本：V2.6.1-fuel-worker-2026-05-24
 
 这是一个内部 FedEx 运费核价小工具项目。当前阶段同时维护 Excel 计算母版和 Streamlit 本地网页试算版；等真实订单校验稳定后，再考虑内网或云端访问。
 
@@ -90,10 +90,10 @@ Excel 的 `calculator` sheet 输入：
 
 ## 版本日期
 
-- 工具版本：2026-05-17
+- 工具版本：2026-05-24
 - IP 协议价：2026-01-05
-- 需求附加费：2026-04-13，仅使用“中国大陆出口的国际货件”列
-- 燃油附加费：人工维护，默认 48%
+- 旺季附加费：2026-05-11，仅使用”中国大陆出口的国际货件”列
+- 燃油附加费：配置化维护，当前 FedEx 49.50%，本工具 54.50%（含 5% 冗余），每周一 Cloudflare Worker 自动检查更新
 
 ## 当前数据状态
 
@@ -111,7 +111,20 @@ Streamlit 本地网页已读取：
 - `data_processed/ip_parcel_rate_0_20_5kg.csv`
 - `data_processed/ip_parcel_rate_21kg_plus.csv`
 
-网页逻辑先复刻 Excel 的 `calculator`，不要新增业务范围。美国邮编自动分区、燃油费每周自动更新、访问控制可以作为后续增强项。
+网页逻辑先复刻 Excel 的 `calculator`，不要新增业务范围。美国邮编自动分区、访问控制可以作为后续增强项。
+
+## Cloudflare Worker 燃油费自动更新
+
+`cloudflare/fuel-surcharge-worker/` 每周一 10:00 和 14:00（北京时间）通过 Cloudflare Cron 自动：
+
+1. 抓取 EIA 官方 USGC 航空燃油周价格
+2. 匹配 FedEx 官方燃油附加费表
+3. 更新 `data_processed/rate_config.json` 并自动 push 到 GitHub
+4. Streamlit Cloud 检测到 repo 变更后自动重新部署
+5. 通过 Telegram Bot 通知更新结果
+
+Worker 公开 `/fuel-current` 端点供查询，支持 `/check`、`/status`、`/stats` 等 Telegram 命令。
+详见 `cloudflare/fuel-surcharge-worker/README.md`。
 
 ## 项目维护
 
