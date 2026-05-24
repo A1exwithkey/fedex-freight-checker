@@ -65,7 +65,7 @@ def render_v2_styles() -> None:
                     linear-gradient(180deg, #fbfcff 0%, var(--bg) 36rem);
             }
             .block-container {
-                padding-top: 1.35rem;
+                padding-top: 2.1rem;
                 padding-bottom: 2rem;
                 max-width: 1180px;
             }
@@ -122,7 +122,7 @@ def render_v2_styles() -> None:
             }
             .v2-note {
                 color: var(--muted);
-                font-size: 10.5px;
+                font-size: 9.5px;
                 line-height: 1.6;
                 margin: 0 0 14px;
             }
@@ -240,7 +240,7 @@ def render_v2_styles() -> None:
                 color: #222638;
             }
             @media (max-width: 760px) {
-                .block-container { padding-top: 0.8rem; }
+                .block-container { padding-top: 1.5rem; }
                 .v2-result-main { font-size: 34px; }
                 .v2-breakdown, .v2-match-grid {
                     grid-template-columns: 1fr;
