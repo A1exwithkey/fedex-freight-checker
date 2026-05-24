@@ -38,6 +38,220 @@ DEFAULT_MARKUP = 1.1
 DEFAULT_EXCHANGE_RATE = 6.8
 
 
+def format_money(value: float, currency: str = "") -> str:
+    prefix = f"{currency} " if currency else ""
+    return f"{prefix}{value:,.2f}"
+
+
+def render_v2_styles() -> None:
+    st.markdown(
+        """
+        <style>
+            :root {
+                --bg: #f6f7fb;
+                --panel: #ffffff;
+                --ink: #202332;
+                --muted: #747b8d;
+                --line: #dde2ea;
+                --accent: #4f46e5;
+                --accent-soft: #eef0ff;
+                --ok: #0f8a68;
+                --ok-soft: #e8f7f1;
+                --warn: #b45309;
+            }
+            .stApp {
+                background:
+                    radial-gradient(circle at 10% 0%, rgba(79,70,229,0.08), transparent 26rem),
+                    linear-gradient(180deg, #fbfcff 0%, var(--bg) 36rem);
+            }
+            .block-container {
+                padding-top: 1.35rem;
+                padding-bottom: 2rem;
+                max-width: 1180px;
+            }
+            h1, h2, h3, p, label, [data-testid="stMarkdownContainer"] {
+                font-family: Arial, "Helvetica Neue", sans-serif;
+            }
+            h1 {
+                color: var(--ink);
+                letter-spacing: 0;
+                font-size: 2.05rem !important;
+                line-height: 1.08 !important;
+                margin-bottom: 0.2rem !important;
+            }
+            h2, h3 {
+                color: var(--ink);
+                letter-spacing: 0;
+            }
+            div[data-testid="stVerticalBlockBorderWrapper"] {
+                border: 1px solid rgba(24, 31, 54, 0.08);
+                border-radius: 12px;
+                background: rgba(255,255,255,0.88);
+                box-shadow: 0 10px 28px rgba(36, 44, 74, 0.055);
+            }
+            div[data-testid="stMetric"] {
+                background: transparent;
+            }
+            div[data-testid="stMetricValue"] {
+                color: var(--ink);
+                font-weight: 760;
+                letter-spacing: 0;
+            }
+            .v2-topline {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                margin: 10px 0 12px;
+                align-items: center;
+            }
+            .v2-chip {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                padding: 4px 9px;
+                border: 1px solid var(--line);
+                border-radius: 999px;
+                background: rgba(255,255,255,0.86);
+                color: #5b6275;
+                font-size: 11.5px;
+                white-space: nowrap;
+            }
+            .v2-chip strong {
+                color: var(--ink);
+                font-weight: 700;
+            }
+            .v2-note {
+                color: var(--muted);
+                font-size: 12.5px;
+                line-height: 1.6;
+                margin: 0 0 14px;
+            }
+            .v2-result-card {
+                border-radius: 14px;
+                padding: 22px 22px 18px;
+                color: white;
+                background:
+                    linear-gradient(135deg, rgba(52,50,143,0.98), rgba(18,92,130,0.95)),
+                    radial-gradient(circle at 88% 12%, rgba(255,255,255,0.20), transparent 15rem);
+                box-shadow: 0 16px 36px rgba(38, 53, 102, 0.18);
+                margin-bottom: 14px;
+            }
+            .v2-result-label {
+                font-size: 13px;
+                opacity: 0.78;
+                margin-bottom: 7px;
+            }
+            .v2-result-main {
+                font-size: 44px;
+                font-weight: 780;
+                line-height: 1;
+                letter-spacing: 0;
+                margin-bottom: 8px;
+            }
+            .v2-result-sub {
+                font-size: 14px;
+                opacity: 0.84;
+            }
+            .v2-breakdown {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 10px;
+                margin-top: 10px;
+            }
+            .v2-mini-card {
+                border: 1px solid rgba(24, 31, 54, 0.08);
+                border-radius: 12px;
+                background: rgba(255,255,255,0.86);
+                padding: 13px 14px;
+                min-height: 76px;
+            }
+            .v2-mini-label {
+                color: var(--muted);
+                font-size: 12px;
+                margin-bottom: 7px;
+            }
+            .v2-mini-value {
+                color: var(--ink);
+                font-size: 20px;
+                font-weight: 760;
+                line-height: 1.15;
+            }
+            .v2-match-grid {
+                display: grid;
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                gap: 10px;
+                margin: 10px 0 0;
+            }
+            .v2-match {
+                border-radius: 10px;
+                border: 1px solid var(--line);
+                padding: 10px 12px;
+                background: #fbfcff;
+            }
+            .v2-match-label {
+                color: var(--muted);
+                font-size: 11px;
+                margin-bottom: 5px;
+            }
+            .v2-match-value {
+                color: var(--ink);
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 1.25;
+            }
+            .v2-formula {
+                color: var(--muted);
+                font-size: 12px;
+                line-height: 1.55;
+                padding-top: 4px;
+            }
+            [data-testid="stSelectbox"] label,
+            [data-testid="stTextInput"] label,
+            [data-testid="stNumberInput"] label {
+                color: var(--ink);
+                font-weight: 700;
+                font-size: 13px;
+            }
+            [data-testid="stDataFrame"] {
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            div[data-testid="stPopover"] button {
+                min-height: 28px;
+                padding: 2px 8px;
+                border-radius: 8px;
+                color: #586073;
+                font-size: 10.5px;
+                line-height: 1.2;
+                box-shadow: none;
+                background: rgba(255,255,255,0.72);
+            }
+            div[data-testid="stPopover"] button p {
+                font-size: 10.5px;
+                line-height: 1.2;
+            }
+            [data-testid="stPopoverBody"] p,
+            [data-testid="stPopoverBody"] li {
+                color: #5d6475;
+                font-size: 12.5px;
+                line-height: 1.55;
+            }
+            [data-testid="stPopoverBody"] strong {
+                color: #222638;
+            }
+            @media (max-width: 760px) {
+                .block-container { padding-top: 0.8rem; }
+                .v2-result-main { font-size: 34px; }
+                .v2-breakdown, .v2-match-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
 @st.cache_data
 def load_rate_config() -> dict:
     return json.loads(RATE_CONFIG.read_text(encoding="utf-8"))
@@ -278,31 +492,22 @@ def calculate_base(weight_kg: float, zone: str, fixed: pd.DataFrame, per_kg: pd.
 def main() -> None:
     st.set_page_config(page_title="FedEx IP 运费核价助手", layout="wide")
     rate_config = load_rate_config()
-    st.markdown(
-        """
-        <style>
-            .block-container {
-                padding-top: 2.2rem;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
+    render_v2_styles()
     session_id = ensure_session_id()
     if not st.session_state.get("page_view_logged"):
         log_usage_event("page_view")
         st.session_state["page_view_logged"] = True
 
-    title_col, notice_col, feedback_col = st.columns([7.2, 0.72, 0.72], vertical_alignment="center")
+    title_col, notice_col, feedback_col = st.columns([7.2, 0.82, 0.82], vertical_alignment="center")
     with title_col:
-        st.title("FedEx IP 运费核价助手")
+        st.title("FedEx IP 运费核价助手 2.0")
     with notice_col:
         with st.popover("更新通知"):
             st.markdown(
                 """
-                - 2026-05-17：V1 版本上线
-                - 2026-05-20：V1.1 更新旺季附加费至 2026-05-11 版本，反馈入口改为留言区，优化页面排版、统计口径和表格显示
-                - 2026-05-20：V1.1 燃油费改为配置化更新；旺季附加费仍按 PDF 手动确认后推送
+                - **V1.0 · 2026-05-17**：上线 IP 包裹核价，确认国家分区、0.5-20.5kg 固定价和 21kg+ 每公斤价。
+                - **V1.1 · 2026-05-20**：加入旺季附加费、燃油费配置化、Telegram 检查和 GitHub 自动更新链路。
+                - **V2.0 · 2026-05-24**：重做报价台界面，突出最终 USD、费用拆分、IP 分区和旺季大区。
                 """
             )
     with feedback_col:
@@ -334,22 +539,28 @@ def main() -> None:
                     if can_delete and button_cols[1].button("删除", key=f"delete_{message['message_id']}"):
                         delete_feedback_message(str(message["message_id"]))
                         st.rerun()
-    st.caption(
-        f"网址版本 {rate_config['web_version']} | FedEx IP 协议价 {rate_config['ip_rate_effective_date']} | "
-        f"旺季附加费 {rate_config['seasonal_surcharge_effective_date']} | 燃油费 {rate_config['fuel_effective_label']} | "
-        f"燃油附加费率 FedEx {rate_config['fedex_fuel_rate']:.2%} + 5%冗余 = {rate_config['default_fuel_rate']:.2%}"
-    )
-    st.caption(
-        "本工具仅用于内部运费快速预估，计算结果不作为最终结算依据；超过 68kg、偏远地区、特殊处理、税费及其他特殊案例需单独复核，"
-        "实际费用以 FedEx 账单和公司正式报价流程为准。"
+    st.markdown(
+        f"""
+        <div class="v2-topline">
+            <span class="v2-chip">网址版本 <strong>{rate_config['web_version']}</strong></span>
+            <span class="v2-chip">IP 协议价 <strong>{rate_config['ip_rate_effective_date']}</strong></span>
+            <span class="v2-chip">旺季附加费 <strong>{rate_config['seasonal_surcharge_effective_date']}</strong></span>
+            <span class="v2-chip">燃油费 <strong>{rate_config['fuel_effective_label']}</strong></span>
+            <span class="v2-chip">FedEx <strong>{rate_config['fedex_fuel_rate']:.2%}</strong> + 冗余 = <strong>{rate_config['default_fuel_rate']:.2%}</strong></span>
+        </div>
+        <p class="v2-note">
+            本工具仅用于内部运费快速预估，计算结果不作为最终结算依据；超过 68kg、偏远地区、特殊处理、税费及其他特殊案例需单独复核，实际费用以 FedEx 账单和公司正式报价流程为准。
+        </p>
+        """,
+        unsafe_allow_html=True,
     )
 
     aliases, fixed, per_kg, dropdown = load_data()
 
-    with st.container(border=True):
-        st.subheader("输入区")
-        col1, col2 = st.columns([2.4, 2.0])
-        with col1:
+    work_col, result_col = st.columns([1.06, 0.94], gap="large")
+    with work_col:
+        with st.container(border=True):
+            st.subheader("输入区")
             selected_country = st.selectbox(
                 "目的地（下拉）",
                 dropdown,
@@ -359,7 +570,6 @@ def main() -> None:
                 key="selected_country",
                 on_change=mark_dropdown_active,
             )
-        with col2:
             manual_country = st.text_input(
                 "目的地（手输，可选）",
                 value="",
@@ -368,38 +578,39 @@ def main() -> None:
                 args=(aliases, dropdown),
             )
 
-        col3, col4, col5, col6 = st.columns(4)
-        with col3:
-            weight_kg = st.number_input("实际重量 kg", min_value=0.5, value=10.0, step=0.5, on_change=mark_user_edited_input)
-        with col4:
-            fuel_rate = st.number_input(
-                "燃油附加费率（官网+5%）",
-                min_value=0.0,
-                value=float(rate_config["default_fuel_rate"]),
-                step=0.01,
-                format="%.2f",
-                on_change=mark_user_edited_input,
-            )
-        with col5:
-            markup = st.number_input("冗余系数", min_value=1.0, value=DEFAULT_MARKUP, step=0.01, format="%.2f", on_change=mark_user_edited_input)
-        with col6:
-            exchange_rate = st.number_input(
-                "汇率 CNY/USD",
-                min_value=0.01,
-                value=DEFAULT_EXCHANGE_RATE,
-                step=0.01,
-                format="%.2f",
-                on_change=mark_user_edited_input,
-            )
+            col3, col4 = st.columns(2)
+            with col3:
+                weight_kg = st.number_input("实际重量 kg", min_value=0.5, value=10.0, step=0.5, on_change=mark_user_edited_input)
+            with col4:
+                fuel_rate = st.number_input(
+                    "燃油附加费率（官网+5%）",
+                    min_value=0.0,
+                    value=float(rate_config["default_fuel_rate"]),
+                    step=0.01,
+                    format="%.2f",
+                    on_change=mark_user_edited_input,
+                )
+            col5, col6 = st.columns(2)
+            with col5:
+                markup = st.number_input("冗余系数", min_value=1.0, value=DEFAULT_MARKUP, step=0.01, format="%.2f", on_change=mark_user_edited_input)
+            with col6:
+                exchange_rate = st.number_input(
+                    "汇率 CNY/USD",
+                    min_value=0.01,
+                    value=DEFAULT_EXCHANGE_RATE,
+                    step=0.01,
+                    format="%.2f",
+                    on_change=mark_user_edited_input,
+                )
 
-        country_source = st.session_state.get("country_source", "dropdown")
-        country_input = manual_country.strip() if country_source == "manual" and manual_country.strip() else selected_country
+            country_source = st.session_state.get("country_source", "dropdown")
+            country_input = manual_country.strip() if country_source == "manual" and manual_country.strip() else selected_country
 
-        zone, matched_country = lookup_zone(country_input, aliases)
-        demand_region, demand_rate, demand_minimum = lookup_demand(country_input, aliases)
-        base_cny, rate_type, lookup_weight = calculate_base(weight_kg, zone, fixed, per_kg)
-        if demand_rate is not None:
-            demand_surcharge_cny = max(weight_kg * demand_rate, demand_minimum) if demand_rate > 0 else 0.0
+            zone, matched_country = lookup_zone(country_input, aliases)
+            demand_region, demand_rate, demand_minimum = lookup_demand(country_input, aliases)
+            base_cny, rate_type, lookup_weight = calculate_base(weight_kg, zone, fixed, per_kg)
+            if demand_rate is not None:
+                demand_surcharge_cny = max(weight_kg * demand_rate, demand_minimum) if demand_rate > 0 else 0.0
 
     if base_cny is None or demand_rate is None:
         st.warning("Need Review：国家/地区、重量或旺季附加费区域未匹配。")
@@ -421,17 +632,31 @@ def main() -> None:
         )
         st.session_state["last_quote_signature"] = quote_signature
 
-    with st.container(border=True):
-        st.subheader("报价结果")
-        result_cols = st.columns(5)
-        result_cols[0].metric("最终 USD", f"{final_usd:,.2f}")
-        result_cols[1].metric("最终 CNY", f"{final_cny:,.2f}")
-        result_cols[2].metric("基础运费 CNY", f"{base_cny:,.2f}")
-        result_cols[3].metric("燃油附加费 CNY", f"{fuel_cny:,.2f}")
-        result_cols[4].metric("旺季附加费 CNY", f"{demand_surcharge_cny:,.2f}")
-        st.caption(
-            "报价公式：最终 USD = (基础运费 CNY + 旺季附加费 CNY) × "
-            "(1 + 燃油附加费率) × 冗余系数 ÷ 汇率"
+    with result_col:
+        st.markdown(
+            f"""
+            <div class="v2-result-card">
+                <div class="v2-result-label">最终报价 USD</div>
+                <div class="v2-result-main">{final_usd:,.2f}</div>
+                <div class="v2-result-sub">最终 CNY {final_cny:,.2f} · {matched_country} · IP Zone {zone}</div>
+            </div>
+            <div class="v2-breakdown">
+                <div class="v2-mini-card"><div class="v2-mini-label">基础运费 CNY</div><div class="v2-mini-value">{format_money(base_cny)}</div></div>
+                <div class="v2-mini-card"><div class="v2-mini-label">燃油附加费 CNY</div><div class="v2-mini-value">{format_money(fuel_cny)}</div></div>
+                <div class="v2-mini-card"><div class="v2-mini-label">旺季附加费 CNY</div><div class="v2-mini-value">{format_money(demand_surcharge_cny)}</div></div>
+                <div class="v2-mini-card"><div class="v2-mini-label">计费口径</div><div class="v2-mini-value">{rate_type}</div></div>
+            </div>
+            <div class="v2-match-grid">
+                <div class="v2-match"><div class="v2-match-label">国家/地区</div><div class="v2-match-value">{matched_country}</div></div>
+                <div class="v2-match"><div class="v2-match-label">IP 分区</div><div class="v2-match-value">{zone}</div></div>
+                <div class="v2-match"><div class="v2-match-label">旺季大区</div><div class="v2-match-value">{demand_region}</div></div>
+                <div class="v2-match"><div class="v2-match-label">查表重量</div><div class="v2-match-value">{lookup_weight:.2f} kg</div></div>
+            </div>
+            <div class="v2-formula">
+                最终 USD = (基础运费 CNY + 旺季附加费 CNY) × (1 + 燃油附加费率) × 冗余系数 ÷ 汇率
+            </div>
+            """,
+            unsafe_allow_html=True,
         )
 
     with st.container(border=True):
