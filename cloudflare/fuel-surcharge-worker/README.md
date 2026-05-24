@@ -1,12 +1,12 @@
 # FedEx Fuel Surcharge Worker
 
-这个 Cloudflare Worker 只做一件事：定时读取 EIA 官方 USGC 周价格，再套用 FedEx 官方燃油附加费表，算出当前 FedEx 中国燃油费并发 Telegram，供人工确认。
+这个 Cloudflare Worker 只做一件事：定时读取 EIA 官方 USGC 周价格，再套用 FedEx 官方燃油附加费表，算出当前 FedEx 中国燃油费，写入缓存并发 Telegram，供网页读取和人工复核。
 
 ## 口径
 
 - EIA 来源：`https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=W&n=PET&s=EER_EPJK_PF4_RGC_DPG`
 - FedEx 表来源：`https://www.fedex.com/content/dam/fedex/international/rates/fedex-fuel-table-may-2026-apac.pdf`
-- 不自动修改 Streamlit 网站报价。
+- Streamlit 只读取 Worker 缓存后的公开燃油结果，不在用户打开网页时直接抓 EIA。
 - 抓取或匹配失败时发 `NEED_REVIEW`，保留网站当前已确认燃油费。
 
 ## 定时
@@ -58,7 +58,13 @@ https://<worker-url>/check?notify=1&key=<MANUAL_CHECK_TOKEN>
 https://<worker-url>/fuel-current
 ```
 
-这个接口不需要密钥，只返回公开燃油费计算结果，供 Streamlit 读取默认燃油费。
+这个接口不需要密钥，只返回公开燃油费计算结果，供 Streamlit 读取默认燃油费。接口优先读 Cloudflare Cache，正常情况下不会因为用户打开网页而重新抓取 EIA。
+
+手动刷新缓存：
+
+```text
+https://<worker-url>/refresh-fuel-current?key=<MANUAL_CHECK_TOKEN>
+```
 
 返回里重点看：
 

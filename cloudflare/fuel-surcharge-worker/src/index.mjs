@@ -4,6 +4,8 @@ const FEDEX_TABLE_URL =
   "https://www.fedex.com/content/dam/fedex/international/rates/fedex-fuel-table-may-2026-apac.pdf";
 const FEDEX_TABLE_EFFECTIVE = "Effective May 18, 2026";
 const DEFAULT_BUFFER_RATE = 0.05;
+const FUEL_CACHE_URL = "https://fedex-fuel-surcharge-checker.internal/fuel-current-cache";
+const FUEL_CACHE_TTL_SECONDS = 60 * 60 * 24 * 7;
 
 const MONTHS = {
   Jan: 1,
@@ -20,13 +22,20 @@ const MONTHS = {
   Dec: 12,
 };
 
-function jsonResponse(data, status = 200) {
+function jsonResponse(data, status = 200, extraHeaders = {}) {
   return new Response(JSON.stringify(data, null, 2), {
     status,
     headers: {
       "content-type": "application/json; charset=utf-8",
       "cache-control": "no-store",
+      ...extraHeaders,
     },
+  });
+}
+
+function cacheableJsonResponse(data) {
+  return jsonResponse(data, 200, {
+    "cache-control": `public, max-age=${FUEL_CACHE_TTL_SECONDS}`,
   });
 }
 
@@ -255,6 +264,7 @@ async function runCheck(env, options = {}) {
 function publicFuelPayload(payload) {
   return {
     checked_at_utc: payload.checked_at_utc,
+    cache_status: payload.cache_status || "",
     status: payload.status,
     method: payload.method,
     sources: payload.sources,
@@ -266,6 +276,45 @@ function publicFuelPayload(payload) {
     tool_fuel_rate_percent: payload.tool_fuel_rate_percent ?? null,
     note: payload.note || "",
   };
+}
+
+async function readCachedFuelPayload() {
+  if (!globalThis.caches?.default) return null;
+  const response = await caches.default.match(new Request(FUEL_CACHE_URL));
+  if (!response) return null;
+  const payload = await response.json();
+  return { ...payload, cache_status: "HIT" };
+}
+
+async function writeCachedFuelPayload(payload) {
+  if (!globalThis.caches?.default) return null;
+  const publicPayload = {
+    ...publicFuelPayload(payload),
+    cache_status: "REFRESHED",
+  };
+  await caches.default.put(
+    new Request(FUEL_CACHE_URL),
+    cacheableJsonResponse(publicPayload)
+  );
+  return publicPayload;
+}
+
+async function currentFuelPayload(env) {
+  const cached = await readCachedFuelPayload();
+  if (cached) return cached;
+  const payload = await runCheck(env);
+  return (await writeCachedFuelPayload(payload)) || {
+    ...publicFuelPayload(payload),
+    cache_status: "MISS_RECOMPUTED",
+  };
+}
+
+async function refreshFuelPayload(request, env) {
+  if (!authorized(request, env)) {
+    return jsonResponse({ error: "Unauthorized" }, 401);
+  }
+  const payload = await runCheck(env);
+  return jsonResponse((await writeCachedFuelPayload(payload)) || publicFuelPayload(payload));
 }
 
 function normalizeTelegramCommand(text) {
@@ -379,7 +428,10 @@ export default {
       );
     }
     if (url.pathname === "/fuel-current") {
-      return jsonResponse(publicFuelPayload(await runCheck(env)));
+      return jsonResponse(await currentFuelPayload(env));
+    }
+    if (url.pathname === "/refresh-fuel-current") {
+      return refreshFuelPayload(request, env);
     }
     if (url.pathname === "/telegram") {
       if (request.method !== "POST") {
@@ -400,6 +452,7 @@ export default {
       manual_test: "/check?key=MANUAL_CHECK_TOKEN",
       manual_test_with_telegram: "/check?notify=1&key=MANUAL_CHECK_TOKEN",
       fuel_current: "/fuel-current",
+      refresh_fuel_current: "/refresh-fuel-current?key=MANUAL_CHECK_TOKEN",
       set_telegram_webhook: "/set-telegram-webhook?key=MANUAL_CHECK_TOKEN",
       telegram_webhook_info: "/telegram-webhook-info?key=MANUAL_CHECK_TOKEN",
       schedule: "Monday 10:00 and 14:00 Asia/Shanghai",
@@ -407,6 +460,11 @@ export default {
   },
 
   async scheduled(event, env, ctx) {
-    ctx.waitUntil(runCheck(env, { notify: true }));
+    ctx.waitUntil(
+      (async () => {
+        const payload = await runCheck(env, { notify: true });
+        await writeCachedFuelPayload(payload);
+      })()
+    );
   },
 };

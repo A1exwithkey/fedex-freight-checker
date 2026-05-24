@@ -38,7 +38,7 @@ FEEDBACK_COLUMNS = ["message_id", "timestamp", "session_id", "message", "likes",
 
 DEFAULT_MARKUP = 1.1
 DEFAULT_EXCHANGE_RATE = 6.8
-FUEL_AUTO_TIMEOUT_SECONDS = 8
+FUEL_AUTO_TIMEOUT_SECONDS = 3
 
 
 @st.cache_data
@@ -46,7 +46,7 @@ def load_rate_config() -> dict:
     return json.loads(RATE_CONFIG.read_text(encoding="utf-8"))
 
 
-@st.cache_data(ttl=3600)
+@st.cache_data(ttl=21600)
 def fetch_live_fuel_config(endpoint: str) -> dict:
     request = urllib.request.Request(
         endpoint,
@@ -90,6 +90,7 @@ def apply_live_fuel_config(rate_config: dict) -> dict:
     updated["fuel_update_method"] = "Auto from EIA weekly USGC price + FedEx official fuel table."
     updated["fuel_live_status"] = "Auto"
     updated["fuel_live_checked_at"] = payload.get("checked_at_utc", "")
+    updated["fuel_cache_status"] = payload.get("cache_status", "")
     return updated
 
 

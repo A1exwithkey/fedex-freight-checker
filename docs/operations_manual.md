@@ -48,7 +48,7 @@ python3 scripts/02_build_excel.py
 2. 套用 FedEx 官方燃油附加费表（当前表：Effective May 18, 2026）。
 3. 计算 FedEx 官网燃油费和官网 +5% 后的工具建议值。
 4. 可选发送 Telegram 通知。
-5. Streamlit 打开时优先读取 Cloudflare Worker `/fuel-current` 自动更新默认燃油费。
+5. 定时任务和手动刷新会把燃油结果写入 Cloudflare Cache，Streamlit 打开时优先读取 Cloudflare Worker `/fuel-current` 的缓存结果。
 6. Worker 读取失败时保留 `data_processed/rate_config.json` 中的上一次确认值。
 
 手动检查命令：

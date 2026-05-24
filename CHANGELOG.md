@@ -10,6 +10,7 @@
 - 新增 `scripts/06_check_fedex_fuel_official_sources.py`，用于本地复核 EIA 周价格、FedEx 表匹配结果和官网 +5% 后的工具建议燃油费。
 - Worker 新增 Telegram webhook：支持 `/check`、`/status`、`/stats`、`/help` 命令，并提供 `/set-telegram-webhook` 和 `/telegram-webhook-info` 管理入口。
 - Worker 新增公开 `/fuel-current` 接口；Streamlit 打开时优先读取该接口自动更新默认燃油费，失败时回退到 `rate_config.json`。
+- `/fuel-current` 改为优先读取 Cloudflare Cache；定时任务和手动刷新负责更新缓存，避免每个网页访问者触发 EIA 实时抓取。
 
 ## V2.6.0-web-polish-2026-05-20 - 2026-05-20
 

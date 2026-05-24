@@ -8,6 +8,7 @@ FedEx 燃油附加费自动检查可行，但现阶段只做“抓取 + Telegram
 
 - Cloudflare Worker 每周一北京时间 10:00 和 14:00 各检查一次。
 - 当前方案不再抓 FedEx 页面当前行，而是读取 EIA 官方 USGC 周价格，并套用 FedEx 官方燃油附加费表。
+- 定时任务和手动刷新会把燃油结果写入 Cloudflare Cache；Streamlit 只读取缓存后的 `/fuel-current`，不会让每个访问者打开网页时都触发 EIA 实时抓取。
 - 2026-05-24 实测：Cloudflare Browser Rendering 能启动浏览器，但 FedEx 返回 `It appears you don't have permission to view this webpage`，因此不能作为稳定抓取入口。
 - 当前可用方向：`scripts/06_check_fedex_fuel_official_sources.py` 和 `cloudflare/fuel-surcharge-worker/`。
 - 抓到燃油费后发 Telegram，人工确认后再更新 `data_processed/rate_config.json`。
@@ -80,6 +81,13 @@ https://fedex-fuel-surcharge-checker.a1exwithkey.workers.dev/fuel-current
 ```
 
 Streamlit 打开时优先读取这个接口更新默认燃油费；接口失败时回退到 `data_processed/rate_config.json`。
+
+性能口径：
+
+- 周一 10:00 和 14:00：Worker 计算一次燃油结果并写入缓存。
+- 用户打开网页：Streamlit 读取 `/fuel-current` 的缓存结果。
+- 如果缓存被 Cloudflare 清掉：Worker 只会补算一次，然后重新写入缓存。
+- Streamlit 自身也会缓存读取结果 6 小时，避免页面频繁请求 Worker。
 
 运行规则：
 
