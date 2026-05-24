@@ -6,6 +6,10 @@ const FEDEX_TABLE_EFFECTIVE = "Effective May 18, 2026";
 const DEFAULT_BUFFER_RATE = 0.05;
 const FUEL_CACHE_URL = "https://fedex-fuel-surcharge-checker.internal/fuel-current-cache";
 const FUEL_CACHE_TTL_SECONDS = 60 * 60 * 24 * 7;
+const DEFAULT_GITHUB_OWNER = "A1exwithkey";
+const DEFAULT_GITHUB_REPO = "fedex-freight-checker";
+const DEFAULT_GITHUB_BRANCH = "main";
+const RATE_CONFIG_PATH = "data_processed/rate_config.json";
 
 const MONTHS = {
   Jan: 1,
@@ -96,6 +100,30 @@ function addDays(date, days) {
 
 function isoDate(date) {
   return date.toISOString().slice(0, 10);
+}
+
+function todayInBeijing() {
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Shanghai",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(new Date());
+}
+
+function base64EncodeUtf8(text) {
+  let binary = "";
+  const bytes = new TextEncoder().encode(text);
+  for (let index = 0; index < bytes.length; index += 1) {
+    binary += String.fromCharCode(bytes[index]);
+  }
+  return btoa(binary);
+}
+
+function base64DecodeUtf8(text) {
+  const binary = atob(String(text || "").replace(/\s/g, ""));
+  const bytes = Uint8Array.from(binary, (char) => char.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
 }
 
 function fedexApplyWeek(eiaWeekEndDate) {
@@ -190,6 +218,19 @@ function buildTelegramMessage(payload) {
     lines.push(`官网燃油费：${payload.fedex_fuel_rate_percent.toFixed(2)}%`);
     lines.push(`工具建议值：${payload.tool_fuel_rate_percent.toFixed(2)}%（官网 +5%冗余）`);
   }
+  if (payload.github_update) {
+    const update = payload.github_update;
+    if (update.status === "UPDATED") {
+      lines.push(`网页配置：已提交 GitHub，等待 Streamlit 自动部署`);
+      lines.push(`Commit：${update.commit_sha || "已提交"}`);
+    } else if (update.status === "UNCHANGED") {
+      lines.push("网页配置：无需更新，GitHub 已是当前燃油费");
+    } else if (update.status === "SKIPPED") {
+      lines.push(`网页配置：未自动发布，原因：${update.reason}`);
+    } else {
+      lines.push(`网页配置：更新失败，原因：${update.reason || update.status}`);
+    }
+  }
   lines.push(`FedEx 表版本：${payload.sources.fedex_fuel_table_effective}`);
   lines.push("说明：结果仍建议人工确认后再更新正式报价。");
   return lines.join("\n");
@@ -261,6 +302,106 @@ async function runCheck(env, options = {}) {
   return payload;
 }
 
+async function githubRequest(env, path, options = {}) {
+  const owner = env.GITHUB_OWNER || DEFAULT_GITHUB_OWNER;
+  const repo = env.GITHUB_REPO || DEFAULT_GITHUB_REPO;
+  const url = `https://api.github.com/repos/${owner}/${repo}${path}`;
+  const response = await fetch(url, {
+    ...options,
+    headers: {
+      "accept": "application/vnd.github+json",
+      "authorization": `Bearer ${env.GITHUB_TOKEN}`,
+      "content-type": "application/json",
+      "user-agent": "fedex-fuel-surcharge-worker",
+      "x-github-api-version": "2022-11-28",
+      ...(options.headers || {}),
+    },
+  });
+  const body = await response.json().catch(async () => ({ raw: await response.text() }));
+  if (!response.ok) {
+    throw new Error(`GitHub API ${response.status}: ${JSON.stringify(body).slice(0, 300)}`);
+  }
+  return body;
+}
+
+function buildRateConfigFromPayload(currentConfig, payload) {
+  return {
+    ...currentConfig,
+    web_version: todayInBeijing(),
+    fuel_effective_label: payload.fedex_apply_week.label,
+    fedex_fuel_rate: Number((payload.fedex_fuel_rate_percent / 100).toFixed(6)),
+    fuel_buffer_rate: Number((payload.fuel_buffer_percent / 100).toFixed(6)),
+    default_fuel_rate: Number((payload.tool_fuel_rate_percent / 100).toFixed(6)),
+    fuel_update_method: "Auto updated by Cloudflare Worker from EIA weekly USGC price and FedEx fuel table.",
+    updated_at: todayInBeijing(),
+  };
+}
+
+function fuelConfigChanged(currentConfig, nextConfig) {
+  return (
+    currentConfig.fuel_effective_label !== nextConfig.fuel_effective_label ||
+    Number(currentConfig.fedex_fuel_rate) !== Number(nextConfig.fedex_fuel_rate) ||
+    Number(currentConfig.default_fuel_rate) !== Number(nextConfig.default_fuel_rate)
+  );
+}
+
+function validatePublishableFuelPayload(payload) {
+  if (payload.status !== "OK") return "Fuel check status is not OK.";
+  if (!payload.fedex_apply_week?.label) return "FedEx apply week is missing.";
+  if (!Number.isFinite(payload.fedex_fuel_rate_percent)) return "FedEx fuel rate is missing.";
+  if (!Number.isFinite(payload.tool_fuel_rate_percent)) return "Tool fuel rate is missing.";
+  if (payload.fedex_fuel_rate_percent <= 0 || payload.fedex_fuel_rate_percent > 100) {
+    return "FedEx fuel rate is outside expected range.";
+  }
+  if (payload.tool_fuel_rate_percent <= 0 || payload.tool_fuel_rate_percent > 100) {
+    return "Tool fuel rate is outside expected range.";
+  }
+  return "";
+}
+
+async function publishFuelConfigIfChanged(env, payload) {
+  const validationError = validatePublishableFuelPayload(payload);
+  if (validationError) {
+    return { status: "SKIPPED", reason: validationError };
+  }
+  if (!env.GITHUB_TOKEN) {
+    return { status: "SKIPPED", reason: "GITHUB_TOKEN is not configured." };
+  }
+
+  const branch = env.GITHUB_BRANCH || DEFAULT_GITHUB_BRANCH;
+  try {
+    const currentFile = await githubRequest(
+      env,
+      `/contents/${RATE_CONFIG_PATH}?ref=${encodeURIComponent(branch)}`
+    );
+    const currentConfig = JSON.parse(base64DecodeUtf8(currentFile.content));
+    const nextConfig = buildRateConfigFromPayload(currentConfig, payload);
+    if (!fuelConfigChanged(currentConfig, nextConfig)) {
+      return { status: "UNCHANGED", reason: "rate_config.json already has current fuel values." };
+    }
+
+    const nextText = `${JSON.stringify(nextConfig, null, 2)}\n`;
+    const updatedFile = await githubRequest(env, `/contents/${RATE_CONFIG_PATH}`, {
+      method: "PUT",
+      body: JSON.stringify({
+        message: `Update FedEx fuel surcharge ${nextConfig.fuel_effective_label}`,
+        content: base64EncodeUtf8(nextText),
+        sha: currentFile.sha,
+        branch,
+      }),
+    });
+    return {
+      status: "UPDATED",
+      path: RATE_CONFIG_PATH,
+      branch,
+      commit_sha: updatedFile.commit?.sha || "",
+      html_url: updatedFile.commit?.html_url || "",
+    };
+  } catch (error) {
+    return { status: "ERROR", reason: String(error?.message || error) };
+  }
+}
+
 function publicFuelPayload(payload) {
   return {
     checked_at_utc: payload.checked_at_utc,
@@ -315,6 +456,19 @@ async function refreshFuelPayload(request, env) {
   }
   const payload = await runCheck(env);
   return jsonResponse((await writeCachedFuelPayload(payload)) || publicFuelPayload(payload));
+}
+
+async function publishFuelPayload(request, env) {
+  if (!authorized(request, env)) {
+    return jsonResponse({ error: "Unauthorized" }, 401);
+  }
+  const payload = await runCheck(env);
+  payload.github_update = await publishFuelConfigIfChanged(env, payload);
+  await writeCachedFuelPayload(payload);
+  if (request && new URL(request.url).searchParams.get("notify") === "1") {
+    payload.telegram = await sendTelegram(env, buildTelegramMessage(payload));
+  }
+  return jsonResponse(payload);
 }
 
 function normalizeTelegramCommand(text) {
@@ -433,6 +587,9 @@ export default {
     if (url.pathname === "/refresh-fuel-current") {
       return refreshFuelPayload(request, env);
     }
+    if (url.pathname === "/publish-fuel-config") {
+      return publishFuelPayload(request, env);
+    }
     if (url.pathname === "/telegram") {
       if (request.method !== "POST") {
         return jsonResponse({ ok: false, error: "Use POST for Telegram webhook." }, 405);
@@ -453,6 +610,7 @@ export default {
       manual_test_with_telegram: "/check?notify=1&key=MANUAL_CHECK_TOKEN",
       fuel_current: "/fuel-current",
       refresh_fuel_current: "/refresh-fuel-current?key=MANUAL_CHECK_TOKEN",
+      publish_fuel_config: "/publish-fuel-config?notify=1&key=MANUAL_CHECK_TOKEN",
       set_telegram_webhook: "/set-telegram-webhook?key=MANUAL_CHECK_TOKEN",
       telegram_webhook_info: "/telegram-webhook-info?key=MANUAL_CHECK_TOKEN",
       schedule: "Monday 10:00 and 14:00 Asia/Shanghai",
@@ -462,8 +620,10 @@ export default {
   async scheduled(event, env, ctx) {
     ctx.waitUntil(
       (async () => {
-        const payload = await runCheck(env, { notify: true });
+        const payload = await runCheck(env);
+        payload.github_update = await publishFuelConfigIfChanged(env, payload);
         await writeCachedFuelPayload(payload);
+        await sendTelegram(env, buildTelegramMessage(payload));
       })()
     );
   },

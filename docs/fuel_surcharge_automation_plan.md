@@ -2,16 +2,18 @@
 
 ## 当前结论
 
-FedEx 燃油附加费自动检查可行，但现阶段只做“抓取 + Telegram 通知 + 人工确认”，不自动修改正式报价。
+FedEx 燃油附加费自动检查可行，当前目标是“抓取 + 自动更新 GitHub 配置 + Streamlit 自动部署 + Telegram 通知”。
 
 2026-05-24 口径调整：
 
 - Cloudflare Worker 每周一北京时间 10:00 和 14:00 各检查一次。
 - 当前方案不再抓 FedEx 页面当前行，而是读取 EIA 官方 USGC 周价格，并套用 FedEx 官方燃油附加费表。
-- 定时任务和手动刷新会把燃油结果写入 Cloudflare Cache；Streamlit 只读取缓存后的 `/fuel-current`，不会让每个访问者打开网页时都触发 EIA 实时抓取。
+- Worker 检查结果为 `OK` 且燃油费或适用周发生变化时，会用 GitHub API 更新 `data_processed/rate_config.json`。
+- Streamlit 只读取 GitHub 仓库里的 `rate_config.json`，不会让每个访问者打开网页时都触发 EIA 实时抓取。
+- GitHub 出现新 commit 后，由 Streamlit 自动重新部署，页面顶部燃油费时间和费率随配置文件更新。
 - 2026-05-24 实测：Cloudflare Browser Rendering 能启动浏览器，但 FedEx 返回 `It appears you don't have permission to view this webpage`，因此不能作为稳定抓取入口。
 - 当前可用方向：`scripts/06_check_fedex_fuel_official_sources.py` 和 `cloudflare/fuel-surcharge-worker/`。
-- 抓到燃油费后发 Telegram，人工确认后再更新 `data_processed/rate_config.json`。
+- 抓到燃油费后发 Telegram；如果 GitHub 自动更新成功，Telegram 会写明已提交 commit。
 - 抓不到或返回 `FedEx | System Down` 时发 `NEED_REVIEW`，网站继续使用上一次确认值。
 
 注意：FedEx 页面会对部分脚本请求返回拦截页，所以自动检查必须判断页面标题、页面长度、关键词和是否解析到可靠日期区间，不允许只看 HTTP 200。
@@ -72,7 +74,7 @@ TELEGRAM_BOT_TOKEN=... TELEGRAM_CHAT_ID=... python3 scripts/06_check_fedex_fuel_
 
 ### Cloudflare Workers Cron + Telegram
 
-已新增目录：`cloudflare/fuel-surcharge-worker/`，当前正式用途是读取 EIA 周价格并套用 FedEx 官方燃油表后发送 Telegram。它不再访问 FedEx 页面当前行。
+已新增目录：`cloudflare/fuel-surcharge-worker/`，当前正式用途是读取 EIA 周价格并套用 FedEx 官方燃油表，然后自动更新 GitHub 配置文件并发送 Telegram。它不再访问 FedEx 页面当前行。
 
 同时提供公开接口：
 
@@ -80,14 +82,14 @@ TELEGRAM_BOT_TOKEN=... TELEGRAM_CHAT_ID=... python3 scripts/06_check_fedex_fuel_
 https://fedex-fuel-surcharge-checker.a1exwithkey.workers.dev/fuel-current
 ```
 
-Streamlit 打开时优先读取这个接口更新默认燃油费；接口失败时回退到 `data_processed/rate_config.json`。
+`/fuel-current` 保留为人工检查接口。Streamlit 不再依赖这个接口加载首屏，避免网页变卡。
 
 性能口径：
 
-- 周一 10:00 和 14:00：Worker 计算一次燃油结果并写入缓存。
-- 用户打开网页：Streamlit 读取 `/fuel-current` 的缓存结果。
-- 如果缓存被 Cloudflare 清掉：Worker 只会补算一次，然后重新写入缓存。
-- Streamlit 自身也会缓存读取结果 6 小时，避免页面频繁请求 Worker。
+- 周一 10:00 和 14:00：Worker 计算一次燃油结果。
+- 如果结果 `OK` 且和 GitHub 配置不同：Worker 提交 `rate_config.json` 到 GitHub。
+- 用户打开网页：Streamlit 读取随仓库部署的本地配置文件。
+- 因此用户访问不会触发燃油抓取，也不会等待 Worker。
 
 运行规则：
 
@@ -115,13 +117,20 @@ Telegram 通知内容：
 TELEGRAM_BOT_TOKEN
 TELEGRAM_CHAT_ID
 MANUAL_CHECK_TOKEN
+GITHUB_TOKEN
 ```
 
 部署命令见 `cloudflare/fuel-surcharge-worker/README.md`。
 
+手动发布测试：
+
+```text
+https://fedex-fuel-surcharge-checker.a1exwithkey.workers.dev/publish-fuel-config?notify=1&key=<MANUAL_CHECK_TOKEN>
+```
+
 ### 后续可选：统计持久化
 
-访问次数、试算次数和留言如果要跨 Streamlit 重启保留，需要迁到 Cloudflare KV/D1 或其它外部存储。燃油费通知本身不会触发 Streamlit 重新部署。
+访问次数、试算次数和留言如果要跨 Streamlit 重启保留，需要迁到 Cloudflare KV/D1 或其它外部存储。
 
 ## 旧方案记录
 
@@ -133,7 +142,7 @@ GitHub Actions 方案仍保留为探测记录，但当前优先使用 Cloudflare
 2. 手动访问 `/check`，确认 EIA 周价格和 FedEx 表匹配结果。
 3. 如果结果为 `OK`，启用 Telegram 通知。
 4. 每周一 10:00 和 14:00 自动检查。
-5. 人工确认后，用 `scripts/05_update_fuel_config.py` 更新正式燃油费配置并部署网站。
+5. 配置 `GITHUB_TOKEN` 后，Worker 自动更新 `data_processed/rate_config.json` 并触发 Streamlit 重新部署。
 
 ## 失败处理
 

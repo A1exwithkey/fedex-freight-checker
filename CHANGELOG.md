@@ -13,6 +13,7 @@
 - `/fuel-current` 改为优先读取 Cloudflare Cache；定时任务和手动刷新负责更新缓存，避免每个网页访问者触发 EIA 实时抓取。
 - Streamlit 读取燃油接口的缓存时间从 6 小时改为 5 分钟，首屏读取超时降到 1.2 秒，并把本地兜底燃油费更新为 2026-05-25 至 2026-05-31 版本：FedEx 49.50%，本工具 54.50%。
 - 为恢复首屏速度，Streamlit 暂停运行时读取 Worker，改为只读本地 `rate_config.json`；Worker 保留每周自动检查和 Telegram 通知。
+- Worker 新增 GitHub 自动发布逻辑：燃油结果 `OK` 且配置发生变化时，自动更新 `data_processed/rate_config.json`，由 Streamlit 监听 GitHub commit 后自动部署。
 
 ## V2.6.0-web-polish-2026-05-20 - 2026-05-20
 
