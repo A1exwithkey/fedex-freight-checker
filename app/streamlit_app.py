@@ -9,6 +9,8 @@ from __future__ import annotations
 import csv
 import json
 import uuid
+import urllib.error
+import urllib.request
 from datetime import datetime
 from pathlib import Path
 
@@ -36,11 +38,56 @@ FEEDBACK_COLUMNS = ["message_id", "timestamp", "session_id", "message", "likes",
 
 DEFAULT_MARKUP = 1.1
 DEFAULT_EXCHANGE_RATE = 6.8
+FUEL_AUTO_TIMEOUT_SECONDS = 8
 
 
 @st.cache_data
 def load_rate_config() -> dict:
     return json.loads(RATE_CONFIG.read_text(encoding="utf-8"))
+
+
+@st.cache_data(ttl=3600)
+def fetch_live_fuel_config(endpoint: str) -> dict:
+    request = urllib.request.Request(
+        endpoint,
+        headers={"User-Agent": "fedex-freight-checker/1.0"},
+    )
+    with urllib.request.urlopen(request, timeout=FUEL_AUTO_TIMEOUT_SECONDS) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def apply_live_fuel_config(rate_config: dict) -> dict:
+    updated = dict(rate_config)
+    endpoint = str(updated.get("fuel_auto_update_url", "")).strip()
+    if not endpoint:
+        updated["fuel_live_status"] = "Fallback"
+        return updated
+
+    try:
+        payload = fetch_live_fuel_config(endpoint)
+    except (urllib.error.URLError, TimeoutError, ValueError, json.JSONDecodeError):
+        updated["fuel_live_status"] = "Fallback"
+        return updated
+
+    if payload.get("status") != "OK":
+        updated["fuel_live_status"] = "Need Review"
+        return updated
+
+    fedex_percent = payload.get("fedex_fuel_rate_percent")
+    tool_percent = payload.get("tool_fuel_rate_percent")
+    buffer_percent = payload.get("fuel_buffer_percent")
+    if fedex_percent is None or tool_percent is None or buffer_percent is None:
+        updated["fuel_live_status"] = "Need Review"
+        return updated
+
+    updated["fedex_fuel_rate"] = float(fedex_percent) / 100
+    updated["fuel_buffer_rate"] = float(buffer_percent) / 100
+    updated["default_fuel_rate"] = float(tool_percent) / 100
+    updated["fuel_effective_label"] = payload.get("fedex_apply_week", {}).get("label", updated["fuel_effective_label"])
+    updated["fuel_update_method"] = "Auto from EIA weekly USGC price + FedEx official fuel table."
+    updated["fuel_live_status"] = "Auto"
+    updated["fuel_live_checked_at"] = payload.get("checked_at_utc", "")
+    return updated
 
 
 @st.cache_data
@@ -290,7 +337,7 @@ def calculate_base(weight_kg: float, zone: str, fixed: pd.DataFrame, per_kg: pd.
 
 def main() -> None:
     st.set_page_config(page_title="FedEx IP 运费核价助手", layout="wide")
-    rate_config = load_rate_config()
+    rate_config = apply_live_fuel_config(load_rate_config())
     st.markdown(
         """
         <style>

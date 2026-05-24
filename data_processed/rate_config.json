@@ -8,6 +8,7 @@
   "default_fuel_rate": 0.5375,
   "fuel_source_url": "https://www.fedex.com/en-cn/shipping/surcharges.html",
   "fuel_table_url": "https://www.fedex.com/content/dam/fedex/international/rates/fedex-fuel-table-may-2026-apac.pdf",
-  "fuel_update_method": "FedEx fuel table effective May 18, 2026; official rate corrected to 48.75%, then +5% buffer.",
+  "fuel_update_method": "Default falls back to this file; Streamlit first tries Cloudflare Worker auto fuel endpoint.",
+  "fuel_auto_update_url": "https://fedex-fuel-surcharge-checker.a1exwithkey.workers.dev/fuel-current",
   "updated_at": "2026-05-20"
 }

@@ -40,15 +40,28 @@ python3 scripts/02_build_excel.py
 
 ### 3. 更新燃油附加费
 
-当前规则：网页按 FedEx 官网 48% + 5% 冗余，使用 53%；Excel V2.5 仍保留上一版输出，后续稳定后再同步生成 V2.6。
+当前规则：网页按 FedEx 官网燃油费 + 5% 冗余；Excel V2.5 仍保留上一版输出，后续稳定后再同步生成 V2.6。
 
-后续可做自动抓取：
+当前自动检查方式：
 
-1. 从 FedEx 官方燃油费页面读取当前百分比和适用日期：`https://www.fedex.com/zh-cn/shipping/surcharges.html`。
-2. 抓取成功时更新网页显示。
-3. 抓取失败时保留人工暂定值。
-4. 页面必须显示燃油费来源日期或适用周。
-5. 当前网页口径为 FedEx 官网费率 + 5% 冗余。
+1. 读取 EIA 官方 USGC kerosene-type jet fuel 周价格。
+2. 套用 FedEx 官方燃油附加费表（当前表：Effective May 18, 2026）。
+3. 计算 FedEx 官网燃油费和官网 +5% 后的工具建议值。
+4. 可选发送 Telegram 通知。
+5. Streamlit 打开时优先读取 Cloudflare Worker `/fuel-current` 自动更新默认燃油费。
+6. Worker 读取失败时保留 `data_processed/rate_config.json` 中的上一次确认值。
+
+手动检查命令：
+
+```bash
+python3 scripts/06_check_fedex_fuel_official_sources.py
+```
+
+发送 Telegram：
+
+```bash
+TELEGRAM_BOT_TOKEN=... TELEGRAM_CHAT_ID=... python3 scripts/06_check_fedex_fuel_official_sources.py --notify
+```
 
 详细方案见 `docs/fuel_surcharge_automation_plan.md`。
 

@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## V2.6.1-fuel-worker-2026-05-24 - 2026-05-24
+
+- 新增 `cloudflare/fuel-surcharge-worker/`，用于定时读取 EIA 官方 USGC 周价格并套用 FedEx 官方燃油附加费表后发送 Telegram 通知。
+- 燃油费自动检查不自动修改正式报价，仍需人工确认后更新网页配置。
+- Cloudflare Cron 设置为北京时间每周一 10:00 和 14:00 各检查一次。
+- Telegram Token、Chat ID 和手动测试密钥改为 Cloudflare Secret 配置，不写入代码。
+- Cloudflare 普通抓取和 Browser Rendering 均无法稳定读取 FedEx 页面当前行，Worker 改为读取 EIA 官方 USGC 周价格并套用 FedEx 官方燃油附加费表。
+- 新增 `scripts/06_check_fedex_fuel_official_sources.py`，用于本地复核 EIA 周价格、FedEx 表匹配结果和官网 +5% 后的工具建议燃油费。
+- Worker 新增 Telegram webhook：支持 `/check`、`/status`、`/stats`、`/help` 命令，并提供 `/set-telegram-webhook` 和 `/telegram-webhook-info` 管理入口。
+- Worker 新增公开 `/fuel-current` 接口；Streamlit 打开时优先读取该接口自动更新默认燃油费，失败时回退到 `rate_config.json`。
+
 ## V2.6.0-web-polish-2026-05-20 - 2026-05-20
 
 - 网页计算接入 `demand_surcharge_latest.csv`，旺季附加费更新为 2026-05-11 版本。

@@ -2,7 +2,18 @@
 
 ## 当前结论
 
-FedEx 燃油附加费自动更新可行，但不建议只靠普通 `curl` 抓网页正文。FedEx 页面会对部分脚本请求返回拦截页，稳定方案应该优先抓官方 PDF 表，其次用浏览器自动化兜底。
+FedEx 燃油附加费自动检查可行，但现阶段只做“抓取 + Telegram 通知 + 人工确认”，不自动修改正式报价。
+
+2026-05-24 口径调整：
+
+- Cloudflare Worker 每周一北京时间 10:00 和 14:00 各检查一次。
+- 当前方案不再抓 FedEx 页面当前行，而是读取 EIA 官方 USGC 周价格，并套用 FedEx 官方燃油附加费表。
+- 2026-05-24 实测：Cloudflare Browser Rendering 能启动浏览器，但 FedEx 返回 `It appears you don't have permission to view this webpage`，因此不能作为稳定抓取入口。
+- 当前可用方向：`scripts/06_check_fedex_fuel_official_sources.py` 和 `cloudflare/fuel-surcharge-worker/`。
+- 抓到燃油费后发 Telegram，人工确认后再更新 `data_processed/rate_config.json`。
+- 抓不到或返回 `FedEx | System Down` 时发 `NEED_REVIEW`，网站继续使用上一次确认值。
+
+注意：FedEx 页面会对部分脚本请求返回拦截页，所以自动检查必须判断页面标题、页面长度、关键词和是否解析到可靠日期区间，不允许只看 HTTP 200。
 
 2026-05-20 实测：
 
@@ -15,7 +26,8 @@ FedEx 燃油附加费自动更新可行，但不建议只靠普通 `curl` 抓网
 
 - FedEx 中国燃油附加费页面：`https://www.fedex.com/zh-cn/shipping/surcharges.html`
 - FedEx 中国燃油附加费英文页面：`https://www.fedex.com/en-cn/shipping/surcharges.html`
-- 2026 年 5 月 APAC 燃油费表：`https://www.fedex.com/content/dam/fedex/international/rates/fedex-fuel-table-may-2026-apac.pdf`
+- FedEx 燃油附加费表 PDF：`https://www.fedex.com/content/dam/fedex/international/rates/fedex-fuel-table-may-2026-apac.pdf`
+- EIA USGC Kerosene-Type Jet Fuel 周价格：`https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=W&n=PET&s=EER_EPJK_PF4_RGC_DPG`
 - FedEx 中国旺季附加费页面：`https://www.fedex.com/en-cn/shipping/surcharges/demand-surcharge.html`
 - 2026 年 5 月旺季附加费 PDF：`https://www.fedex.com/content/dam/fedex/international/rates/fedex-ds-2026-may9-638-en-cn.pdf`
 
@@ -32,54 +44,88 @@ FedEx 燃油附加费自动更新可行，但不建议只靠普通 `curl` 抓网
 - 工具默认燃油附加费率：53%
 - 当前页面显示的燃油版本：2026-04-06 至 2026-05-17
 
-## 推荐云端方案
+## 当前云端方案
 
-### 方案 A：Cloudflare Workers Cron + KV
+### EIA 周价格 + FedEx 官方燃油表
 
-适合后续云端部署。
+已新增脚本：`scripts/06_check_fedex_fuel_official_sources.py`
 
-1. Worker 每周一运行一次。
-2. 周一下午或周二再跑一次兜底。
-3. 抓取 FedEx 官方燃油表 PDF 或页面。
-4. 解析最新适用日期和百分比。
-5. 写入 Cloudflare KV：
+用途：
 
-```json
-{
-  "source_rate": 0.48,
-  "buffer_rate": 0.05,
-  "effective_rate": 0.53,
-  "source_url": "https://www.fedex.com/zh-cn/shipping/surcharges.html",
-  "effective_label": "2026-04-06 至 2026-05-17",
-  "fetched_at": "2026-05-17T06:00:00Z"
-}
+- 读取 EIA 官方 USGC kerosene-type jet fuel 周价格。
+- 套用 FedEx 官方燃油附加费表。
+- 计算 FedEx 官网燃油费和官网 +5% 后的工具建议值。
+- 可选发送 Telegram。
+
+手动检查：
+
+```bash
+python3 scripts/06_check_fedex_fuel_official_sources.py
 ```
 
-优点：不依赖本机，适合长期运行。
+发送 Telegram：
 
-风险：如果 FedEx 对 Cloudflare Worker IP 拦截，需要改用浏览器抓取或 GitHub Actions。
+```bash
+TELEGRAM_BOT_TOKEN=... TELEGRAM_CHAT_ID=... python3 scripts/06_check_fedex_fuel_official_sources.py --notify
+```
 
-### 方案 B：GitHub Actions 定时抓取
+### Cloudflare Workers Cron + Telegram
 
-适合先做 MVP。
+已新增目录：`cloudflare/fuel-surcharge-worker/`，当前正式用途是读取 EIA 周价格并套用 FedEx 官方燃油表后发送 Telegram。它不再访问 FedEx 页面当前行。
 
-1. GitHub Actions 每周一和周二运行。
-2. 用 Python 下载官方 PDF。
-3. 解析燃油表。
-4. 生成 `data_processed/fuel_surcharge.json`。
-5. 自动提交或打开 PR。
+同时提供公开接口：
 
-优点：日志清楚、失败容易看、和 Git 版本天然结合。
+```text
+https://fedex-fuel-surcharge-checker.a1exwithkey.workers.dev/fuel-current
+```
 
-风险：公开仓库不适合放内部协议价；需要私有仓库。
+Streamlit 打开时优先读取这个接口更新默认燃油费；接口失败时回退到 `data_processed/rate_config.json`。
+
+运行规则：
+
+- `0 2 * * 1`：北京时间周一 10:00
+- `0 6 * * 1`：北京时间周一 14:00
+
+Worker 输出：
+
+- `OK`：识别到 EIA 周价格，并匹配到 FedEx 表区间。
+- `NEED_REVIEW`：未识别到 EIA 周价格，或价格超出 FedEx 表区间。
+
+Telegram 通知内容：
+
+- EIA 周结束日
+- EIA 周价格
+- FedEx 适用周
+- FedEx 表区间
+- 官网燃油费
+- 工具建议值，即官网燃油费 + 5% 冗余
+- 异常原因
+
+需要配置的 Cloudflare Secret：
+
+```text
+TELEGRAM_BOT_TOKEN
+TELEGRAM_CHAT_ID
+MANUAL_CHECK_TOKEN
+```
+
+部署命令见 `cloudflare/fuel-surcharge-worker/README.md`。
+
+### 后续可选：统计持久化
+
+访问次数、试算次数和留言如果要跨 Streamlit 重启保留，需要迁到 Cloudflare KV/D1 或其它外部存储。燃油费通知本身不会触发 Streamlit 重新部署。
+
+## 旧方案记录
+
+GitHub Actions 方案仍保留为探测记录，但当前优先使用 Cloudflare Worker 做 Telegram 通知。GitHub Actions 不作为燃油费正式更新入口。
 
 ## 建议执行顺序
 
-1. 先用 `scripts/03_probe_fedex_surcharges.py` 做探测和日志留存。
-2. 加一个浏览器抓取版本，验证是否能绕过 `FedEx | System Down`。
-3. 稳定解析 PDF 后，再接 GitHub Actions。
-4. 如果网页部署在 Cloudflare，再把燃油结果迁到 KV 或 D1。
-5. 网页读取云端 JSON，不再硬编码 48%。
+1. 部署 Cloudflare Worker。
+2. 手动访问 `/check`，确认 EIA 周价格和 FedEx 表匹配结果。
+3. 如果结果为 `OK`，启用 Telegram 通知。
+4. 每周一 10:00 和 14:00 自动检查。
+5. 人工确认后，用 `scripts/05_update_fuel_config.py` 更新正式燃油费配置并部署网站。
 
 ## 失败处理
 

@@ -118,6 +118,7 @@ Streamlit 本地网页已读取：
 - 运维手册：`docs/operations_manual.md`
 - 发布检查清单：`docs/release_checklist.md`
 - 燃油费自动更新方案：`docs/fuel_surcharge_automation_plan.md`
+- 燃油费 Cloudflare 定时通知 Worker：`cloudflare/fuel-surcharge-worker/`
 - 云端部署方案：`docs/deployment_plan.md`
 - 每次更新价格表、需求附加费、燃油费或网页逻辑，都要更新 `CHANGELOG.md` 并提交 Git。
 

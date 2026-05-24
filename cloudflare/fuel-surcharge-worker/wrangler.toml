@@ -1,0 +1,10 @@
+name = "fedex-fuel-surcharge-checker"
+main = "src/index.mjs"
+compatibility_date = "2026-05-24"
+
+[triggers]
+# Cloudflare cron uses UTC. These are Monday 10:00 and 14:00 in Asia/Shanghai.
+crons = ["0 2 * * 1", "0 6 * * 1"]
+
+[vars]
+FUEL_BUFFER_RATE = "0.05"
