@@ -11,6 +11,7 @@
 - Worker 新增 Telegram webhook：支持 `/check`、`/status`、`/stats`、`/help` 命令，并提供 `/set-telegram-webhook` 和 `/telegram-webhook-info` 管理入口。
 - Worker 新增公开 `/fuel-current` 接口；Streamlit 打开时优先读取该接口自动更新默认燃油费，失败时回退到 `rate_config.json`。
 - `/fuel-current` 改为优先读取 Cloudflare Cache；定时任务和手动刷新负责更新缓存，避免每个网页访问者触发 EIA 实时抓取。
+- Streamlit 读取燃油接口的缓存时间从 6 小时改为 5 分钟，首屏读取超时降到 1.2 秒，并把本地兜底燃油费更新为 2026-05-25 至 2026-05-31 版本：FedEx 49.50%，本工具 54.50%。
 
 ## V2.6.0-web-polish-2026-05-20 - 2026-05-20
 

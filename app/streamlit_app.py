@@ -38,7 +38,7 @@ FEEDBACK_COLUMNS = ["message_id", "timestamp", "session_id", "message", "likes",
 
 DEFAULT_MARKUP = 1.1
 DEFAULT_EXCHANGE_RATE = 6.8
-FUEL_AUTO_TIMEOUT_SECONDS = 3
+FUEL_AUTO_TIMEOUT_SECONDS = 1.2
 
 
 @st.cache_data
@@ -46,7 +46,7 @@ def load_rate_config() -> dict:
     return json.loads(RATE_CONFIG.read_text(encoding="utf-8"))
 
 
-@st.cache_data(ttl=21600)
+@st.cache_data(ttl=300)
 def fetch_live_fuel_config(endpoint: str) -> dict:
     request = urllib.request.Request(
         endpoint,
