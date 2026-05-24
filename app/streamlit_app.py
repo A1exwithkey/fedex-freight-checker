@@ -53,7 +53,10 @@ def fetch_live_fuel_config(endpoint: str) -> dict:
         headers={"User-Agent": "fedex-freight-checker/1.0"},
     )
     with urllib.request.urlopen(request, timeout=FUEL_AUTO_TIMEOUT_SECONDS) as response:
-        return json.loads(response.read().decode("utf-8"))
+        payload = json.loads(response.read().decode("utf-8"))
+    if payload.get("status") != "OK":
+        raise ValueError("Fuel auto endpoint did not return OK.")
+    return payload
 
 
 def apply_live_fuel_config(rate_config: dict) -> dict:
