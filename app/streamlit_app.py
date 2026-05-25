@@ -170,6 +170,20 @@ def render_v2_styles() -> None:
                 font-size: 12px;
                 margin-bottom: 7px;
             }
+            .v2-weight-callout {
+                border: 1px solid rgba(79, 70, 229, 0.18);
+                border-radius: 10px;
+                background: rgba(238, 240, 255, 0.72);
+                color: #34384d;
+                font-size: 12px;
+                line-height: 1.45;
+                padding: 9px 11px;
+                margin: 0 0 8px;
+            }
+            .v2-weight-callout strong {
+                color: var(--accent);
+                font-weight: 760;
+            }
             .v2-mini-value {
                 color: var(--ink);
                 font-size: 20px;
@@ -579,6 +593,10 @@ def main() -> None:
 
             col3, col4 = st.columns(2)
             with col3:
+                st.markdown(
+                    '<div class="v2-weight-callout"><strong>先填重量</strong>，系统会自动匹配固定价或每公斤价。</div>',
+                    unsafe_allow_html=True,
+                )
                 weight_kg = st.number_input("实际重量 kg", min_value=0.5, value=10.0, step=0.5, on_change=mark_user_edited_input)
             with col4:
                 fuel_rate = st.number_input(
