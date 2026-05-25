@@ -121,10 +121,24 @@ def render_v2_styles() -> None:
                 font-weight: 700;
             }
             .v2-note {
-                color: var(--muted);
-                font-size: 9.5px;
-                line-height: 1.6;
+                color: var(--muted) !important;
+                font-size: 11px !important;
+                line-height: 1.45 !important;
                 margin: 0 0 14px;
+            }
+            .v2-left-panel-marker {
+                display: none;
+            }
+            div[data-testid="stVerticalBlockBorderWrapper"]:has(.v2-left-panel-marker) {
+                min-height: 560px;
+            }
+            .v2-input-panel-title {
+                color: var(--ink);
+                font-size: 26px;
+                font-weight: 780;
+                line-height: 1.1;
+                letter-spacing: 0;
+                margin: 4px 0 18px;
             }
             .v2-result-card {
                 border-radius: 14px;
@@ -135,6 +149,26 @@ def render_v2_styles() -> None:
                     radial-gradient(circle at 88% 12%, rgba(255,255,255,0.20), transparent 15rem);
                 box-shadow: 0 16px 36px rgba(38, 53, 102, 0.18);
                 margin-bottom: 14px;
+            }
+            .v2-input-section {
+                display: flex;
+                align-items: center;
+                gap: 9px;
+                color: var(--ink);
+                font-size: 14px;
+                font-weight: 760;
+                margin: 23px 0 11px;
+            }
+            .v2-input-section:first-of-type {
+                margin-top: 2px;
+            }
+            .v2-input-section::before {
+                content: "";
+                width: 4px;
+                height: 19px;
+                border-radius: 999px;
+                background: linear-gradient(180deg, #4f46e5, #125c82);
+                box-shadow: 0 6px 14px rgba(79, 70, 229, 0.18);
             }
             .v2-result-label {
                 font-size: 13px;
@@ -169,20 +203,6 @@ def render_v2_styles() -> None:
                 color: var(--muted);
                 font-size: 12px;
                 margin-bottom: 7px;
-            }
-            .v2-weight-callout {
-                border: 1px solid rgba(79, 70, 229, 0.18);
-                border-radius: 10px;
-                background: rgba(238, 240, 255, 0.72);
-                color: #34384d;
-                font-size: 12px;
-                line-height: 1.45;
-                padding: 9px 11px;
-                margin: 0 0 8px;
-            }
-            .v2-weight-callout strong {
-                color: var(--accent);
-                font-weight: 760;
             }
             .v2-mini-value {
                 color: var(--ink);
@@ -252,6 +272,13 @@ def render_v2_styles() -> None:
             }
             [data-testid="stPopoverBody"] strong {
                 color: #222638;
+            }
+            div[data-testid="stNumberInput"] input {
+                border-color: rgba(79, 70, 229, 0.18);
+            }
+            div[data-testid="stNumberInput"] input:focus {
+                border-color: rgba(79, 70, 229, 0.55);
+                box-shadow: 0 0 0 1px rgba(79, 70, 229, 0.12);
             }
             @media (max-width: 760px) {
                 .block-container { padding-top: 1.5rem; }
@@ -561,53 +588,62 @@ def main() -> None:
             <span class="v2-chip">燃油费 <strong>{rate_config['fuel_effective_label']}</strong></span>
             <span class="v2-chip">燃油费 <strong>{rate_config['fedex_fuel_rate']:.2%}</strong> + 冗余 5% = <strong>{rate_config['default_fuel_rate']:.2%}</strong></span>
         </div>
-        <p class="v2-note">
+        <div class="v2-note">
             本工具仅用于内部运费快速预估，计算结果不作为最终结算依据；超过 68kg、偏远地区、特殊处理、税费及其他特殊案例需单独复核，实际费用以 FedEx 账单和公司正式报价流程为准。
-        </p>
+        </div>
         """,
         unsafe_allow_html=True,
     )
 
     aliases, fixed, per_kg, dropdown = load_data()
 
-    work_col, result_col = st.columns([1.06, 0.94], gap="large")
+    work_col, result_col = st.columns([1, 1], gap="large")
     with work_col:
         with st.container(border=True):
-            st.subheader("输入区")
-            selected_country = st.selectbox(
-                "目的地（下拉）",
-                dropdown,
-                index=dropdown.index("United States - Other Areas (美国其他地区)")
-                if "United States - Other Areas (美国其他地区)" in dropdown
-                else 0,
-                key="selected_country",
-                on_change=mark_dropdown_active,
-            )
-            manual_country = st.text_input(
-                "目的地（手输，可选）",
-                value="",
-                key="manual_country",
-                on_change=mark_manual_active,
-                args=(aliases, dropdown),
+            st.markdown('<div class="v2-left-panel-marker"></div>', unsafe_allow_html=True)
+            st.markdown('<div class="v2-input-panel-title">输入区</div>', unsafe_allow_html=True)
+            st.markdown('<div class="v2-input-section">目的地</div>', unsafe_allow_html=True)
+            dest_col, manual_col = st.columns([1.35, 0.75])
+            with dest_col:
+                selected_country = st.selectbox(
+                    "下拉选择",
+                    dropdown,
+                    index=dropdown.index("United States - Other Areas (美国其他地区)")
+                    if "United States - Other Areas (美国其他地区)" in dropdown
+                    else 0,
+                    key="selected_country",
+                    on_change=mark_dropdown_active,
+                )
+            with manual_col:
+                manual_country = st.text_input(
+                    "手输可选",
+                    value="",
+                    key="manual_country",
+                    on_change=mark_manual_active,
+                    args=(aliases, dropdown),
+                )
+
+            st.markdown('<div class="v2-input-section">货件重量</div>', unsafe_allow_html=True)
+            weight_kg = st.number_input(
+                "实际重量 kg",
+                min_value=0.5,
+                value=10.0,
+                step=0.5,
+                format="%.2f",
+                on_change=mark_user_edited_input,
             )
 
-            col3, col4 = st.columns(2)
-            with col3:
-                st.markdown(
-                    '<div class="v2-weight-callout"><strong>先填重量</strong>，系统会自动匹配固定价或每公斤价。</div>',
-                    unsafe_allow_html=True,
-                )
-                weight_kg = st.number_input("实际重量 kg", min_value=0.5, value=10.0, step=0.5, on_change=mark_user_edited_input)
+            st.markdown('<div class="v2-input-section">报价参数</div>', unsafe_allow_html=True)
+            col4, col5, col6 = st.columns(3)
             with col4:
                 fuel_rate = st.number_input(
-                    "燃油附加费率（官网+5%）",
+                    "燃油附加费率",
                     min_value=0.0,
                     value=float(rate_config["default_fuel_rate"]),
                     step=0.01,
                     format="%.2f",
                     on_change=mark_user_edited_input,
                 )
-            col5, col6 = st.columns(2)
             with col5:
                 markup = st.number_input("冗余系数", min_value=1.0, value=DEFAULT_MARKUP, step=0.01, format="%.2f", on_change=mark_user_edited_input)
             with col6:
