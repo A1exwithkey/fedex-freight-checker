@@ -545,7 +545,7 @@ def main() -> None:
             <span class="v2-chip">IP 协议价 <strong>{rate_config['ip_rate_effective_date']}</strong></span>
             <span class="v2-chip">旺季附加费 <strong>{rate_config['seasonal_surcharge_effective_date']}</strong></span>
             <span class="v2-chip">燃油费 <strong>{rate_config['fuel_effective_label']}</strong></span>
-            <span class="v2-chip">FedEx <strong>{rate_config['fedex_fuel_rate']:.2%}</strong> + 冗余 = <strong>{rate_config['default_fuel_rate']:.2%}</strong></span>
+            <span class="v2-chip">燃油费 <strong>{rate_config['fedex_fuel_rate']:.2%}</strong> + 冗余 5% = <strong>{rate_config['default_fuel_rate']:.2%}</strong></span>
         </div>
         <p class="v2-note">
             本工具仅用于内部运费快速预估，计算结果不作为最终结算依据；超过 68kg、偏远地区、特殊处理、税费及其他特殊案例需单独复核，实际费用以 FedEx 账单和公司正式报价流程为准。
