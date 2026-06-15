@@ -6,3 +6,9 @@ __pycache__/
 .wrangler/
 logs/
 outputs/~$*.xlsx
+vercel_app/node_modules/
+vercel_app/.next/
+vercel_app/.vercel/
+vercel_app/out/
+vercel_app/design_options/
+vercel_app/design_review_snapshot.html

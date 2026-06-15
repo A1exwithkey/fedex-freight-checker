@@ -1,0 +1,7 @@
+node_modules/
+.next/
+out/
+design_options/
+design_review_snapshot.html
+*.log
+.DS_Store

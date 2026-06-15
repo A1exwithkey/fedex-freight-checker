@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## V3.1.0-github-vercel-automation-2026-06-15 - 2026-06-15
+
+- 将网页版本更新为 V3.1，网页版本日期更新为 2026-06-15。
+- 将燃油费配置更新为 2026-06-15 至 2026-06-21：FedEx 43.00%，工具按 +3% 冗余后为 46.00%。
+- 将 `vercel_app/` 作为 GitHub / Vercel 长期部署入口纳入项目管理，避免继续依赖手动 Vercel 快照。
+- 明确长期自动更新链路：Cloudflare Worker 更新 `vercel_app/data/rate_config.json`，GitHub commit 触发 Vercel 自动部署。
+- 更新 README、部署方案和运维手册，记录 GitHub/Vercel 连接要求和当前燃油费版本。
+
+## V3.0.1-docs-maintenance-2026-06-07 - 2026-06-07
+
+- 更新 `README.md`，将项目主线改为 Vercel / Next.js 网页版，并同步 IP + IE、3% 燃油冗余、Supabase 统计和当前线上地址。
+- 更新 `docs/release_checklist.md`，将发布检查项从 Streamlit / IP 单服务调整为 Vercel / IP+IE 同屏报价。
+- 更新 `docs/operations_manual.md`、`docs/fuel_surcharge_automation_plan.md`、`docs/deployment_plan.md` 和 `docs/web_operations_next_steps.md`，统一当前 Vercel / Supabase / Cloudflare Worker 维护口径。
+- 更新 `cloudflare/fuel-surcharge-worker/README.md`，修正配置路径、3% 燃油冗余、Vercel 自动部署和 Telegram `/stats` 说明。
+- 修正 Cloudflare Worker Telegram `/stats` 文案，不再引用已废弃的 Streamlit 本地 CSV 统计。
+- 本次不改变报价公式、费率数据、UI 或部署配置。
+
 ## V2.6.1-fuel-worker-2026-05-24 - 2026-05-24
 
 - 新增 `cloudflare/fuel-surcharge-worker/`，用于定时读取 EIA 官方 USGC 周价格并套用 FedEx 官方燃油附加费表后发送 Telegram 通知。

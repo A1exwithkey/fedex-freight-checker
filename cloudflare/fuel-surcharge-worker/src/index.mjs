@@ -3,13 +3,13 @@ const EIA_URL =
 const FEDEX_TABLE_URL =
   "https://www.fedex.com/content/dam/fedex/international/rates/fedex-fuel-table-may-2026-apac.pdf";
 const FEDEX_TABLE_EFFECTIVE = "Effective May 18, 2026";
-const DEFAULT_BUFFER_RATE = 0.05;
+const DEFAULT_BUFFER_RATE = 0.03;
 const FUEL_CACHE_URL = "https://fedex-fuel-surcharge-checker.internal/fuel-current-cache";
 const FUEL_CACHE_TTL_SECONDS = 60 * 60 * 24 * 7;
 const DEFAULT_GITHUB_OWNER = "A1exwithkey";
 const DEFAULT_GITHUB_REPO = "fedex-freight-checker";
 const DEFAULT_GITHUB_BRANCH = "main";
-const RATE_CONFIG_PATH = "data_processed/rate_config.json";
+const RATE_CONFIG_PATH = "vercel_app/data/rate_config.json";
 
 const MONTHS = {
   Jan: 1,
@@ -158,7 +158,12 @@ async function fetchEiaHtml() {
 
 function buildPayload(eia, bufferRate) {
   const prices = parseEiaWeeklyPrices(eia.html);
-  const latest = prices.length ? prices[prices.length - 1] : null;
+  const today = todayInBeijing();
+  const eligiblePrices = prices.filter(
+    (price) => fedexApplyWeek(price.week_end_date).start_date <= today
+  );
+  const latest = eligiblePrices.length ? eligiblePrices[eligiblePrices.length - 1] : null;
+  const newest = prices.length ? prices[prices.length - 1] : null;
   const table = fedexFuelTable();
   const matched = latest
     ? lookupSurcharge(latest.usgc_price_usd_per_gallon, table)
@@ -178,6 +183,7 @@ function buildPayload(eia, bufferRate) {
       content_type: eia.content_type,
     },
     latest_eia_price: latest,
+    newest_eia_price: newest,
     fedex_apply_week: latest ? fedexApplyWeek(latest.week_end_date) : null,
     matched_fedex_table_row: matched,
     fedex_fuel_rate_percent: matched ? matched.surcharge_percent : null,
@@ -188,7 +194,7 @@ function buildPayload(eia, bufferRate) {
     recent_eia_prices: prices.slice(-6),
     note:
       status === "OK"
-        ? "FedEx applies a two-week lag. The latest EIA week price is matched to the FedEx trigger table."
+        ? "FedEx applies a two-week lag. The current effective EIA week price is matched to the FedEx trigger table."
         : "Could not match latest EIA price to the FedEx fuel table.",
   };
 }
@@ -216,12 +222,12 @@ function buildTelegramMessage(payload) {
   }
   if (payload.fedex_fuel_rate_percent !== null) {
     lines.push(`官网燃油费：${payload.fedex_fuel_rate_percent.toFixed(2)}%`);
-    lines.push(`工具建议值：${payload.tool_fuel_rate_percent.toFixed(2)}%（官网 +5%冗余）`);
+    lines.push(`工具建议值：${payload.tool_fuel_rate_percent.toFixed(2)}%（官网 +3%冗余）`);
   }
   if (payload.github_update) {
     const update = payload.github_update;
     if (update.status === "UPDATED") {
-      lines.push(`网页配置：已提交 GitHub，等待 Streamlit 自动部署`);
+      lines.push(`网页配置：已提交 GitHub，等待 Vercel 自动部署`);
       lines.push(`Commit：${update.commit_sha || "已提交"}`);
     } else if (update.status === "UNCHANGED") {
       lines.push("网页配置：无需更新，GitHub 已是当前燃油费");
@@ -325,23 +331,45 @@ async function githubRequest(env, path, options = {}) {
 }
 
 function buildRateConfigFromPayload(currentConfig, payload) {
-  return {
-    ...currentConfig,
-    web_version: todayInBeijing(),
-    fuel_effective_label: payload.fedex_apply_week.label,
+  const nextFuelItem = {
+    start_date: payload.fedex_apply_week.start_date,
+    end_date: payload.fedex_apply_week.end_date,
+    label: payload.fedex_apply_week.label,
     fedex_fuel_rate: Number((payload.fedex_fuel_rate_percent / 100).toFixed(6)),
     fuel_buffer_rate: Number((payload.fuel_buffer_percent / 100).toFixed(6)),
     default_fuel_rate: Number((payload.tool_fuel_rate_percent / 100).toFixed(6)),
+  };
+  const existingSchedule = Array.isArray(currentConfig.fuel_schedule)
+    ? currentConfig.fuel_schedule
+    : [];
+  const fuelSchedule = [
+    ...existingSchedule.filter((item) => item.start_date !== nextFuelItem.start_date),
+    nextFuelItem,
+  ]
+    .sort((a, b) => String(a.start_date).localeCompare(String(b.start_date)))
+    .slice(-4);
+
+  return {
+    ...currentConfig,
+    web_version: todayInBeijing(),
+    fuel_effective_label: nextFuelItem.label,
+    fedex_fuel_rate: nextFuelItem.fedex_fuel_rate,
+    fuel_buffer_rate: nextFuelItem.fuel_buffer_rate,
+    default_fuel_rate: nextFuelItem.default_fuel_rate,
+    fuel_schedule: fuelSchedule,
     fuel_update_method: "Auto updated by Cloudflare Worker from EIA weekly USGC price and FedEx fuel table.",
     updated_at: todayInBeijing(),
   };
 }
 
 function fuelConfigChanged(currentConfig, nextConfig) {
+  const currentSchedule = JSON.stringify(currentConfig.fuel_schedule || []);
+  const nextSchedule = JSON.stringify(nextConfig.fuel_schedule || []);
   return (
     currentConfig.fuel_effective_label !== nextConfig.fuel_effective_label ||
     Number(currentConfig.fedex_fuel_rate) !== Number(nextConfig.fedex_fuel_rate) ||
-    Number(currentConfig.default_fuel_rate) !== Number(nextConfig.default_fuel_rate)
+    Number(currentConfig.default_fuel_rate) !== Number(nextConfig.default_fuel_rate) ||
+    currentSchedule !== nextSchedule
   );
 }
 
@@ -493,8 +521,9 @@ function statsMessage() {
   return [
     "网站统计",
     "",
-    "访问和试算次数目前仍在 Streamlit 本地 CSV 中，重新部署会丢失。",
-    "下一步需要接 Cloudflare D1 后，/stats 才能显示长期保存的数据。",
+    "访问人数、打开次数和试算次数已由 Vercel API 写入 Supabase。",
+    "网页底部会显示当前汇总数据；更细的访问趋势请看 Vercel Analytics。",
+    "本机器人暂不直接读取 Supabase，避免在 Worker 中重复维护数据库密钥。",
   ].join("\n");
 }
 

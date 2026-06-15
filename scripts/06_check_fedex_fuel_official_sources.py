@@ -25,7 +25,7 @@ from typing import Any
 EIA_URL = "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=W&n=PET&s=EER_EPJK_PF4_RGC_DPG"
 FEDEX_TABLE_URL = "https://www.fedex.com/content/dam/fedex/international/rates/fedex-fuel-table-may-2026-apac.pdf"
 FEDEX_TABLE_EFFECTIVE = "Effective May 18, 2026"
-DEFAULT_BUFFER_RATE = 0.05
+DEFAULT_BUFFER_RATE = 0.03
 
 MONTHS = {
     "Jan": 1,
@@ -138,7 +138,14 @@ def fedex_apply_week(eia_week_end: str) -> dict[str, str]:
 def build_payload(buffer_rate: float) -> dict[str, Any]:
     html = fetch_text(EIA_URL)
     prices = parse_eia_weekly_prices(html)
-    latest = prices[-1] if prices else None
+    today = datetime.now(timezone(timedelta(hours=8))).date()
+    eligible_prices = [
+        price
+        for price in prices
+        if date.fromisoformat(fedex_apply_week(price["week_end_date"])["start_date"]) <= today
+    ]
+    latest = eligible_prices[-1] if eligible_prices else None
+    newest = prices[-1] if prices else None
     table = fedex_fuel_table()
     selected_row = lookup_surcharge(latest["usgc_price_usd_per_gallon"], table) if latest else None
     status = "OK" if latest and selected_row else "NEED_REVIEW"
@@ -152,6 +159,7 @@ def build_payload(buffer_rate: float) -> dict[str, Any]:
             "fedex_fuel_table_effective": FEDEX_TABLE_EFFECTIVE,
         },
         "latest_eia_price": latest,
+        "newest_eia_price": newest,
         "fedex_apply_week": fedex_apply_week(latest["week_end_date"]) if latest else None,
         "matched_fedex_table_row": selected_row,
         "fedex_fuel_rate_percent": selected_row["surcharge_percent"] if selected_row else None,
@@ -159,7 +167,7 @@ def build_payload(buffer_rate: float) -> dict[str, Any]:
         "tool_fuel_rate_percent": selected_row["surcharge_percent"] + buffer_rate * 100 if selected_row else None,
         "recent_eia_prices": prices[-6:],
         "note": (
-            "FedEx applies a two-week lag. The latest EIA week price is matched to the FedEx trigger table."
+            "FedEx applies a two-week lag. The current effective EIA week price is matched to the FedEx trigger table."
             if status == "OK"
             else "Could not match latest EIA price to the FedEx fuel table."
         ),
@@ -186,7 +194,7 @@ def build_message(payload: dict[str, Any]) -> str:
         lines.append(f"FedEx 区间：${row['min_usd']:.2f} - ${row['max_usd']:.2f}")
     if payload.get("fedex_fuel_rate_percent") is not None:
         lines.append(f"官网燃油费：{payload['fedex_fuel_rate_percent']:.2f}%")
-        lines.append(f"工具建议值：{payload['tool_fuel_rate_percent']:.2f}%（官网 +5%冗余）")
+        lines.append(f"工具建议值：{payload['tool_fuel_rate_percent']:.2f}%（官网 +3%冗余）")
     lines.append(f"FedEx 表版本：{payload['sources']['fedex_fuel_table_effective']}")
     lines.append("说明：结果仍建议人工确认后再更新正式报价。")
     return "\n".join(lines)

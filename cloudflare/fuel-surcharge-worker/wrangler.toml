@@ -7,4 +7,4 @@ compatibility_date = "2026-05-24"
 crons = ["0 2 * * 1", "0 6 * * 1"]
 
 [vars]
-FUEL_BUFFER_RATE = "0.05"
+FUEL_BUFFER_RATE = "0.03"

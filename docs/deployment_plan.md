@@ -2,98 +2,145 @@
 
 ## 当前目标
 
-先上一个最简单的云端试用版，让少数朋友可以通过网页链接访问和试算。
+提供一个简单、稳定、可分享的内部网页，让用户通过链接访问 FedEx IP / IE 运费试算。
 
-不做复杂权限系统，不做数据库，不做自动燃油抓取首版。
+当前已采用 Vercel / Next.js，不再以 Streamlit Cloud 作为主部署方案。
 
-## 推荐方案
+## 当前部署方案
 
-使用 Streamlit Community Cloud。
+- 平台：Vercel
+- 项目名：`microsensor-fedex`
+- 应用目录：`vercel_app/`
+- 主网址：`https://microsensor-fedex.vercel.app/`
+- 备用网址：`https://vercelapp-brown-mu.vercel.app/`
+- 部署触发：GitHub 主分支出现新 commit 后自动部署
 
-原因：
+重要：不要再把 Production 当作一次性 `vercel deploy` 快照维护。`vercel_app/` 必须提交到 GitHub，Vercel 项目必须连接同一个 GitHub 仓库，否则 Cloudflare Worker 自动更新燃油费后不会触发网页更新。
 
-- 当前网页已经是 Streamlit。
-- 不需要改成前后端项目。
-- 可以直接从 GitHub 仓库部署。
-- 适合先给少数人试用。
+## 本地开发
 
-## 仓库建议
-
-建议新建一个 GitHub 私有仓库，只放 `fedex-freight-checker` 这个项目。
-
-不要把 `/Users/alex./Documents/New project` 外层其它历史文件推上去。
-
-云端运行实际只需要：
-
-```text
-app/
-data_processed/
-.streamlit/
-requirements.txt
-README.md
-calculation_rules.md
-field_dictionary.md
-CHANGELOG.md
-docs/
+```bash
+cd vercel_app
+npm install
+npm run dev
 ```
 
-`data_raw/` 和 `outputs/` 不需要给网页运行使用。首版部署时可以先不放进云端仓库，避免原始协议价 PDF 和历史 Excel 输出被不必要地上传。
+本地验证：
 
-## Streamlit Cloud 设置
-
-部署入口：
-
-```text
-app/streamlit_app.py
+```bash
+cd vercel_app
+npm run smoke
+npm run build
 ```
 
-Python 版本：
+## Vercel 配置
+
+Build 设置：
 
 ```text
-3.12
+Framework Preset: Next.js
+Root Directory: vercel_app
+Build Command: npm run build
+Install Command: npm install
+Output Directory: 默认
 ```
 
-依赖文件：
+Git 设置：
 
 ```text
-requirements.txt
+Repository: A1exwithkey/fedex-freight-checker
+Production Branch: main
+Root Directory: vercel_app
 ```
 
-建议先设置为 private app，或者只分享给少数测试用户。
+环境变量：
 
-## 最小发布流程
+```text
+SUPABASE_URL
+SUPABASE_SERVICE_ROLE_KEY
+```
 
-1. 本地确认页面没问题。
-2. 新建 GitHub 私有仓库。
-3. 只上传云端运行所需文件。
-4. 在 Streamlit Community Cloud 创建 app。
-5. 选择仓库、分支和入口文件 `app/streamlit_app.py`。
-6. 拿到网页链接后发给测试用户。
+说明：
+
+- `SUPABASE_SERVICE_ROLE_KEY` 只放在 Vercel 环境变量里。
+- 不要把 Supabase secret 写入代码、README 或截图。
+
+## 域名
+
+当前免费 Vercel 子域名：
+
+```text
+microsensor-fedex.vercel.app
+```
+
+Vercel 项目内路径：
+
+```text
+Project Settings -> Domains
+```
+
+如后续要绑定公司自有域名，需要在域名服务商处配置 DNS 记录，并按 Vercel 提示完成验证。
+
+## 数据文件
+
+网页运行需要：
+
+```text
+vercel_app/data/fedex_ip_ie_data.json
+vercel_app/data/rate_config.json
+```
+
+不需要把原始 PDF 作为网页可下载资产暴露。
+
+## 统计
+
+当前统计方式：
+
+- 前端记录访问和试算事件。
+- `vercel_app/app/api/stats/route.ts` 写入 Supabase。
+- 页面底部显示访问人数、打开次数、试算次数。
+- Vercel Analytics 用来看页面访问趋势。
+
+Supabase 表结构：
+
+```text
+vercel_app/supabase_usage_stats.sql
+```
+
+## 燃油费自动更新
+
+当前由 Cloudflare Worker 负责：
+
+1. 定时检查 EIA 周价格。
+2. 套用 FedEx APAC 燃油表。
+3. 更新 `vercel_app/data/rate_config.json`。
+4. GitHub commit 触发 Vercel 自动部署。
+5. Telegram 发送通知。
+
+详见：
+
+```text
+docs/fuel_surcharge_automation_plan.md
+cloudflare/fuel-surcharge-worker/README.md
+```
 
 ## 反馈入口
 
-当前网页的“反馈留言”只是 UI 占位，不会自动发送。
+当前网页的“反馈留言”仍不是正式反馈系统。
 
-首版建议先改成其中一种：
+可选方案：
 
-- `mailto:` 邮件链接，最简单。
-- 飞书/企业微信/Google Form 表单链接。
-- 后续再接数据库或自动邮件。
+- 短期：改成邮箱提示。
+- 中期：接 Supabase `feedback_messages` 表。
+- 长期：做管理员页面查看和处理留言。
 
-## 后续增强
+## 上线前检查
 
-1. 按需求附加费 PDF 第 3-4 页脚注重建区域国家映射。
-2. 新增燃油费自动抓取脚本。
-3. 每周一和周二定时抓取燃油费。
-4. 把燃油费结果写入 JSON，网页读取 JSON。
-5. 增加简单访问控制或私有分享名单。
-6. 添加正式部署记录和回滚说明。
-
-## 上云前检查
-
-- `fedex-freight-checker/` Git 状态干净。
-- `data_processed/` 数据已更新。
-- 页面顶部版本日期正确。
-- 页面免责声明存在。
-- 原始 PDF 没有通过网页暴露下载入口。
-- 反馈入口说明清楚。
+- `npm run smoke` 通过。
+- `npm run build` 通过。
+- 首页版本、协议价日期、旺季附加费日期、燃油适用周、汇率日期正确。
+- 目的地下拉和手输都能工作。
+- 修改重量后 IP / IE 同屏报价更新。
+- 页面底部统计可读。
+- 原始 PDF 没有作为公开下载入口。
+- Vercel Production 部署成功。

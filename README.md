@@ -1,85 +1,96 @@
 # fedex-freight-checker / 运费核价助手
 
-当前版本：V2.6.1-fuel-worker-2026-05-24
+当前版本：V3.1-web-2026-06-15
 
-这是一个内部 FedEx 运费核价小工具项目。当前阶段同时维护 Excel 计算母版和 Streamlit 本地网页试算版；等真实订单校验稳定后，再考虑内网或云端访问。
+这是一个内部 FedEx 运费快速预估工具。当前主线是 Vercel / Next.js 网页版，Excel 和 Streamlit 版本保留为历史验证资产。
+
+线上地址：
+
+- 主网址：<https://microsensor-fedex.vercel.app/>
+- 备用网址：<https://vercelapp-brown-mu.vercel.app/>
 
 ## 业务范围
 
-只包含：
+包含：
 
 - 中国 FedEx 国际出口
-- FedEx 国际优先快递服务出口，即 IP
+- FedEx IP 和 IE
 - 包裹价格
 - 0.5kg-20.5kg 固定费率
 - 21kg 及以上每公斤费率
+- 旺季附加费
+- 燃油附加费
+- CNY/USD 汇率
 
 不包含：
 
-- IPE、IE
+- IPE
 - 进口
 - 第三方支付
 - 重货
 - 快递封、快递袋
 - 税费、偏远地区附加费、特殊处理费等其它附加费
 
-## 使用方式
+## 当前网页
 
-先安装依赖：
-
-```bash
-python3 -m pip install -r requirements.txt
-```
-
-重新提取并校验数据：
-
-```bash
-python3 scripts/01_extract_ip_data.py
-```
-
-重新生成 Excel：
-
-```bash
-python3 scripts/02_build_excel.py
-```
-
-生成文件：
+网页目录：
 
 ```text
-outputs/运费核价助手_FedEx_IP_V2.5_网页试算版.xlsx
+vercel_app/
 ```
 
-本地启动网页试算版：
+本地启动：
 
 ```bash
-streamlit run app/streamlit_app.py
+cd vercel_app
+npm install
+npm run dev
 ```
+
+本地验证：
+
+```bash
+cd vercel_app
+npm run smoke
+npm run build
+```
+
+部署方式：
+
+- Vercel 项目：`microsensor-fedex`
+- GitHub 有新 commit 后，Vercel 自动部署 Production
+- Vercel Domains 已绑定 `microsensor-fedex.vercel.app`
 
 ## 输入输出
 
-Excel 的 `calculator` sheet 输入：
+输入：
 
-- `country_dropdown`：英文 A-Z 目的地下拉，显示格式为 `English (中文)`
-- `country_manual_input`：可选手动输入，填写时优先于下拉，例如 `USA`、`Germany`、`德国`
-- `weight_kg`：实际重量 kg
-- `fuel_surcharge_rate`：燃油附加费率，默认 0.48
-- `redundancy_factor`：冗余系数，默认 1.1
-- `exchange_rate_cny_usd`：汇率，默认 6.8
+- `destination`：目的地，下拉或手输
+- `weight_kg`：实际重量 kg，保留两位小数
+- `fuel_surcharge_rate`：燃油附加费率，默认读取配置
+- `markup`：冗余系数，默认 1.1
+- `exchange_rate_cny_usd`：CNY/USD 汇率，默认从汇率接口读取，失败时回退配置值
 
 输出：
 
-- `ip_zone`
-- `matched_country`
-- `chargeable_weight_for_lookup`
-- `rate_type`
-- `base_freight_cny`
-- `demand_region`
-- `demand_surcharge_cny`
-- `freight_before_fuel_cny`
-- `freight_with_fuel_cny`
-- `final_cny`
-- `final_usd`
-- `status`
+- IP 报价
+- IE 报价
+- 匹配国家/地区
+- IP / IE 分区
+- 旺季大区
+- 查表重量
+- 基础运费 CNY
+- 旺季附加费 CNY
+- 燃油附加费 CNY
+- 最终 CNY
+- 最终 USD
+- 状态：`OK` 或 `Need Review`
+
+计算公式：
+
+```text
+Final USD = (Base Freight CNY + Seasonal Surcharge CNY) × (1 + Fuel Rate) × Markup / Exchange Rate
+```
 
 ## 美国逻辑
 
@@ -88,53 +99,72 @@ Excel 的 `calculator` sheet 输入：
 - 用户输入 `USA` / `United States` / `美国` 默认映射为美国其他地区 Zone 2
 - 只有明确输入美国西部，或后续增加邮编判断，才映射 Zone 1
 
-## 版本日期
+## 数据和版本
 
-- 工具版本：2026-05-24
-- IP 协议价：2026-01-05
-- 旺季附加费：2026-05-11，仅使用”中国大陆出口的国际货件”列
-- 燃油附加费：配置化维护，当前 FedEx 49.50%，本工具 54.50%（含 5% 冗余），每周一 Cloudflare Worker 自动检查更新
+- 网页版本：2026-06-15
+- IP / IE 协议价：2026-01-05
+- 旺季附加费：2026-05-11
+- 燃油冗余：官网燃油费 + 3%
+- 当前燃油费：2026-06-15 至 2026-06-21，FedEx 43%，工具 46%
+- 汇率：网页运行时读取 ECB 汇率接口，人工仍可覆盖
 
-## 当前数据状态
+网页运行数据：
 
-- IP 包裹固定费率：943 行，等于 41 个重量档 × 23 个 Zone
-- IP 21kg+ 每公斤费率：161 行，等于 7 个重量段 × 23 个 Zone
-- V1 Excel 费率表与 PDF 抽取值对比：0 个差异
-- V1 Excel 国家分区表发现换行粘连风险：14 行，V2 已按 PDF 重新解析
-- 需求附加费区域：210 个 OK，3 个 Need Review
+- `vercel_app/data/fedex_ip_ie_data.json`
+- `vercel_app/data/rate_config.json`
 
-## 后续网页计划
+历史加工数据：
 
-Streamlit 本地网页已读取：
+- `data_processed/`
+- `outputs/`
 
-- `data_processed/country_alias.csv`
-- `data_processed/ip_parcel_rate_0_20_5kg.csv`
-- `data_processed/ip_parcel_rate_21kg_plus.csv`
+## 统计
 
-网页逻辑先复刻 Excel 的 `calculator`，不要新增业务范围。美国邮编自动分区、访问控制可以作为后续增强项。
+网页底部显示：
 
-## Cloudflare Worker 燃油费自动更新
+- 访问人数
+- 打开次数
+- 试算次数
 
-`cloudflare/fuel-surcharge-worker/` 每周一 10:00 和 14:00（北京时间）通过 Cloudflare Cron 自动：
+统计链路：
 
-1. 抓取 EIA 官方 USGC 航空燃油周价格
-2. 匹配 FedEx 官方燃油附加费表
-3. 更新 `data_processed/rate_config.json` 并自动 push 到 GitHub
-4. Streamlit Cloud 检测到 repo 变更后自动重新部署
-5. 通过 Telegram Bot 通知更新结果
+- 前端调用 `vercel_app/app/api/stats/route.ts`
+- Vercel Serverless Function 写入 Supabase
+- Supabase 表结构见 `vercel_app/supabase_usage_stats.sql`
 
-Worker 公开 `/fuel-current` 端点供查询，支持 `/check`、`/status`、`/stats` 等 Telegram 命令。
-详见 `cloudflare/fuel-surcharge-worker/README.md`。
+说明：
+
+- Vercel Analytics 用来看页面访问趋势。
+- Supabase 统计用于网页底部的业务计数。
+- 这两套统计口径不同，不要混用。
+
+## 燃油费自动更新
+
+`cloudflare/fuel-surcharge-worker/` 用于定时检查燃油费：
+
+1. 读取 EIA 官方 USGC 航空燃油周价格
+2. 套用 FedEx APAC 燃油附加费表
+3. 生成当前适用周和下一适用周的燃油配置
+4. 如果配置变化，提交 GitHub
+5. Vercel 连接 GitHub 后，监听 GitHub commit 自动部署
+6. Telegram Bot 发送检查结果
+
+当前策略：
+
+- 燃油费提前写入 `fuel_schedule`
+- 到生效日期当天，网页按北京时间自动切换当前适用燃油费
+- 网页打开时不实时抓 FedEx 或 EIA，避免首屏变慢
 
 ## 项目维护
 
 - 运维手册：`docs/operations_manual.md`
 - 发布检查清单：`docs/release_checklist.md`
 - 燃油费自动更新方案：`docs/fuel_surcharge_automation_plan.md`
-- 燃油费 Cloudflare 定时通知 Worker：`cloudflare/fuel-surcharge-worker/`
-- 云端部署方案：`docs/deployment_plan.md`
-- 每次更新价格表、需求附加费、燃油费或网页逻辑，都要更新 `CHANGELOG.md` 并提交 Git。
+- Cloudflare Worker：`cloudflare/fuel-surcharge-worker/`
+- 每次更新价格表、旺季附加费、燃油费、汇率逻辑或网页逻辑，都要更新 `CHANGELOG.md`
 
-## 外部经验参考
+## 当前风险点
 
-调研笔记见 `docs/online_research_notes.md`。当前结论：我们的 Excel 版先坚持“协议价静态核价”，不要提前混入实时 API；网页版优先补国家/邮编校验、体积重、附加费提示和版本化数据源。
+- FedEx 燃油表目前由代码推导区间，后续应沉淀成显式 JSON/CSV 表并抽查。
+- 反馈留言入口暂未接数据库，当前不作为正式反馈系统。
+- 超过 68kg、偏远地区、特殊处理、税费等特殊案例仍需人工复核。

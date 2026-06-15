@@ -1,13 +1,15 @@
 # FedEx Fuel Surcharge Worker
 
-这个 Cloudflare Worker 只做一件事：定时读取 EIA 官方 USGC 周价格，再套用 FedEx 官方燃油附加费表，算出当前 FedEx 中国燃油费；如果结果可靠且和 GitHub 当前配置不同，就自动提交 `data_processed/rate_config.json`，再发 Telegram 通知。
+这个 Cloudflare Worker 用于定时检查 FedEx 中国燃油费。它读取 EIA 官方 USGC 周价格，套用 FedEx APAC 燃油附加费表；如果结果可靠且网页配置需要更新，就自动提交 `vercel_app/data/rate_config.json`，再发 Telegram 通知。
 
 ## 口径
 
 - EIA 来源：`https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=W&n=PET&s=EER_EPJK_PF4_RGC_DPG`
 - FedEx 表来源：`https://www.fedex.com/content/dam/fedex/international/rates/fedex-fuel-table-may-2026-apac.pdf`
-- Streamlit 仍只读取 GitHub 仓库里的 `data_processed/rate_config.json`，不在用户打开网页时抓 EIA 或请求 Worker。
-- Worker 通过 GitHub API 更新配置文件；GitHub 出现新 commit 后，由 Streamlit 自动重新部署。
+- 工具燃油费：FedEx 官方燃油费 + 3% 冗余。
+- 网页读取 GitHub 仓库里的 `vercel_app/data/rate_config.json`。
+- 用户打开网页时不会触发 EIA 或 FedEx 实时抓取。
+- GitHub 出现新 commit 后，Vercel 自动部署。
 - 抓取或匹配失败时发 `NEED_REVIEW`，不更新 GitHub 配置。
 
 ## 定时
@@ -21,14 +23,20 @@ Cloudflare Cron 使用 UTC。本项目设置为：
 
 `wrangler.toml` 中的普通变量：
 
-- `FUEL_BUFFER_RATE`
+- `FUEL_BUFFER_RATE`，当前为 `0.03`
 
 需要用 Cloudflare Secret 配置，不能写进代码：
 
 - `TELEGRAM_BOT_TOKEN`
 - `TELEGRAM_CHAT_ID`
 - `MANUAL_CHECK_TOKEN`
-- `GITHUB_TOKEN`：只需要能写入当前仓库 Contents 的 token，用于更新 `data_processed/rate_config.json`
+- `GITHUB_TOKEN`
+
+`GITHUB_TOKEN` 只需要能写入当前仓库 Contents 的权限，用于更新：
+
+```text
+vercel_app/data/rate_config.json
+```
 
 可选普通变量：
 
@@ -61,13 +69,13 @@ https://<worker-url>/check?key=<MANUAL_CHECK_TOKEN>
 https://<worker-url>/check?notify=1&key=<MANUAL_CHECK_TOKEN>
 ```
 
-网页自动燃油费接口：
+公开燃油费检查接口：
 
 ```text
 https://<worker-url>/fuel-current
 ```
 
-这个接口不需要密钥，只返回公开燃油费计算结果，供 Streamlit 读取默认燃油费。接口优先读 Cloudflare Cache，正常情况下不会因为用户打开网页而重新抓取 EIA。
+这个接口不需要密钥，只返回公开燃油费计算结果。接口优先读 Cloudflare Cache，正常情况下不会因为用户打开网页而重新抓取 EIA。
 
 手动刷新缓存：
 
@@ -87,6 +95,7 @@ https://<worker-url>/publish-fuel-config?notify=1&key=<MANUAL_CHECK_TOKEN>
 
 - `status`
 - `latest_eia_price`
+- `newest_eia_price`
 - `matched_fedex_table_row`
 - `fedex_fuel_rate_percent`
 - `tool_fuel_rate_percent`
@@ -121,5 +130,13 @@ https://<worker-url>/telegram-webhook-info?key=<MANUAL_CHECK_TOKEN>
 
 - `/check`：立即读取 EIA 周价格并套 FedEx 表，回复燃油费。
 - `/status`：返回当前燃油费状态。
-- `/stats`：统计持久化接入 D1 前，只提示待接入。
+- `/stats`：说明当前访问和试算统计由 Vercel API 写入 Supabase；Worker 不直接读取 Supabase。
 - `/help`：返回命令说明。
+
+## 验收标准
+
+- `/check` 返回 `OK`。
+- `/publish-fuel-config` 在有变化时能提交 GitHub。
+- Telegram 能收到检查结果。
+- Vercel 因 GitHub commit 自动部署。
+- 网页顶部燃油适用周和费率显示正确。
