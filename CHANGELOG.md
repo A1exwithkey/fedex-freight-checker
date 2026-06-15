@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## V3.1.1-worker-cache-2026-06-15 - 2026-06-15
+
+- 重新部署 Cloudflare Fuel Surcharge Worker，将线上 `FUEL_BUFFER_RATE` 从 `0.05` 修正为 `0.03`。
+- 将 Worker `/fuel-current` 缓存键升级为 v2，避免继续命中旧的 `+5%` 燃油冗余缓存。
+- 将公开燃油缓存时间从 7 天缩短为 6 小时，减少部署后显示旧燃油口径的风险。
+
 ## V3.1.0-github-vercel-automation-2026-06-15 - 2026-06-15
 
 - 将网页版本更新为 V3.1，网页版本日期更新为 2026-06-15。

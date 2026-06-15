@@ -75,7 +75,7 @@ https://<worker-url>/check?notify=1&key=<MANUAL_CHECK_TOKEN>
 https://<worker-url>/fuel-current
 ```
 
-这个接口不需要密钥，只返回公开燃油费计算结果。接口优先读 Cloudflare Cache，正常情况下不会因为用户打开网页而重新抓取 EIA。
+这个接口不需要密钥，只返回公开燃油费计算结果。接口优先读 Cloudflare Cache，缓存约 6 小时；正常情况下不会因为用户打开网页而重新抓取 EIA。缓存键带版本号，避免部署后继续读到旧燃油冗余口径。
 
 手动刷新缓存：
 

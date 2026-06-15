@@ -4,8 +4,8 @@ const FEDEX_TABLE_URL =
   "https://www.fedex.com/content/dam/fedex/international/rates/fedex-fuel-table-may-2026-apac.pdf";
 const FEDEX_TABLE_EFFECTIVE = "Effective May 18, 2026";
 const DEFAULT_BUFFER_RATE = 0.03;
-const FUEL_CACHE_URL = "https://fedex-fuel-surcharge-checker.internal/fuel-current-cache";
-const FUEL_CACHE_TTL_SECONDS = 60 * 60 * 24 * 7;
+const FUEL_CACHE_URL = "https://fedex-fuel-surcharge-checker.internal/fuel-current-cache-v2";
+const FUEL_CACHE_TTL_SECONDS = 60 * 60 * 6;
 const DEFAULT_GITHUB_OWNER = "A1exwithkey";
 const DEFAULT_GITHUB_REPO = "fedex-freight-checker";
 const DEFAULT_GITHUB_BRANCH = "main";
