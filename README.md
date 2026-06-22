@@ -1,8 +1,8 @@
 # fedex-freight-checker / 运费核价助手
 
-当前版本：V3.1-web-2026-06-15
+当前版本：V3.2-maintenance-2026-06-22
 
-这是一个内部 FedEx 运费快速预估工具。当前主线是 Vercel / Next.js 网页版，Excel 和 Streamlit 版本保留为历史验证资产。
+这是一个内部 FedEx 运费快速预估工具。当前生产主线是 Vercel / Next.js 网页版；Excel 和 Streamlit 版本保留为历史验证资产，不再作为线上入口。
 
 线上地址：
 
@@ -37,6 +37,23 @@
 
 ```text
 vercel_app/
+```
+
+生产主线：
+
+```text
+vercel_app/
+cloudflare/fuel-surcharge-worker/
+vercel_app/data/
+```
+
+历史资产：
+
+```text
+app/streamlit_app.py
+data_processed/
+outputs/
+scripts/01_* - 07_*
 ```
 
 本地启动：
@@ -101,11 +118,11 @@ Final USD = (Base Freight CNY + Seasonal Surcharge CNY) × (1 + Fuel Rate) × Ma
 
 ## 数据和版本
 
-- 网页版本：2026-06-15
+- 网页版本：2026-06-22
 - IP / IE 协议价：2026-01-05
 - 旺季附加费：2026-05-11
 - 燃油冗余：官网燃油费 + 3%
-- 当前燃油费：2026-06-15 至 2026-06-21，FedEx 43%，工具 46%
+- 当前燃油费：2026-06-22 至 2026-06-28，FedEx 41.50%，工具 44.50%
 - 汇率：网页运行时读取 ECB 汇率接口，人工仍可覆盖
 
 网页运行数据：
@@ -117,6 +134,10 @@ Final USD = (Base Freight CNY + Seasonal Surcharge CNY) × (1 + Fuel Rate) × Ma
 
 - `data_processed/`
 - `outputs/`
+
+数据版本清单：
+
+- `docs/data_version_manifest.md`
 
 ## 统计
 
@@ -157,11 +178,28 @@ Final USD = (Base Freight CNY + Seasonal Surcharge CNY) × (1 + Fuel Rate) × Ma
 
 ## 项目维护
 
+- 系统架构：`docs/system_architecture.md`
+- 数据版本清单：`docs/data_version_manifest.md`
 - 运维手册：`docs/operations_manual.md`
 - 发布检查清单：`docs/release_checklist.md`
 - 燃油费自动更新方案：`docs/fuel_surcharge_automation_plan.md`
 - Cloudflare Worker：`cloudflare/fuel-surcharge-worker/`
 - 每次更新价格表、旺季附加费、燃油费、汇率逻辑或网页逻辑，都要更新 `CHANGELOG.md`
+
+线上健康检查：
+
+```bash
+python3 scripts/08_health_check.py
+```
+
+该脚本会检查：
+
+- Worker 当前燃油费
+- GitHub `rate_config.json`
+- 线上网页显示
+- 汇率 API
+
+若结果不是 `OK`，优先按脚本输出定位链路断点。
 
 ## 当前风险点
 

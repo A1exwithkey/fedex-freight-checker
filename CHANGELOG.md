@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## V3.2.0-maintainability-2026-06-22 - 2026-06-22
+
+- 明确当前生产主线为 `vercel_app/`、`vercel_app/data/` 和 `cloudflare/fuel-surcharge-worker/`，Excel / Streamlit 保留为历史验证资产。
+- 新增 `docs/system_architecture.md`，记录前端、业务逻辑、数据、集成和配置分层。
+- 新增 `docs/data_version_manifest.md`，明确生产数据文件、历史加工数据和当前版本。
+- 新增 `scripts/08_health_check.py`，用于检查 Worker、GitHub 配置、线上网页和汇率 API 是否一致。
+- 更新 `README.md` 当前版本、燃油费版本和健康检查入口，降低后续维护和 AI 接手成本。
+
 ## V3.1.2-fuel-week-2026-06-22 - 2026-06-22
 
 - 将网页燃油配置更新为 2026-06-22 至 2026-06-28：FedEx 41.50%，工具按 +3% 冗余后为 44.50%。
