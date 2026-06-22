@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## V3.1.2-fuel-week-2026-06-22 - 2026-06-22
+
+- 将网页燃油配置更新为 2026-06-22 至 2026-06-28：FedEx 41.50%，工具按 +3% 冗余后为 44.50%。
+- 为 Cloudflare Fuel Surcharge Worker 的 Cron 和手动发布路径增加结构化日志，记录燃油周、GitHub 更新状态、失败原因和 commit SHA，便于定位自动发布失败。
+- 为 Cron 增加顶层错误捕获；若定时任务失败，会写入 Worker 日志并尝试发送 Telegram 失败通知。
+
 ## V3.1.1-worker-cache-2026-06-15 - 2026-06-15
 
 - 重新部署 Cloudflare Fuel Surcharge Worker，将线上 `FUEL_BUFFER_RATE` 从 `0.05` 修正为 `0.03`。

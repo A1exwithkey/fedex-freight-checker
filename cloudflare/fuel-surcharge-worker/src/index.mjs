@@ -37,6 +37,15 @@ function jsonResponse(data, status = 200, extraHeaders = {}) {
   });
 }
 
+function logFuelUpdate(level, data) {
+  const log = level === "error" ? console.error : console.log;
+  log(JSON.stringify({
+    level,
+    service: "fedex-fuel-surcharge-checker",
+    ...data,
+  }));
+}
+
 function cacheableJsonResponse(data) {
   return jsonResponse(data, 200, {
     "cache-control": `public, max-age=${FUEL_CACHE_TTL_SECONDS}`,
@@ -493,6 +502,16 @@ async function publishFuelPayload(request, env) {
   const payload = await runCheck(env);
   payload.github_update = await publishFuelConfigIfChanged(env, payload);
   await writeCachedFuelPayload(payload);
+  logFuelUpdate(payload.github_update?.status === "ERROR" ? "error" : "info", {
+    msg: "manual_publish_finished",
+    fuel_status: payload.status,
+    fuel_week: payload.fedex_apply_week?.label || null,
+    fedex_fuel_rate_percent: payload.fedex_fuel_rate_percent ?? null,
+    tool_fuel_rate_percent: payload.tool_fuel_rate_percent ?? null,
+    github_update_status: payload.github_update?.status || null,
+    github_update_reason: payload.github_update?.reason || null,
+    commit_sha: payload.github_update?.commit_sha || null,
+  });
   if (request && new URL(request.url).searchParams.get("notify") === "1") {
     payload.telegram = await sendTelegram(env, buildTelegramMessage(payload));
   }
@@ -649,10 +668,31 @@ export default {
   async scheduled(event, env, ctx) {
     ctx.waitUntil(
       (async () => {
-        const payload = await runCheck(env);
-        payload.github_update = await publishFuelConfigIfChanged(env, payload);
-        await writeCachedFuelPayload(payload);
-        await sendTelegram(env, buildTelegramMessage(payload));
+        try {
+          const payload = await runCheck(env);
+          payload.github_update = await publishFuelConfigIfChanged(env, payload);
+          await writeCachedFuelPayload(payload);
+          logFuelUpdate(payload.github_update?.status === "ERROR" ? "error" : "info", {
+            msg: "scheduled_publish_finished",
+            cron: event?.cron || null,
+            fuel_status: payload.status,
+            fuel_week: payload.fedex_apply_week?.label || null,
+            fedex_fuel_rate_percent: payload.fedex_fuel_rate_percent ?? null,
+            tool_fuel_rate_percent: payload.tool_fuel_rate_percent ?? null,
+            github_update_status: payload.github_update?.status || null,
+            github_update_reason: payload.github_update?.reason || null,
+            commit_sha: payload.github_update?.commit_sha || null,
+          });
+          await sendTelegram(env, buildTelegramMessage(payload));
+        } catch (error) {
+          const message = String(error?.message || error);
+          logFuelUpdate("error", {
+            msg: "scheduled_publish_failed",
+            cron: event?.cron || null,
+            error: message,
+          });
+          await sendTelegram(env, `FedEx 燃油费自动检查失败\n\nCron：${event?.cron || "unknown"}\n错误：${message}`);
+        }
       })()
     );
   },
