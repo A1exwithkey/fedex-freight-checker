@@ -217,7 +217,7 @@ export default function Home() {
     <main className="page-shell">
       <header className="topbar quote-topbar">
         <div>
-          <h1>FedEx 运费核价助手 3.1</h1>
+          <h1>FedEx 运费核价助手 3.2</h1>
         </div>
         <div className="header-actions">
           <details>
@@ -237,6 +237,9 @@ export default function Home() {
               </p>
               <p>
                 <strong>V3.1 · 2026-06-15</strong>：将 Vercel 网页纳入 GitHub 管理，更新燃油费至 2026-06-15 周，并整理自动更新链路文档。
+              </p>
+              <p>
+                <strong>V3.2 · 2026-06-29</strong>：旺季附加费更新至 2026-06-29，IP / IE 分别使用对应旺季费率，并补充 MEISA 第 1 / 第 2 组识别。
               </p>
             </div>
           </details>

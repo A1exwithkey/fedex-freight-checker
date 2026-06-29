@@ -81,11 +81,24 @@ def load_validation(ws) -> list[dict]:
 
 def main() -> None:
     excel_path = Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_EXCEL
-    if not excel_path.exists():
-        raise FileNotFoundError(excel_path)
 
     ip_data = json.loads(IP_DATA.read_text(encoding="utf-8"))
-    wb = load_workbook(excel_path, read_only=False, data_only=True)
+    existing_payload = json.loads(OUTPUT.read_text(encoding="utf-8")) if OUTPUT.exists() else {}
+    if excel_path.exists():
+        wb = load_workbook(excel_path, read_only=False, data_only=True)
+        ie_rates = {
+            "label": "FedEx IE 国际经济",
+            "fixed_0_20_5kg": load_wide_fixed(wb["ie_fixed_wide"], "IE export parcel", "10-12"),
+            "perkg_21kg_plus": load_wide_perkg(wb["ie_perkg_wide"], "IE export parcel", "12-13"),
+        }
+        validation_checks = load_validation(wb["validation_checks"])
+        ie_source_excel = excel_path.name
+    elif existing_payload.get("rates", {}).get("IE"):
+        ie_rates = existing_payload["rates"]["IE"]
+        validation_checks = existing_payload.get("validation_checks", [])
+        ie_source_excel = existing_payload.get("summary", {}).get("ie_source_excel", "existing vercel data")
+    else:
+        raise FileNotFoundError(excel_path)
 
     payload = {
         "summary": {
@@ -93,7 +106,7 @@ def main() -> None:
             "service_types": ["IP", "IE"],
             "ie_fixed_rate_rows": 0,
             "ie_per_kg_rate_rows": 0,
-            "ie_source_excel": excel_path.name,
+            "ie_source_excel": ie_source_excel,
         },
         "country_alias": ip_data["country_alias"],
         "demand_surcharge_rates": ip_data.get("demand_surcharge_rates", []),
@@ -104,13 +117,9 @@ def main() -> None:
                 "fixed_0_20_5kg": ip_data["ip_parcel_rate_0_20_5kg"],
                 "perkg_21kg_plus": ip_data["ip_parcel_rate_21kg_plus"],
             },
-            "IE": {
-                "label": "FedEx IE 国际经济",
-                "fixed_0_20_5kg": load_wide_fixed(wb["ie_fixed_wide"], "IE export parcel", "10-12"),
-                "perkg_21kg_plus": load_wide_perkg(wb["ie_perkg_wide"], "IE export parcel", "12-13"),
-            },
+            "IE": ie_rates,
         },
-        "validation_checks": load_validation(wb["validation_checks"]),
+        "validation_checks": validation_checks,
     }
     payload["summary"]["ie_fixed_rate_rows"] = len(payload["rates"]["IE"]["fixed_0_20_5kg"])
     payload["summary"]["ie_per_kg_rate_rows"] = len(payload["rates"]["IE"]["perkg_21kg_plus"])

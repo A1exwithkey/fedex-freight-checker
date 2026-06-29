@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## V3.4.0-demand-surcharge-2026-06-29 - 2026-06-29
+
+- 更新旺季附加费至 `FEDEX需求附加费-2026.6.29日更新.pdf`，生效日期为 2026-06-29。
+- 旺季附加费新增 IP / IE 分服务费率：美国和波多黎各、加拿大、墨西哥、拉丁美洲 IP 为 5.4 CNY/kg，IE 为 4.0 CNY/kg。
+- 将 MEISA 拆分为第 1 组和第 2 组：第 1 组 11.2 CNY/kg，第 2 组 17.4 CNY/kg。
+- 保留每票最低收费 1.80 CNY，并继续只使用“中国大陆出口的国际货件”口径，排除 ImportOne 和 G3P。
+- 更新 `scripts/04_extract_demand_surcharge_pdf.py`、`data_processed/`、`vercel_app/data/`、README 和数据版本清单。
+
 ## V3.3.0-fuel-watchdog-2026-06-29 - 2026-06-29
 
 - 将 Cloudflare Worker 燃油检查时间提前 2 小时，改为北京时间周一 08:00 和 12:00。

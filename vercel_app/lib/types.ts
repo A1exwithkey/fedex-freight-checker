@@ -7,6 +7,8 @@ export type AliasRow = {
   demand_region_cn: string;
   demand_region_code: string;
   demand_rate_cny_per_kg: number | string | null;
+  demand_ip_rate_cny_per_kg?: number | string | null;
+  demand_ie_rate_cny_per_kg?: number | string | null;
   demand_minimum_cny: number | string | null;
   demand_review_status: string;
 };

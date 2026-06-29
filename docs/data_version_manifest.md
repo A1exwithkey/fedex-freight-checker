@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | 网页版本 | 2026-06-29 | `vercel_app/data/rate_config.json` |
 | IP / IE 协议价 | 2026-01-05 | `vercel_app/data/fedex_ip_ie_data.json` |
-| 旺季附加费 | 2026-05-11 | `vercel_app/data/fedex_ip_ie_data.json` |
+| 旺季附加费 | 2026-06-29 | `vercel_app/data/fedex_ip_ie_data.json` |
 | 燃油适用周 | 2026-06-29 至 2026-07-05 | `vercel_app/data/rate_config.json` |
 | FedEx 燃油费 | 38.50% | `vercel_app/data/rate_config.json` |
 | 工具燃油费 | 41.50% | `vercel_app/data/rate_config.json` |

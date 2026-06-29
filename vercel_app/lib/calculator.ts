@@ -132,7 +132,11 @@ export function calculateQuote(data: FedExData, input: QuoteInput): QuoteResult 
     };
   }
 
-  const demandRate = numeric(country.demand_rate_cny_per_kg);
+  const serviceDemandRate =
+    input.serviceType === "IE"
+      ? country.demand_ie_rate_cny_per_kg ?? country.demand_rate_cny_per_kg
+      : country.demand_ip_rate_cny_per_kg ?? country.demand_rate_cny_per_kg;
+  const demandRate = numeric(serviceDemandRate);
   const demandMinimum = numeric(country.demand_minimum_cny);
   const ipZone = String(country.ip_zone);
   const matchedCountry = String(country.canonical_country_region);

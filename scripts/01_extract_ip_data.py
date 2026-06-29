@@ -29,9 +29,9 @@ DEFAULT_OUT_DIR = PROJECT_ROOT / "data_processed"
 
 ZONES = ["1", "2", "A", "B", "D", "E", "F", "G", "H", "K", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "X", "Y", "Z"]
 
-DEMAND_SOURCE = "FEDEX需求附加费-2026.4.13日生效至另行通知.pdf"
+DEMAND_SOURCE = "FEDEX需求附加费-2026.6.29日更新.pdf"
 DEMAND_SOURCE_URL = ""
-DEMAND_EFFECTIVE_DATE = "2026-04-13"
+DEMAND_EFFECTIVE_DATE = "2026-06-29"
 DEMAND_MIN_CNY_PER_SHIPMENT = 1.8
 
 DEMAND_REGION_RATES = [
@@ -40,6 +40,7 @@ DEMAND_REGION_RATES = [
         "demand_region_cn": "澳大利亚、新西兰",
         "demand_region_en": "Australia and New Zealand",
         "priority_rate_cny_per_kg": 0.0,
+        "economy_rate_cny_per_kg": 0.0,
         "minimum_cny_per_shipment": DEMAND_MIN_CNY_PER_SHIPMENT,
         "source": DEMAND_SOURCE,
         "source_url": DEMAND_SOURCE_URL,
@@ -51,17 +52,19 @@ DEMAND_REGION_RATES = [
         "demand_region_cn": "亚洲区",
         "demand_region_en": "Asia",
         "priority_rate_cny_per_kg": 0.0,
+        "economy_rate_cny_per_kg": 0.0,
         "minimum_cny_per_shipment": DEMAND_MIN_CNY_PER_SHIPMENT,
         "source": DEMAND_SOURCE,
         "source_url": DEMAND_SOURCE_URL,
         "effective_date": DEMAND_EFFECTIVE_DATE,
-        "notes": "Region footnote 1 in the 2026-04-13 demand surcharge PDF.",
+        "notes": "Region footnote 1 in the 2026-06-29 demand surcharge PDF.",
     },
     {
         "demand_region_code": "US_PR",
         "demand_region_cn": "美国和波多黎各",
         "demand_region_en": "United States of America and Puerto Rico",
-        "priority_rate_cny_per_kg": 0.0,
+        "priority_rate_cny_per_kg": 5.4,
+        "economy_rate_cny_per_kg": 4.0,
         "minimum_cny_per_shipment": DEMAND_MIN_CNY_PER_SHIPMENT,
         "source": DEMAND_SOURCE,
         "source_url": DEMAND_SOURCE_URL,
@@ -72,7 +75,8 @@ DEMAND_REGION_RATES = [
         "demand_region_code": "CANADA",
         "demand_region_cn": "加拿大",
         "demand_region_en": "Canada",
-        "priority_rate_cny_per_kg": 0.0,
+        "priority_rate_cny_per_kg": 5.4,
+        "economy_rate_cny_per_kg": 4.0,
         "minimum_cny_per_shipment": DEMAND_MIN_CNY_PER_SHIPMENT,
         "source": DEMAND_SOURCE,
         "source_url": DEMAND_SOURCE_URL,
@@ -83,7 +87,8 @@ DEMAND_REGION_RATES = [
         "demand_region_code": "ISRAEL",
         "demand_region_cn": "以色列",
         "demand_region_en": "Israel",
-        "priority_rate_cny_per_kg": 24.0,
+        "priority_rate_cny_per_kg": 8.0,
+        "economy_rate_cny_per_kg": 8.0,
         "minimum_cny_per_shipment": DEMAND_MIN_CNY_PER_SHIPMENT,
         "source": DEMAND_SOURCE,
         "source_url": DEMAND_SOURCE_URL,
@@ -95,17 +100,19 @@ DEMAND_REGION_RATES = [
         "demand_region_cn": "欧洲区",
         "demand_region_en": "Europe",
         "priority_rate_cny_per_kg": 8.0,
+        "economy_rate_cny_per_kg": 8.0,
         "minimum_cny_per_shipment": DEMAND_MIN_CNY_PER_SHIPMENT,
         "source": DEMAND_SOURCE,
         "source_url": DEMAND_SOURCE_URL,
         "effective_date": DEMAND_EFFECTIVE_DATE,
-        "notes": "Region footnote 2 in the 2026-04-13 demand surcharge PDF.",
+        "notes": "Region footnote 2 in the 2026-06-29 demand surcharge PDF.",
     },
     {
         "demand_region_code": "INDIA",
         "demand_region_cn": "印度",
         "demand_region_en": "India",
         "priority_rate_cny_per_kg": 0.0,
+        "economy_rate_cny_per_kg": 0.0,
         "minimum_cny_per_shipment": DEMAND_MIN_CNY_PER_SHIPMENT,
         "source": DEMAND_SOURCE,
         "source_url": DEMAND_SOURCE_URL,
@@ -113,21 +120,35 @@ DEMAND_REGION_RATES = [
         "notes": "Export shipments from Chinese Mainland only.",
     },
     {
-        "demand_region_code": "MEISA",
-        "demand_region_cn": "中东/印度次大陆/非洲区",
+        "demand_region_code": "MEISA_1",
+        "demand_region_cn": "中东/印度次大陆/非洲区 第 1 组",
         "demand_region_en": "Middle East, Indian Subcontinent and Africa",
         "priority_rate_cny_per_kg": 11.2,
+        "economy_rate_cny_per_kg": 11.2,
         "minimum_cny_per_shipment": DEMAND_MIN_CNY_PER_SHIPMENT,
         "source": DEMAND_SOURCE,
         "source_url": DEMAND_SOURCE_URL,
         "effective_date": DEMAND_EFFECTIVE_DATE,
-        "notes": "Region footnote 3 in the 2026-04-13 demand surcharge PDF.",
+        "notes": "Region footnote 3 group 1 in the 2026-06-29 demand surcharge PDF.",
+    },
+    {
+        "demand_region_code": "MEISA_2",
+        "demand_region_cn": "中东/印度次大陆/非洲区 第 2 组",
+        "demand_region_en": "Middle East, Indian Subcontinent and Africa",
+        "priority_rate_cny_per_kg": 17.4,
+        "economy_rate_cny_per_kg": 17.4,
+        "minimum_cny_per_shipment": DEMAND_MIN_CNY_PER_SHIPMENT,
+        "source": DEMAND_SOURCE,
+        "source_url": DEMAND_SOURCE_URL,
+        "effective_date": DEMAND_EFFECTIVE_DATE,
+        "notes": "Region footnote 3 group 2 in the 2026-06-29 demand surcharge PDF.",
     },
     {
         "demand_region_code": "MEXICO",
         "demand_region_cn": "墨西哥",
         "demand_region_en": "Mexico",
-        "priority_rate_cny_per_kg": 0.0,
+        "priority_rate_cny_per_kg": 5.4,
+        "economy_rate_cny_per_kg": 4.0,
         "minimum_cny_per_shipment": DEMAND_MIN_CNY_PER_SHIPMENT,
         "source": DEMAND_SOURCE,
         "source_url": DEMAND_SOURCE_URL,
@@ -138,12 +159,13 @@ DEMAND_REGION_RATES = [
         "demand_region_code": "LAC",
         "demand_region_cn": "拉丁美洲区",
         "demand_region_en": "Latin America",
-        "priority_rate_cny_per_kg": 0.0,
+        "priority_rate_cny_per_kg": 5.4,
+        "economy_rate_cny_per_kg": 4.0,
         "minimum_cny_per_shipment": DEMAND_MIN_CNY_PER_SHIPMENT,
         "source": DEMAND_SOURCE,
         "source_url": DEMAND_SOURCE_URL,
         "effective_date": DEMAND_EFFECTIVE_DATE,
-        "notes": "Region footnote 4 in the 2026-04-13 demand surcharge PDF.",
+        "notes": "Region footnote 4 in the 2026-06-29 demand surcharge PDF.",
     },
 ]
 
@@ -224,18 +246,20 @@ DEMAND_REGION_COUNTRIES = {
         "United Kingdom (Great Britain)", "Vatican City",
     ],
     "INDIA": ["India"],
-    "MEISA": [
-        "Afghanistan", "Algeria", "Angola", "Bahrain", "Bangladesh", "Benin", "Bhutan", "Botswana",
-        "Burkina Faso", "Burundi", "Cameroon", "Cape Verde", "Chad", "Congo", "Democratic Republic of the Congo",
-        "Congo, Dem Rep Of", "Djibouti", "Egypt", "Eritrea", "Ethiopia", "Gabon", "Gambia", "Ghana",
-        "Guinea", "Iraq", "Ivory Coast", "Côte D'ivoire (Ivory Coast)", "Jordan", "Kazakhstan", "Kenya",
-        "Kuwait", "Kyrgyzstan", "Lebanon", "Lesotho", "Liberia", "Libya", "Madagascar", "Malawi",
-        "Maldives", "Mali", "Mauritania", "Mauritius", "Morocco", "Mozambique", "Namibia", "Nepal",
-        "Niger", "Nigeria", "Oman", "Pakistan", "Palestine Autonomous", "Palestinian Autonomous Territories",
-        "Qatar", "Reunion", "Réunion", "Rwanda", "Saudi Arabia",
-        "Senegal", "Seychelles", "South Africa", "Sri Lanka", "Swaziland", "Tanzania",
-        "United Republic of Tanzania", "Togo", "Tunisia", "Uganda", "United Arab Emirates", "Uzbekistan",
-        "Zambia", "Zimbabwe",
+    "MEISA_1": [
+        "Afghanistan", "Bahrain", "Bangladesh", "Bhutan", "Egypt", "Jordan", "Kuwait", "Kyrgyzstan",
+        "Maldives", "Nepal", "Oman", "Palestine Autonomous", "Palestinian Autonomous Territories",
+        "Saudi Arabia", "Sri Lanka", "United Arab Emirates", "Uzbekistan",
+    ],
+    "MEISA_2": [
+        "Algeria", "Angola", "Benin", "Botswana", "Burkina Faso", "Burundi", "Cameroon", "Cape Verde",
+        "Chad", "Congo", "Democratic Republic of the Congo", "Congo, Dem Rep Of", "Djibouti", "Eritrea",
+        "Ethiopia", "Gabon", "Gambia", "Ghana", "Guinea", "Iraq", "Ivory Coast",
+        "Côte D'ivoire (Ivory Coast)", "Kazakhstan", "Kenya", "Lebanon", "Lesotho", "Liberia", "Libya",
+        "Madagascar", "Malawi", "Mali", "Mauritania", "Mauritius", "Morocco", "Mozambique", "Namibia",
+        "Niger", "Nigeria", "Pakistan", "Qatar", "Reunion", "Réunion", "Rwanda", "Senegal",
+        "Seychelles", "South Africa", "Swaziland", "Tanzania", "United Republic of Tanzania", "Togo",
+        "Tunisia", "Uganda", "Zambia", "Zimbabwe",
     ],
     "MEXICO": ["Mexico"],
     "LAC": [
@@ -551,11 +575,12 @@ def make_country_demand_regions(country_rows: list[dict[str, Any]]) -> list[dict
                     "demand_region_cn": rate["demand_region_cn"],
                     "demand_region_en": rate["demand_region_en"],
                     "priority_rate_cny_per_kg": rate["priority_rate_cny_per_kg"],
+                    "economy_rate_cny_per_kg": rate["economy_rate_cny_per_kg"],
                     "minimum_cny_per_shipment": rate["minimum_cny_per_shipment"],
                     "source": rate["source"],
                     "effective_date": rate["effective_date"],
                     "review_status": "OK",
-                    "notes": "Matched from the 2026-04-13 demand surcharge PDF region footnotes.",
+                    "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes.",
                 }
             )
         else:
@@ -567,11 +592,12 @@ def make_country_demand_regions(country_rows: list[dict[str, Any]]) -> list[dict
                     "demand_region_cn": "Need Review",
                     "demand_region_en": "Need Review",
                     "priority_rate_cny_per_kg": "",
+                    "economy_rate_cny_per_kg": "",
                     "minimum_cny_per_shipment": DEMAND_MIN_CNY_PER_SHIPMENT,
                     "source": DEMAND_SOURCE,
                     "effective_date": DEMAND_EFFECTIVE_DATE,
                     "review_status": "Need Review",
-                    "notes": "No exact match in the 2026-04-13 demand surcharge PDF region footnotes; do not guess.",
+                    "notes": "No exact match in the 2026-06-29 demand surcharge PDF region footnotes; do not guess.",
                 }
             )
     return rows
@@ -593,7 +619,12 @@ def enrich_aliases_with_demand(
         demand = None
         if "美国西部" in alias.get("alias", "") or "美国西部" in alias.get("canonical_country_region", ""):
             demand = demand_by_key.get(normalize_key("美国西部"))
+        alias_candidates: list[str] = []
         for value in [alias.get("alias", ""), alias.get("canonical_country_region", "")]:
+            alias_candidates.append(value)
+            name_en, name_zh = split_country_name(value)
+            alias_candidates.extend([name_en, name_zh])
+        for value in alias_candidates:
             if demand:
                 break
             key = normalize_key(str(value))
@@ -606,6 +637,8 @@ def enrich_aliases_with_demand(
                 "demand_region_cn": demand["demand_region_cn"] if demand else "Need Review",
                 "demand_region_code": demand["demand_region_code"] if demand else "Need Review",
                 "demand_rate_cny_per_kg": demand["priority_rate_cny_per_kg"] if demand else "",
+                "demand_ip_rate_cny_per_kg": demand["priority_rate_cny_per_kg"] if demand else "",
+                "demand_ie_rate_cny_per_kg": demand["economy_rate_cny_per_kg"] if demand else "",
                 "demand_minimum_cny": demand["minimum_cny_per_shipment"] if demand else DEMAND_MIN_CNY_PER_SHIPMENT,
                 "demand_review_status": demand["review_status"] if demand else "Need Review",
             }
@@ -740,7 +773,7 @@ def make_validation_checks(
             "pdf_value": usa_base,
             "excel_value": usa_base,
             "pass_fail": "PASS",
-            "notes": "IP 包裹固定费率，非 IPE/IE；需求附加费按 2026-04-13 PDF，美国和波多黎各为 0",
+            "notes": "IP 包裹固定费率，非 IPE/IE；旺季附加费按 2026-06-29 PDF 单独计算",
         },
         {
             "test_case_id": "TC-006",
@@ -784,9 +817,9 @@ def make_validation_checks(
             "matched_country": "美国其他地区",
             "ip_zone": "2",
             "weight_kg": 10.0,
-            "pdf_page": "7-10; Demand Surcharge 2026-04-13",
-            "pdf_value": "Base 812.56; USA/Puerto Rico demand 0/kg; fuel 48%; redundancy 1.1; exchange 6.8",
-            "excel_value": round(812.56 * (1 + 0.48) * 1.1 / 6.8, 2),
+            "pdf_page": "7-10; Demand Surcharge 2026-06-29",
+            "pdf_value": "Base 812.56; USA/Puerto Rico IP demand 5.4/kg; fuel 48%; redundancy 1.1; exchange 6.8",
+            "excel_value": round((812.56 + 10.0 * 5.4) * (1 + 0.48) * 1.1 / 6.8, 2),
             "pass_fail": "PASS",
             "notes": "Final USD = (Base CNY + Demand Surcharge CNY) × (1 + Fuel Rate) × Redundancy / Exchange Rate",
         },
@@ -796,11 +829,11 @@ def make_validation_checks(
             "matched_country": "美国其他地区",
             "ip_zone": "2",
             "weight_kg": 10.0,
-            "pdf_page": "FedEx Demand Surcharge 2026-04-13",
-            "pdf_value": "USA and Puerto Rico RMB 0/kg; minimum RMB 1.8/shipment when surcharge applies",
+            "pdf_page": "FedEx Demand Surcharge 2026-06-29",
+            "pdf_value": "USA and Puerto Rico IP RMB 5.4/kg; IE RMB 4.0/kg; minimum RMB 1.8/shipment when surcharge applies",
             "excel_value": usa_demand.get("priority_rate_cny_per_kg", "Need Review"),
             "pass_fail": "PASS" if usa_demand.get("demand_region_code") == "US_PR" else "FAIL",
-            "notes": "需求附加费按 kg 加到基础运费，再乘燃油和冗余；费率为 0 时需求附加费为 0。",
+            "notes": "旺季附加费按服务类型取 IP/IE 对应费率，再进入最终报价公式。",
         },
         {
             "test_case_id": "TC-011",
@@ -808,7 +841,7 @@ def make_validation_checks(
             "matched_country": "德国",
             "ip_zone": "K",
             "weight_kg": 10.0,
-            "pdf_page": "FedEx Demand Surcharge 2026-04-13",
+            "pdf_page": "FedEx Demand Surcharge 2026-06-29",
             "pdf_value": "Europe RMB 8.0/kg; minimum RMB 1.8/shipment when surcharge applies",
             "excel_value": germany_demand.get("priority_rate_cny_per_kg", "Need Review"),
             "pass_fail": "PASS" if germany_demand.get("demand_region_code") == "EUROPE" else "FAIL",
