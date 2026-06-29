@@ -1,0 +1,50 @@
+name: FedEx fuel watchdog
+
+on:
+  schedule:
+    # UTC schedules. These are Monday 08:20 and 12:20 in Asia/Shanghai.
+    - cron: "20 0 * * 1"
+    - cron: "20 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fedex-fuel-watchdog
+  cancel-in-progress: false
+
+jobs:
+  sync-fuel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Sync fuel config from Worker
+        run: python3 scripts/09_sync_fuel_config_from_worker.py
+
+      - name: Show diff
+        run: git diff -- vercel_app/data/rate_config.json
+
+      - name: Commit fuel config if changed
+        run: |
+          if git diff --quiet -- vercel_app/data/rate_config.json; then
+            echo "No fuel config change."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add vercel_app/data/rate_config.json
+          fuel_week="$(python3 - <<'PY'
+          import json
+          print(json.load(open('vercel_app/data/rate_config.json'))['fuel_effective_label'])
+          PY
+          )"
+          git commit -m "Update FedEx fuel surcharge ${fuel_week}"
+          git push

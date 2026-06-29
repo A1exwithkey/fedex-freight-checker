@@ -16,8 +16,15 @@
 
 Cloudflare Cron 使用 UTC。本项目设置为：
 
-- `0 2 * * 1`：北京时间周一 10:00
-- `0 6 * * 1`：北京时间周一 14:00
+- `0 0 * * 1`：北京时间周一 08:00
+- `0 4 * * 1`：北京时间周一 12:00
+
+GitHub Actions watchdog 作为独立平台兜底：
+
+- `20 0 * * 1`：北京时间周一 08:20
+- `20 4 * * 1`：北京时间周一 12:20
+
+watchdog 会读取公开 `/fuel-current`，必要时更新 `vercel_app/data/rate_config.json` 并提交 GitHub。
 
 ## 环境变量和密钥
 

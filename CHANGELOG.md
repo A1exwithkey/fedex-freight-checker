@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## V3.3.0-fuel-watchdog-2026-06-29 - 2026-06-29
+
+- 将 Cloudflare Worker 燃油检查时间提前 2 小时，改为北京时间周一 08:00 和 12:00。
+- 新增 GitHub Actions `FedEx fuel watchdog`，在北京时间周一 08:20 和 12:20 读取 Worker 公开燃油结果并兜底更新 `vercel_app/data/rate_config.json`。
+- 新增 `scripts/09_sync_fuel_config_from_worker.py`，用于从 Worker 公开接口同步本地燃油配置，供 watchdog 和人工修复使用。
+- 将网页燃油配置更新为 2026-06-29 至 2026-07-05：FedEx 38.50%，工具按 +3% 冗余后为 41.50%。
+- 更新 README、燃油自动化方案、运维手册、发布检查清单和数据版本清单。
+
 ## V3.2.0-maintainability-2026-06-22 - 2026-06-22
 
 - 明确当前生产主线为 `vercel_app/`、`vercel_app/data/` 和 `cloudflare/fuel-surcharge-worker/`，Excel / Streamlit 保留为历史验证资产。

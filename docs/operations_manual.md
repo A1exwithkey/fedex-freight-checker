@@ -78,10 +78,29 @@ npm run build
 5. GitHub 有新 commit 后，Vercel 自动部署。
 6. Telegram 通知检查结果和 GitHub 更新结果。
 
+当前定时：
+
+- Cloudflare Worker：北京时间周一 08:00 和 12:00。
+- GitHub Actions watchdog：北京时间周一 08:20 和 12:20。
+
+watchdog 用于检测 Cloudflare Cron 没触发或没完成的情况；若 Worker 已能给出新燃油周但 GitHub 配置仍旧，watchdog 会直接更新 `vercel_app/data/rate_config.json` 并提交 GitHub。
+
 本地复核命令：
 
 ```bash
 python3 scripts/06_check_fedex_fuel_official_sources.py
+```
+
+线上健康检查：
+
+```bash
+python3 scripts/08_health_check.py
+```
+
+按 Worker 公开结果同步本地配置：
+
+```bash
+python3 scripts/09_sync_fuel_config_from_worker.py
 ```
 
 Cloudflare Worker 详见：

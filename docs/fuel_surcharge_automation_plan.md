@@ -88,10 +88,17 @@ cloudflare/fuel-surcharge-worker/
 
 Cloudflare Cron 使用 UTC：
 
-- `0 2 * * 1`：北京时间周一 10:00
-- `0 6 * * 1`：北京时间周一 14:00
+- `0 0 * * 1`：北京时间周一 08:00
+- `0 4 * * 1`：北京时间周一 12:00
 
 这两个时间点用于确认本周或下周燃油费是否已经可计算。若配置有变化，Worker 会提交 GitHub。
+
+GitHub Actions watchdog 使用 UTC：
+
+- `20 0 * * 1`：北京时间周一 08:20
+- `20 4 * * 1`：北京时间周一 12:20
+
+watchdog 用于检测“应发生但没有发生”的自动化。它读取 Worker 公开燃油结果，若 `vercel_app/data/rate_config.json` 仍落后，则直接更新并提交 GitHub，由 Vercel 自动部署。
 
 ## GitHub / Vercel 链路
 
@@ -109,6 +116,8 @@ vercel_app/data/rate_config.json
 4. Vercel 监听 GitHub commit。
 5. Vercel 自动部署 Production。
 6. 网页顶部显示新的燃油适用周和燃油费率。
+
+若 Cloudflare Cron 没触发或没完成，GitHub Actions watchdog 会在 20 分钟后兜底执行同样的配置同步。
 
 ## Telegram 通知
 

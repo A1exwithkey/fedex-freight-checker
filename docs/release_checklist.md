@@ -63,6 +63,8 @@
 - [ ] 页面底部统计显示访问人数、打开次数、试算次数。
 - [ ] Cloudflare Worker `/fuel-current` 能返回当前燃油状态。
 - [ ] Telegram `/check` 能返回燃油检查结果。
+- [ ] GitHub Actions `FedEx fuel watchdog` 已启用，定时为北京时间周一 08:20 和 12:20。
+- [ ] `python3 scripts/08_health_check.py` 返回 `OK`。
 
 ## Excel / 历史资产
 
