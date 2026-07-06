@@ -14,12 +14,15 @@
 
 ## 定时
 
-Cloudflare Cron 使用 UTC。本项目设置为：
+Cloudflare Cron 使用 UTC。本项目是主发布链路，设置为：
 
 - `0 0 * * 1`：北京时间周一 08:00
+- `0 2 * * 1`：北京时间周一 10:00
 - `0 4 * * 1`：北京时间周一 12:00
 
-GitHub Actions watchdog 作为独立平台兜底：
+每次 Cron 都会读取 EIA、计算当前 FedEx 燃油费，并在 `rate_config.json` 需要变化时直接提交 GitHub。更新逻辑是幂等的，当前周已更新时不会重复提交。
+
+GitHub Actions watchdog 仅作为独立平台兜底：
 
 - `20 0 * * 1`：北京时间周一 08:20
 - `20 4 * * 1`：北京时间周一 12:20

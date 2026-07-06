@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## V3.4.1-fuel-worker-cron-retry-2026-07-06 - 2026-07-06
+
+- 验证 Cloudflare Worker 可直接发布燃油费到 GitHub，并已更新网页燃油费至 2026-07-06 至 2026-07-12。
+- 将 Cloudflare Cron 从 2 次增加到 3 次：北京时间周一 08:00、10:00、12:00，降低单次定时触发不稳定的风险。
+- 明确 Cloudflare Worker 为燃油费主发布链路，GitHub Actions watchdog 只作为兜底。
+
 ## V3.4.0-demand-surcharge-2026-06-29 - 2026-06-29
 
 - 更新旺季附加费至 `FEDEX需求附加费-2026.6.29日更新.pdf`，生效日期为 2026-06-29。

@@ -661,7 +661,7 @@ export default {
       publish_fuel_config: "/publish-fuel-config?notify=1&key=MANUAL_CHECK_TOKEN",
       set_telegram_webhook: "/set-telegram-webhook?key=MANUAL_CHECK_TOKEN",
       telegram_webhook_info: "/telegram-webhook-info?key=MANUAL_CHECK_TOKEN",
-      schedule: "Monday 10:00 and 14:00 Asia/Shanghai",
+      schedule: "Monday 08:00, 10:00 and 12:00 Asia/Shanghai",
     });
   },
 
