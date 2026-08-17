@@ -1,20 +1,12 @@
 {
-  "web_version": "2026-08-10",
+  "web_version": "2026-08-17",
   "ip_rate_effective_date": "2026-01-05",
   "seasonal_surcharge_effective_date": "2026-06-29",
-  "fuel_effective_label": "2026-08-10 至 2026-08-16",
-  "fedex_fuel_rate": 0.46,
+  "fuel_effective_label": "2026-08-17 至 2026-08-23",
+  "fedex_fuel_rate": 0.435,
   "fuel_buffer_rate": 0.03,
-  "default_fuel_rate": 0.49,
+  "default_fuel_rate": 0.465,
   "fuel_schedule": [
-    {
-      "start_date": "2026-07-20",
-      "end_date": "2026-07-26",
-      "label": "2026-07-20 至 2026-07-26",
-      "fedex_fuel_rate": 0.3975,
-      "fuel_buffer_rate": 0.03,
-      "default_fuel_rate": 0.4275
-    },
     {
       "start_date": "2026-07-27",
       "end_date": "2026-08-02",
@@ -38,6 +30,14 @@
       "fedex_fuel_rate": 0.46,
       "fuel_buffer_rate": 0.03,
       "default_fuel_rate": 0.49
+    },
+    {
+      "start_date": "2026-08-17",
+      "end_date": "2026-08-23",
+      "label": "2026-08-17 至 2026-08-23",
+      "fedex_fuel_rate": 0.435,
+      "fuel_buffer_rate": 0.03,
+      "default_fuel_rate": 0.465
     }
   ],
   "default_exchange_rate": 6.8,
@@ -47,5 +47,5 @@
   "fuel_table_url": "https://www.fedex.com/content/dam/fedex/international/rates/fedex-fuel-table-may-2026-apac.pdf",
   "fuel_update_method": "Auto synced from Cloudflare Worker public fuel endpoint by GitHub Actions watchdog.",
   "fuel_auto_update_url": "https://fedex-fuel-surcharge-checker.a1exwithkey.workers.dev/fuel-current",
-  "updated_at": "2026-08-10"
+  "updated_at": "2026-08-17"
 }
