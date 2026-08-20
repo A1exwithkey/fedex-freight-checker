@@ -12,9 +12,10 @@ from typing import Any
 from pypdf import PdfReader
 
 
-DEFAULT_PDF = Path("data_raw/fedex-ds-2026-may9-638-en-cn.pdf")
+DEFAULT_PDF = Path("data_raw/需求附加费-2026.9.2生效.pdf")
 DEFAULT_JSON = Path("data_processed/demand_surcharge_latest.json")
 DEFAULT_CSV = Path("data_processed/demand_surcharge_latest.csv")
+DEFAULT_MINIMUM_CNY_PER_SHIPMENT = 1.8
 
 REGIONS = [
     ("AUNZ", "澳大利亚、新西兰", "Australia, New Zealand", r"Australia,\s*New Zealand\s+([\d.]+)\s+[\d.]+"),
@@ -40,8 +41,11 @@ REGIONS = [
 ]
 
 CHINESE_REGION_RATES = [
-    ("AUNZ", "澳大利亚、新西兰", "Australia, New Zealand", 0.0, 0.0),
-    ("ASIA", "亚洲区", "Asia", 0.0, 0.0),
+    ("AUNZ", "澳大利亚、新西兰", "Australia, New Zealand", 2.1, 2.1),
+    ("GUAM_JAPAN", "关岛、日本", "Guam and Japan", 2.1, 2.1),
+    ("MALAYSIA", "马来西亚", "Malaysia", 1.3, 1.3),
+    ("VIETNAM", "越南", "Vietnam", 0.0, 0.0),
+    ("ASIA", "亚洲区", "Asia", 1.3, 1.3),
     ("US_PR", "美国和波多黎各", "United States of America (USA) and Puerto Rico", 5.4, 4.0),
     ("CANADA", "加拿大", "Canada", 5.4, 4.0),
     ("ISRAEL", "以色列", "Israel", 8.0, 8.0),
@@ -66,17 +70,20 @@ CHINESE_REGION_RATES = [
 ]
 
 CHINESE_RATE_CHECKS = [
-    ("AUNZ", r"澳大利亚，新西兰\s+0\s+0"),
-    ("ASIA", r"亚洲\s*1\s+0\s+0"),
-    ("US_PR", r"美国和波多黎各\s+国际优先服务\^\s+5\.4\s+0\s+国际经济服务\^\^\s+4\.0"),
-    ("CANADA", r"加拿大\s+国际优先服务\^\s+5\.4\s+0\s+国际经济服务\^\^\s+4\.0"),
+    ("AUNZ", r"澳大利亚，新西兰\s+2\.1\s+0"),
+    ("GUAM_JAPAN", r"关岛、日本\s+2\.1\s+0"),
+    ("MALAYSIA", r"马来西亚\s+1\.3\s+0"),
+    ("VIETNAM", r"越南\s+0\s+0"),
+    ("ASIA", r"亚洲\s*1\s+1\.3\s+1\.3"),
+    ("US_PR", r"美国和波多黎各\s+国际优先服务\^\s+5\.4\s+国际经济服务\^\^\s+4\.0\s+0"),
+    ("CANADA", r"加拿大\s+国际优先服务\^\s+5\.4\s+国际经济服务\^\^\s+4\.0\s+0"),
     ("ISRAEL", r"以色列\s+8\.0\s+0\.7"),
     ("EUROPE", r"欧洲\s*2\s+8\.0\s+0\.7"),
     ("INDIA", r"印度\s+0\s+0"),
     ("MEISA_1", r"第\s*1\s*组\s+11\.2\s+8\.0"),
     ("MEISA_2", r"第\s*2\s*组\s+17\.4\s+8\.0"),
-    ("MEXICO", r"墨西哥\s+国际优先服务\^\s+5\.4\s+0\s+国际经济服务\^\^\s+4\.0"),
-    ("LAC", r"拉丁美洲\s*4\s*\(LAC\)\s+国际优先服务\^\s+5\.4\s+0\s+国际经济服务\^\^\s+4\.0"),
+    ("MEXICO", r"墨西哥\s+国际优先服务\^\s+5\.4\s+国际经济服务\^\^\s+4\.0\s+0"),
+    ("LAC", r"拉丁美洲\s*4\s*\(LAC\)\s+国际优先服务\^\s+5\.4\s+国际经济服务\^\^\s+4\.0\s+0"),
 ]
 
 
@@ -84,9 +91,10 @@ def normalize_spaces(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
-def read_pdf_text(pdf_path: Path) -> str:
+def read_pdf_text(pdf_path: Path, first_page_only: bool = False) -> str:
     reader = PdfReader(str(pdf_path))
-    return "\n".join(page.extract_text() or "" for page in reader.pages)
+    pages = reader.pages[:1] if first_page_only else reader.pages
+    return "\n".join(page.extract_text() or "" for page in pages)
 
 
 def format_cn_date(match: re.Match[str]) -> str:
@@ -101,7 +109,7 @@ def extract_chinese_rates(pdf_path: Path, text: str, compact: str) -> dict[str, 
     effective_match = re.search(r"(\d{4})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日起生效", text)
     minimum_match = re.search(r"每票货件的最低收费为\s*([\d.]+)\s*元", compact)
     effective_date = format_cn_date(effective_match) if effective_match else None
-    minimum = float(minimum_match.group(1)) if minimum_match else None
+    minimum = float(minimum_match.group(1)) if minimum_match else DEFAULT_MINIMUM_CNY_PER_SHIPMENT
     missing = [code for code, pattern in CHINESE_RATE_CHECKS if not re.search(pattern, compact)]
 
     rates = []
@@ -126,17 +134,20 @@ def extract_chinese_rates(pdf_path: Path, text: str, compact: str) -> dict[str, 
         "minimum_cny_per_shipment": minimum,
         "review_status": "OK" if effective_date and minimum and not missing else "Need Review",
         "missing_region_codes": missing,
+        "minimum_note": "The 1.80 CNY minimum is preserved from the previously verified project rule; the requested extraction scope is page 1 only.",
         "rates": rates,
     }
 
 
 def extract_rates(pdf_path: Path) -> dict[str, Any]:
-    text = read_pdf_text(pdf_path)
-    compact = normalize_spaces(text)
-    chinese_payload = extract_chinese_rates(pdf_path, text, compact)
+    first_page_text = read_pdf_text(pdf_path, first_page_only=True)
+    first_page_compact = normalize_spaces(first_page_text)
+    chinese_payload = extract_chinese_rates(pdf_path, first_page_text, first_page_compact)
     if chinese_payload:
         return chinese_payload
 
+    text = read_pdf_text(pdf_path)
+    compact = normalize_spaces(text)
     effective_match = re.search(r"Effective from ([A-Z][A-Za-z]+ \d{1,2}, \d{4})", text)
     minimum_match = re.search(r"Minimum of RMB ([\d.]+) per shipment applies", compact)
 
@@ -176,7 +187,7 @@ def extract_rates(pdf_path: Path) -> dict[str, Any]:
 def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8-sig") as file:
-        writer = csv.DictWriter(file, fieldnames=list(rows[0].keys()))
+        writer = csv.DictWriter(file, fieldnames=list(rows[0].keys()), lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 

@@ -6,12 +6,12 @@
 
 | 项目 | 当前值 | 来源文件 |
 | --- | --- | --- |
-| 网页版本 | 2026-06-29 | `vercel_app/data/rate_config.json` |
+| 网页版本 | UI v3.3 / 2026-08-20 | `vercel_app/data/rate_config.json` |
 | IP / IE 协议价 | 2026-01-05 | `vercel_app/data/fedex_ip_ie_data.json` |
-| 旺季附加费 | 2026-06-29 | `vercel_app/data/fedex_ip_ie_data.json` |
-| 燃油适用周 | 2026-06-29 至 2026-07-05 | `vercel_app/data/rate_config.json` |
-| FedEx 燃油费 | 38.50% | `vercel_app/data/rate_config.json` |
-| 工具燃油费 | 41.50% | `vercel_app/data/rate_config.json` |
+| 旺季附加费 | 2026-09-02 | `vercel_app/data/fedex_ip_ie_data.json` |
+| 燃油适用周 | 2026-08-17 至 2026-08-23 | `vercel_app/data/rate_config.json` |
+| FedEx 燃油费 | 43.50% | `vercel_app/data/rate_config.json` |
+| 工具燃油费 | 46.50% | `vercel_app/data/rate_config.json` |
 | 燃油冗余 | +3% | `vercel_app/data/rate_config.json` |
 | 汇率 | 运行时读取 ECB，失败回退 6.8 | `vercel_app/app/api/exchange-rate/route.ts` |
 

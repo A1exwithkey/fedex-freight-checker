@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "FedEx 运费核价助手 3.1",
+  title: "FedEx 运费核价助手 3.3",
   description: "内部运费快速预估工具"
 };
 

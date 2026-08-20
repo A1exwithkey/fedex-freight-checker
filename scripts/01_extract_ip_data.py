@@ -29,9 +29,9 @@ DEFAULT_OUT_DIR = PROJECT_ROOT / "data_processed"
 
 ZONES = ["1", "2", "A", "B", "D", "E", "F", "G", "H", "K", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "X", "Y", "Z"]
 
-DEMAND_SOURCE = "FEDEX需求附加费-2026.6.29日更新.pdf"
+DEMAND_SOURCE = "需求附加费-2026.9.2生效.pdf"
 DEMAND_SOURCE_URL = ""
-DEMAND_EFFECTIVE_DATE = "2026-06-29"
+DEMAND_EFFECTIVE_DATE = "2026-09-02"
 DEMAND_MIN_CNY_PER_SHIPMENT = 1.8
 
 DEMAND_REGION_RATES = [
@@ -39,6 +39,42 @@ DEMAND_REGION_RATES = [
         "demand_region_code": "AUNZ",
         "demand_region_cn": "澳大利亚、新西兰",
         "demand_region_en": "Australia and New Zealand",
+        "priority_rate_cny_per_kg": 2.1,
+        "economy_rate_cny_per_kg": 2.1,
+        "minimum_cny_per_shipment": DEMAND_MIN_CNY_PER_SHIPMENT,
+        "source": DEMAND_SOURCE,
+        "source_url": DEMAND_SOURCE_URL,
+        "effective_date": DEMAND_EFFECTIVE_DATE,
+        "notes": "Export shipments from Chinese Mainland only.",
+    },
+    {
+        "demand_region_code": "GUAM_JAPAN",
+        "demand_region_cn": "关岛、日本",
+        "demand_region_en": "Guam and Japan",
+        "priority_rate_cny_per_kg": 2.1,
+        "economy_rate_cny_per_kg": 2.1,
+        "minimum_cny_per_shipment": DEMAND_MIN_CNY_PER_SHIPMENT,
+        "source": DEMAND_SOURCE,
+        "source_url": DEMAND_SOURCE_URL,
+        "effective_date": DEMAND_EFFECTIVE_DATE,
+        "notes": "Export shipments from Chinese Mainland only.",
+    },
+    {
+        "demand_region_code": "MALAYSIA",
+        "demand_region_cn": "马来西亚",
+        "demand_region_en": "Malaysia",
+        "priority_rate_cny_per_kg": 1.3,
+        "economy_rate_cny_per_kg": 1.3,
+        "minimum_cny_per_shipment": DEMAND_MIN_CNY_PER_SHIPMENT,
+        "source": DEMAND_SOURCE,
+        "source_url": DEMAND_SOURCE_URL,
+        "effective_date": DEMAND_EFFECTIVE_DATE,
+        "notes": "Export shipments from Chinese Mainland only.",
+    },
+    {
+        "demand_region_code": "VIETNAM",
+        "demand_region_cn": "越南",
+        "demand_region_en": "Vietnam",
         "priority_rate_cny_per_kg": 0.0,
         "economy_rate_cny_per_kg": 0.0,
         "minimum_cny_per_shipment": DEMAND_MIN_CNY_PER_SHIPMENT,
@@ -51,13 +87,13 @@ DEMAND_REGION_RATES = [
         "demand_region_code": "ASIA",
         "demand_region_cn": "亚洲区",
         "demand_region_en": "Asia",
-        "priority_rate_cny_per_kg": 0.0,
-        "economy_rate_cny_per_kg": 0.0,
+        "priority_rate_cny_per_kg": 1.3,
+        "economy_rate_cny_per_kg": 1.3,
         "minimum_cny_per_shipment": DEMAND_MIN_CNY_PER_SHIPMENT,
         "source": DEMAND_SOURCE,
         "source_url": DEMAND_SOURCE_URL,
         "effective_date": DEMAND_EFFECTIVE_DATE,
-        "notes": "Region footnote 1 in the 2026-06-29 demand surcharge PDF.",
+        "notes": "Asia region from the prior verified country mapping, excluding separately listed destinations in the 2026-09-02 PDF.",
     },
     {
         "demand_region_code": "US_PR",
@@ -105,7 +141,7 @@ DEMAND_REGION_RATES = [
         "source": DEMAND_SOURCE,
         "source_url": DEMAND_SOURCE_URL,
         "effective_date": DEMAND_EFFECTIVE_DATE,
-        "notes": "Region footnote 2 in the 2026-06-29 demand surcharge PDF.",
+        "notes": "Region footnote 2 carried forward and rate-checked against the 2026-09-02 PDF first page.",
     },
     {
         "demand_region_code": "INDIA",
@@ -129,7 +165,7 @@ DEMAND_REGION_RATES = [
         "source": DEMAND_SOURCE,
         "source_url": DEMAND_SOURCE_URL,
         "effective_date": DEMAND_EFFECTIVE_DATE,
-        "notes": "Region footnote 3 group 1 in the 2026-06-29 demand surcharge PDF.",
+        "notes": "Region footnote 3 group 1 carried forward and rate-checked against the 2026-09-02 PDF first page.",
     },
     {
         "demand_region_code": "MEISA_2",
@@ -141,7 +177,7 @@ DEMAND_REGION_RATES = [
         "source": DEMAND_SOURCE,
         "source_url": DEMAND_SOURCE_URL,
         "effective_date": DEMAND_EFFECTIVE_DATE,
-        "notes": "Region footnote 3 group 2 in the 2026-06-29 demand surcharge PDF.",
+        "notes": "Region footnote 3 group 2 carried forward and rate-checked against the 2026-09-02 PDF first page.",
     },
     {
         "demand_region_code": "MEXICO",
@@ -165,12 +201,15 @@ DEMAND_REGION_RATES = [
         "source": DEMAND_SOURCE,
         "source_url": DEMAND_SOURCE_URL,
         "effective_date": DEMAND_EFFECTIVE_DATE,
-        "notes": "Region footnote 4 in the 2026-06-29 demand surcharge PDF.",
+        "notes": "Region footnote 4 carried forward and rate-checked against the 2026-09-02 PDF first page.",
     },
 ]
 
 DEMAND_REGION_COUNTRIES = {
     "AUNZ": ["Australia", "New Zealand"],
+    "GUAM_JAPAN": ["Guam", "Japan"],
+    "MALAYSIA": ["Malaysia"],
+    "VIETNAM": ["Vietnam"],
     "ASIA": [
         "American Samoa",
         "Brunei",
@@ -179,15 +218,12 @@ DEMAND_REGION_COUNTRIES = {
         "East Timor",
         "Fiji",
         "French Polynesia",
-        "Guam",
         "Hong Kong SAR China",
         "Hong Kong SAR, China",
         "Indonesia",
-        "Japan",
         "Laos",
         "Macau SAR China",
         "Macau SAR, China",
-        "Malaysia",
         "Marshall Islands",
         "Micronesia",
         "Mongolia",
@@ -209,7 +245,6 @@ DEMAND_REGION_COUNTRIES = {
         "Tinian",
         "Tonga",
         "Vanuatu",
-        "Vietnam",
         "Wallis & Futuna",
         "Wallis and Futuna",
     ],
@@ -580,7 +615,7 @@ def make_country_demand_regions(country_rows: list[dict[str, Any]]) -> list[dict
                     "source": rate["source"],
                     "effective_date": rate["effective_date"],
                     "review_status": "OK",
-                    "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes.",
+                    "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates.",
                 }
             )
         else:
@@ -597,7 +632,7 @@ def make_country_demand_regions(country_rows: list[dict[str, Any]]) -> list[dict
                     "source": DEMAND_SOURCE,
                     "effective_date": DEMAND_EFFECTIVE_DATE,
                     "review_status": "Need Review",
-                    "notes": "No exact match in the 2026-06-29 demand surcharge PDF region footnotes; do not guess.",
+                    "notes": "No exact match in the verified demand-region mapping; do not guess.",
                 }
             )
     return rows
@@ -773,7 +808,7 @@ def make_validation_checks(
             "pdf_value": usa_base,
             "excel_value": usa_base,
             "pass_fail": "PASS",
-            "notes": "IP 包裹固定费率，非 IPE/IE；旺季附加费按 2026-06-29 PDF 单独计算",
+            "notes": "IP 包裹固定费率，非 IPE/IE；旺季附加费按 2026-09-02 PDF 单独计算",
         },
         {
             "test_case_id": "TC-006",
@@ -817,7 +852,7 @@ def make_validation_checks(
             "matched_country": "美国其他地区",
             "ip_zone": "2",
             "weight_kg": 10.0,
-            "pdf_page": "7-10; Demand Surcharge 2026-06-29",
+            "pdf_page": "7-10; Demand Surcharge 2026-09-02",
             "pdf_value": "Base 812.56; USA/Puerto Rico IP demand 5.4/kg; fuel 48%; redundancy 1.1; exchange 6.8",
             "excel_value": round((812.56 + 10.0 * 5.4) * (1 + 0.48) * 1.1 / 6.8, 2),
             "pass_fail": "PASS",
@@ -829,7 +864,7 @@ def make_validation_checks(
             "matched_country": "美国其他地区",
             "ip_zone": "2",
             "weight_kg": 10.0,
-            "pdf_page": "FedEx Demand Surcharge 2026-06-29",
+            "pdf_page": "FedEx Demand Surcharge 2026-09-02",
             "pdf_value": "USA and Puerto Rico IP RMB 5.4/kg; IE RMB 4.0/kg; minimum RMB 1.8/shipment when surcharge applies",
             "excel_value": usa_demand.get("priority_rate_cny_per_kg", "Need Review"),
             "pass_fail": "PASS" if usa_demand.get("demand_region_code") == "US_PR" else "FAIL",
@@ -841,7 +876,7 @@ def make_validation_checks(
             "matched_country": "德国",
             "ip_zone": "K",
             "weight_kg": 10.0,
-            "pdf_page": "FedEx Demand Surcharge 2026-06-29",
+            "pdf_page": "FedEx Demand Surcharge 2026-09-02",
             "pdf_value": "Europe RMB 8.0/kg; minimum RMB 1.8/shipment when surcharge applies",
             "excel_value": germany_demand.get("priority_rate_cny_per_kg", "Need Review"),
             "pass_fail": "PASS" if germany_demand.get("demand_region_code") == "EUROPE" else "FAIL",
@@ -866,7 +901,7 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
     if not rows:
         return
     with path.open("w", newline="", encoding="utf-8-sig") as f:
-        writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()), lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 

@@ -29,12 +29,18 @@ const cases: Array<{
   countryInput: string;
   weightKg: number;
   expectedZone: string;
-  expectedBaseCny: number;
+  expectedBaseCny?: number;
+  expectedDemandCny: number;
+  expectedFinalUsd?: number;
 }> = [
-  { serviceType: "IP", countryInput: "USA", weightKg: 10, expectedZone: "2", expectedBaseCny: 812.56 },
-  { serviceType: "IE", countryInput: "USA", weightKg: 10, expectedZone: "2", expectedBaseCny: 805.59 },
-  { serviceType: "IE", countryInput: "United Kingdom", weightKg: 10, expectedZone: "K", expectedBaseCny: 502.03 },
-  { serviceType: "IE", countryInput: "South Korea", weightKg: 25, expectedZone: "Z", expectedBaseCny: 571.5 }
+  { serviceType: "IP", countryInput: "USA", weightKg: 10, expectedZone: "2", expectedBaseCny: 812.56, expectedDemandCny: 54, expectedFinalUsd: 205.36 },
+  { serviceType: "IE", countryInput: "USA", weightKg: 10, expectedZone: "2", expectedBaseCny: 805.59, expectedDemandCny: 40, expectedFinalUsd: 200.39 },
+  { serviceType: "IE", countryInput: "United Kingdom", weightKg: 10, expectedZone: "K", expectedBaseCny: 502.03, expectedDemandCny: 80 },
+  { serviceType: "IE", countryInput: "South Korea", weightKg: 25, expectedZone: "Z", expectedBaseCny: 571.5, expectedDemandCny: 32.5 },
+  { serviceType: "IP", countryInput: "Australia", weightKg: 10, expectedZone: "U", expectedDemandCny: 21 },
+  { serviceType: "IP", countryInput: "Japan", weightKg: 10, expectedZone: "P", expectedDemandCny: 21 },
+  { serviceType: "IP", countryInput: "Malaysia", weightKg: 10, expectedZone: "Q", expectedDemandCny: 13 },
+  { serviceType: "IP", countryInput: "Vietnam", weightKg: 10, expectedZone: "B", expectedDemandCny: 0 }
 ];
 
 const outputs = cases.map((testCase) => {
@@ -55,12 +61,20 @@ const outputs = cases.map((testCase) => {
     throw new Error(`${testCase.serviceType} ${testCase.countryInput}: expected Zone ${testCase.expectedZone}, got ${result.ipZone}`);
   }
 
-  if (result.baseCny === null || Math.abs(result.baseCny - testCase.expectedBaseCny) > 0.01) {
+  if (testCase.expectedBaseCny !== undefined && (result.baseCny === null || Math.abs(result.baseCny - testCase.expectedBaseCny) > 0.01)) {
     throw new Error(`${testCase.serviceType} ${testCase.countryInput}: expected base ${testCase.expectedBaseCny}, got ${result.baseCny}`);
+  }
+
+  if (result.demandSurchargeCny === null || Math.abs(result.demandSurchargeCny - testCase.expectedDemandCny) > 0.01) {
+    throw new Error(`${testCase.serviceType} ${testCase.countryInput}: expected demand ${testCase.expectedDemandCny}, got ${result.demandSurchargeCny}`);
   }
 
   if (result.finalUsd === null || result.finalUsd <= 0) {
     throw new Error(`${testCase.serviceType} ${testCase.countryInput}: expected positive final USD, got ${result.finalUsd}`);
+  }
+
+  if (testCase.expectedFinalUsd !== undefined && Math.abs(result.finalUsd - testCase.expectedFinalUsd) > 0.01) {
+    throw new Error(`${testCase.serviceType} ${testCase.countryInput}: expected final USD ${testCase.expectedFinalUsd}, got ${result.finalUsd}`);
   }
 
   return {
@@ -70,6 +84,9 @@ const outputs = cases.map((testCase) => {
     ipZone: result.ipZone,
     weightKg: testCase.weightKg,
     baseCny: result.baseCny,
+    demandSurchargeCny: result.demandSurchargeCny,
+    fuelCny: result.fuelCny,
+    finalCny: result.finalCny,
     finalUsd: Number(result.finalUsd.toFixed(2))
   };
 });

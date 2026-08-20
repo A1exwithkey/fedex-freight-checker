@@ -268,9 +268,9 @@
       "match_note": "Manual spelling alias for PDF label Phillipines",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -282,9 +282,9 @@
       "match_note": "Manual Chinese alias for PDF label Phillipines",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -464,9 +464,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -478,9 +478,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -492,9 +492,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -506,9 +506,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -870,9 +870,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "澳大利亚、新西兰",
       "demand_region_code": "AUNZ",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 2.1,
+      "demand_ip_rate_cny_per_kg": 2.1,
+      "demand_ie_rate_cny_per_kg": 2.1,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -884,9 +884,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "澳大利亚、新西兰",
       "demand_region_code": "AUNZ",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 2.1,
+      "demand_ip_rate_cny_per_kg": 2.1,
+      "demand_ie_rate_cny_per_kg": 2.1,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -898,9 +898,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "澳大利亚、新西兰",
       "demand_region_code": "AUNZ",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 2.1,
+      "demand_ip_rate_cny_per_kg": 2.1,
+      "demand_ie_rate_cny_per_kg": 2.1,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -912,9 +912,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "澳大利亚、新西兰",
       "demand_region_code": "AUNZ",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 2.1,
+      "demand_ip_rate_cny_per_kg": 2.1,
+      "demand_ie_rate_cny_per_kg": 2.1,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -1892,9 +1892,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -1906,9 +1906,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -1920,9 +1920,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -1934,9 +1934,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -2116,9 +2116,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -2130,9 +2130,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -2144,9 +2144,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -2158,9 +2158,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -2620,9 +2620,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -2634,9 +2634,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -2648,9 +2648,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -2662,9 +2662,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -3264,9 +3264,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -3670,9 +3670,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -3684,9 +3684,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -3698,9 +3698,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -3712,9 +3712,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -3894,9 +3894,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -3908,9 +3908,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -3922,9 +3922,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -3936,9 +3936,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -4424,11 +4424,11 @@
       "canonical_country_region": "Guam 关岛",
       "ip_zone": "E",
       "match_note": "Dropdown display label",
-      "demand_region_cn": "亚洲区",
-      "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_region_cn": "关岛、日本",
+      "demand_region_code": "GUAM_JAPAN",
+      "demand_rate_cny_per_kg": 2.1,
+      "demand_ip_rate_cny_per_kg": 2.1,
+      "demand_ie_rate_cny_per_kg": 2.1,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -4438,11 +4438,11 @@
       "canonical_country_region": "Guam 关岛",
       "ip_zone": "E",
       "match_note": "From PDF country/region English label",
-      "demand_region_cn": "亚洲区",
-      "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_region_cn": "关岛、日本",
+      "demand_region_code": "GUAM_JAPAN",
+      "demand_rate_cny_per_kg": 2.1,
+      "demand_ip_rate_cny_per_kg": 2.1,
+      "demand_ie_rate_cny_per_kg": 2.1,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -4452,11 +4452,11 @@
       "canonical_country_region": "Guam 关岛",
       "ip_zone": "E",
       "match_note": "From PDF country/region Chinese label",
-      "demand_region_cn": "亚洲区",
-      "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_region_cn": "关岛、日本",
+      "demand_region_code": "GUAM_JAPAN",
+      "demand_rate_cny_per_kg": 2.1,
+      "demand_ip_rate_cny_per_kg": 2.1,
+      "demand_ie_rate_cny_per_kg": 2.1,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -4466,11 +4466,11 @@
       "canonical_country_region": "Guam 关岛",
       "ip_zone": "E",
       "match_note": "From PDF combined label",
-      "demand_region_cn": "亚洲区",
-      "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_region_cn": "关岛、日本",
+      "demand_region_code": "GUAM_JAPAN",
+      "demand_rate_cny_per_kg": 2.1,
+      "demand_ip_rate_cny_per_kg": 2.1,
+      "demand_ie_rate_cny_per_kg": 2.1,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -4762,9 +4762,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -4776,9 +4776,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -4790,9 +4790,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -4804,9 +4804,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -4986,9 +4986,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -5000,9 +5000,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -5014,9 +5014,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -5028,9 +5028,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -5320,11 +5320,11 @@
       "canonical_country_region": "Japan 日本",
       "ip_zone": "P",
       "match_note": "Dropdown display label",
-      "demand_region_cn": "亚洲区",
-      "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_region_cn": "关岛、日本",
+      "demand_region_code": "GUAM_JAPAN",
+      "demand_rate_cny_per_kg": 2.1,
+      "demand_ip_rate_cny_per_kg": 2.1,
+      "demand_ie_rate_cny_per_kg": 2.1,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -5334,11 +5334,11 @@
       "canonical_country_region": "Japan 日本",
       "ip_zone": "P",
       "match_note": "From PDF country/region English label",
-      "demand_region_cn": "亚洲区",
-      "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_region_cn": "关岛、日本",
+      "demand_region_code": "GUAM_JAPAN",
+      "demand_rate_cny_per_kg": 2.1,
+      "demand_ip_rate_cny_per_kg": 2.1,
+      "demand_ie_rate_cny_per_kg": 2.1,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -5348,11 +5348,11 @@
       "canonical_country_region": "Japan 日本",
       "ip_zone": "P",
       "match_note": "From PDF country/region Chinese label",
-      "demand_region_cn": "亚洲区",
-      "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_region_cn": "关岛、日本",
+      "demand_region_code": "GUAM_JAPAN",
+      "demand_rate_cny_per_kg": 2.1,
+      "demand_ip_rate_cny_per_kg": 2.1,
+      "demand_ie_rate_cny_per_kg": 2.1,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -5362,11 +5362,11 @@
       "canonical_country_region": "Japan 日本",
       "ip_zone": "P",
       "match_note": "From PDF combined label",
-      "demand_region_cn": "亚洲区",
-      "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_region_cn": "关岛、日本",
+      "demand_region_code": "GUAM_JAPAN",
+      "demand_rate_cny_per_kg": 2.1,
+      "demand_ip_rate_cny_per_kg": 2.1,
+      "demand_ie_rate_cny_per_kg": 2.1,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -5658,9 +5658,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -5672,9 +5672,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -5686,9 +5686,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -5700,9 +5700,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -6162,9 +6162,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -6176,9 +6176,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -6190,9 +6190,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -6204,9 +6204,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -6384,11 +6384,11 @@
       "canonical_country_region": "Malaysia 马来西亚",
       "ip_zone": "Q",
       "match_note": "Dropdown display label",
-      "demand_region_cn": "亚洲区",
-      "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_region_cn": "马来西亚",
+      "demand_region_code": "MALAYSIA",
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -6398,11 +6398,11 @@
       "canonical_country_region": "Malaysia 马来西亚",
       "ip_zone": "Q",
       "match_note": "From PDF country/region English label",
-      "demand_region_cn": "亚洲区",
-      "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_region_cn": "马来西亚",
+      "demand_region_code": "MALAYSIA",
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -6412,11 +6412,11 @@
       "canonical_country_region": "Malaysia 马来西亚",
       "ip_zone": "Q",
       "match_note": "From PDF country/region Chinese label",
-      "demand_region_cn": "亚洲区",
-      "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_region_cn": "马来西亚",
+      "demand_region_code": "MALAYSIA",
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -6426,11 +6426,11 @@
       "canonical_country_region": "Malaysia 马来西亚",
       "ip_zone": "Q",
       "match_note": "From PDF combined label",
-      "demand_region_cn": "亚洲区",
-      "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_region_cn": "马来西亚",
+      "demand_region_code": "MALAYSIA",
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -6610,9 +6610,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -6624,9 +6624,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -6638,9 +6638,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -6652,9 +6652,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -6890,9 +6890,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -6904,9 +6904,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -6918,9 +6918,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -6932,9 +6932,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7002,9 +7002,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7016,9 +7016,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7030,9 +7030,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7044,9 +7044,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7380,9 +7380,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7394,9 +7394,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7408,9 +7408,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7422,9 +7422,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7436,9 +7436,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "澳大利亚、新西兰",
       "demand_region_code": "AUNZ",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 2.1,
+      "demand_ip_rate_cny_per_kg": 2.1,
+      "demand_ie_rate_cny_per_kg": 2.1,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7450,9 +7450,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "澳大利亚、新西兰",
       "demand_region_code": "AUNZ",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 2.1,
+      "demand_ip_rate_cny_per_kg": 2.1,
+      "demand_ie_rate_cny_per_kg": 2.1,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7464,9 +7464,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "澳大利亚、新西兰",
       "demand_region_code": "AUNZ",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 2.1,
+      "demand_ip_rate_cny_per_kg": 2.1,
+      "demand_ie_rate_cny_per_kg": 2.1,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7478,9 +7478,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "澳大利亚、新西兰",
       "demand_region_code": "AUNZ",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 2.1,
+      "demand_ip_rate_cny_per_kg": 2.1,
+      "demand_ie_rate_cny_per_kg": 2.1,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7660,9 +7660,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7674,9 +7674,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7688,9 +7688,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7702,9 +7702,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7884,9 +7884,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7898,9 +7898,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7912,9 +7912,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -7926,9 +7926,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -8052,9 +8052,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -8066,9 +8066,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -8080,9 +8080,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -8094,9 +8094,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -8220,9 +8220,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -8668,9 +8668,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -8682,9 +8682,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -8696,9 +8696,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -8710,9 +8710,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -8948,9 +8948,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -8962,9 +8962,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -8976,9 +8976,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -8990,9 +8990,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -9172,9 +9172,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -9186,9 +9186,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -9200,9 +9200,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -9214,9 +9214,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -9802,9 +9802,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -9816,9 +9816,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -9830,9 +9830,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -9844,9 +9844,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -9858,9 +9858,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -9872,9 +9872,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -9886,9 +9886,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -9900,9 +9900,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -9970,9 +9970,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -11034,9 +11034,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -11048,9 +11048,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -11062,9 +11062,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -11076,9 +11076,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -11144,8 +11144,8 @@
       "canonical_country_region": "Vietnam 越南",
       "ip_zone": "B",
       "match_note": "Dropdown display label",
-      "demand_region_cn": "亚洲区",
-      "demand_region_code": "ASIA",
+      "demand_region_cn": "越南",
+      "demand_region_code": "VIETNAM",
       "demand_rate_cny_per_kg": 0.0,
       "demand_ip_rate_cny_per_kg": 0.0,
       "demand_ie_rate_cny_per_kg": 0.0,
@@ -11158,8 +11158,8 @@
       "canonical_country_region": "Vietnam 越南",
       "ip_zone": "B",
       "match_note": "From PDF country/region English label",
-      "demand_region_cn": "亚洲区",
-      "demand_region_code": "ASIA",
+      "demand_region_cn": "越南",
+      "demand_region_code": "VIETNAM",
       "demand_rate_cny_per_kg": 0.0,
       "demand_ip_rate_cny_per_kg": 0.0,
       "demand_ie_rate_cny_per_kg": 0.0,
@@ -11172,8 +11172,8 @@
       "canonical_country_region": "Vietnam 越南",
       "ip_zone": "B",
       "match_note": "From PDF country/region Chinese label",
-      "demand_region_cn": "亚洲区",
-      "demand_region_code": "ASIA",
+      "demand_region_cn": "越南",
+      "demand_region_code": "VIETNAM",
       "demand_rate_cny_per_kg": 0.0,
       "demand_ip_rate_cny_per_kg": 0.0,
       "demand_ie_rate_cny_per_kg": 0.0,
@@ -11186,8 +11186,8 @@
       "canonical_country_region": "Vietnam 越南",
       "ip_zone": "B",
       "match_note": "From PDF combined label",
-      "demand_region_cn": "亚洲区",
-      "demand_region_code": "ASIA",
+      "demand_region_cn": "越南",
+      "demand_region_code": "VIETNAM",
       "demand_rate_cny_per_kg": 0.0,
       "demand_ip_rate_cny_per_kg": 0.0,
       "demand_ie_rate_cny_per_kg": 0.0,
@@ -11202,9 +11202,9 @@
       "match_note": "Dropdown display label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -11216,9 +11216,9 @@
       "match_note": "From PDF country/region English label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -11230,9 +11230,9 @@
       "match_note": "From PDF country/region Chinese label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -11244,9 +11244,9 @@
       "match_note": "From PDF combined label",
       "demand_region_cn": "亚洲区",
       "demand_region_code": "ASIA",
-      "demand_rate_cny_per_kg": 0.0,
-      "demand_ip_rate_cny_per_kg": 0.0,
-      "demand_ie_rate_cny_per_kg": 0.0,
+      "demand_rate_cny_per_kg": 1.3,
+      "demand_ip_rate_cny_per_kg": 1.3,
+      "demand_ie_rate_cny_per_kg": 1.3,
       "demand_minimum_cny": 1.8,
       "demand_review_status": "OK"
     },
@@ -11466,25 +11466,61 @@
       "demand_region_code": "AUNZ",
       "demand_region_cn": "澳大利亚、新西兰",
       "demand_region_en": "Australia and New Zealand",
+      "priority_rate_cny_per_kg": 2.1,
+      "economy_rate_cny_per_kg": 2.1,
+      "minimum_cny_per_shipment": 1.8,
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "source_url": "",
+      "effective_date": "2026-09-02",
+      "notes": "Export shipments from Chinese Mainland only."
+    },
+    {
+      "demand_region_code": "GUAM_JAPAN",
+      "demand_region_cn": "关岛、日本",
+      "demand_region_en": "Guam and Japan",
+      "priority_rate_cny_per_kg": 2.1,
+      "economy_rate_cny_per_kg": 2.1,
+      "minimum_cny_per_shipment": 1.8,
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "source_url": "",
+      "effective_date": "2026-09-02",
+      "notes": "Export shipments from Chinese Mainland only."
+    },
+    {
+      "demand_region_code": "MALAYSIA",
+      "demand_region_cn": "马来西亚",
+      "demand_region_en": "Malaysia",
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
+      "minimum_cny_per_shipment": 1.8,
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "source_url": "",
+      "effective_date": "2026-09-02",
+      "notes": "Export shipments from Chinese Mainland only."
+    },
+    {
+      "demand_region_code": "VIETNAM",
+      "demand_region_cn": "越南",
+      "demand_region_en": "Vietnam",
       "priority_rate_cny_per_kg": 0.0,
       "economy_rate_cny_per_kg": 0.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
+      "source": "需求附加费-2026.9.2生效.pdf",
       "source_url": "",
-      "effective_date": "2026-06-29",
+      "effective_date": "2026-09-02",
       "notes": "Export shipments from Chinese Mainland only."
     },
     {
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
+      "source": "需求附加费-2026.9.2生效.pdf",
       "source_url": "",
-      "effective_date": "2026-06-29",
-      "notes": "Region footnote 1 in the 2026-06-29 demand surcharge PDF."
+      "effective_date": "2026-09-02",
+      "notes": "Asia region from the prior verified country mapping, excluding separately listed destinations in the 2026-09-02 PDF."
     },
     {
       "demand_region_code": "US_PR",
@@ -11493,9 +11529,9 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
+      "source": "需求附加费-2026.9.2生效.pdf",
       "source_url": "",
-      "effective_date": "2026-06-29",
+      "effective_date": "2026-09-02",
       "notes": "Export shipments from Chinese Mainland only."
     },
     {
@@ -11505,9 +11541,9 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
+      "source": "需求附加费-2026.9.2生效.pdf",
       "source_url": "",
-      "effective_date": "2026-06-29",
+      "effective_date": "2026-09-02",
       "notes": "Export shipments from Chinese Mainland only."
     },
     {
@@ -11517,9 +11553,9 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
+      "source": "需求附加费-2026.9.2生效.pdf",
       "source_url": "",
-      "effective_date": "2026-06-29",
+      "effective_date": "2026-09-02",
       "notes": "Export shipments from Chinese Mainland only."
     },
     {
@@ -11529,10 +11565,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
+      "source": "需求附加费-2026.9.2生效.pdf",
       "source_url": "",
-      "effective_date": "2026-06-29",
-      "notes": "Region footnote 2 in the 2026-06-29 demand surcharge PDF."
+      "effective_date": "2026-09-02",
+      "notes": "Region footnote 2 carried forward and rate-checked against the 2026-09-02 PDF first page."
     },
     {
       "demand_region_code": "INDIA",
@@ -11541,9 +11577,9 @@
       "priority_rate_cny_per_kg": 0.0,
       "economy_rate_cny_per_kg": 0.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
+      "source": "需求附加费-2026.9.2生效.pdf",
       "source_url": "",
-      "effective_date": "2026-06-29",
+      "effective_date": "2026-09-02",
       "notes": "Export shipments from Chinese Mainland only."
     },
     {
@@ -11553,10 +11589,10 @@
       "priority_rate_cny_per_kg": 11.2,
       "economy_rate_cny_per_kg": 11.2,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
+      "source": "需求附加费-2026.9.2生效.pdf",
       "source_url": "",
-      "effective_date": "2026-06-29",
-      "notes": "Region footnote 3 group 1 in the 2026-06-29 demand surcharge PDF."
+      "effective_date": "2026-09-02",
+      "notes": "Region footnote 3 group 1 carried forward and rate-checked against the 2026-09-02 PDF first page."
     },
     {
       "demand_region_code": "MEISA_2",
@@ -11565,10 +11601,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
+      "source": "需求附加费-2026.9.2生效.pdf",
       "source_url": "",
-      "effective_date": "2026-06-29",
-      "notes": "Region footnote 3 group 2 in the 2026-06-29 demand surcharge PDF."
+      "effective_date": "2026-09-02",
+      "notes": "Region footnote 3 group 2 carried forward and rate-checked against the 2026-09-02 PDF first page."
     },
     {
       "demand_region_code": "MEXICO",
@@ -11577,9 +11613,9 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
+      "source": "需求附加费-2026.9.2生效.pdf",
       "source_url": "",
-      "effective_date": "2026-06-29",
+      "effective_date": "2026-09-02",
       "notes": "Export shipments from Chinese Mainland only."
     },
     {
@@ -11589,10 +11625,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
+      "source": "需求附加费-2026.9.2生效.pdf",
       "source_url": "",
-      "effective_date": "2026-06-29",
-      "notes": "Region footnote 4 in the 2026-06-29 demand surcharge PDF."
+      "effective_date": "2026-09-02",
+      "notes": "Region footnote 4 carried forward and rate-checked against the 2026-09-02 PDF first page."
     }
   ],
   "country_demand_region": [
@@ -11605,10 +11641,10 @@
       "priority_rate_cny_per_kg": 11.2,
       "economy_rate_cny_per_kg": 11.2,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "阿尔巴尼亚",
@@ -11619,10 +11655,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "阿尔及利亚",
@@ -11633,10 +11669,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "美属萨摩亚岛",
@@ -11644,13 +11680,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "安道尔",
@@ -11661,10 +11697,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "安哥拉",
@@ -11675,10 +11711,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "安圭拉",
@@ -11689,10 +11725,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "Antigua & Barbuda",
@@ -11703,10 +11739,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "阿根廷",
@@ -11717,10 +11753,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "亚美尼亚",
@@ -11731,10 +11767,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "阿鲁巴",
@@ -11745,10 +11781,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "澳大利亚",
@@ -11756,13 +11792,13 @@
       "demand_region_code": "AUNZ",
       "demand_region_cn": "澳大利亚、新西兰",
       "demand_region_en": "Australia and New Zealand",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 2.1,
+      "economy_rate_cny_per_kg": 2.1,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "奥地利",
@@ -11773,10 +11809,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "阿塞拜疆",
@@ -11787,10 +11823,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "Bahama",
@@ -11801,10 +11837,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "巴林",
@@ -11815,10 +11851,10 @@
       "priority_rate_cny_per_kg": 11.2,
       "economy_rate_cny_per_kg": 11.2,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "孟加拉国",
@@ -11829,10 +11865,10 @@
       "priority_rate_cny_per_kg": 11.2,
       "economy_rate_cny_per_kg": 11.2,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "巴巴多斯",
@@ -11843,10 +11879,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "白俄罗斯",
@@ -11857,10 +11893,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "比利时",
@@ -11871,10 +11907,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "伯利兹",
@@ -11885,10 +11921,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "贝宁",
@@ -11899,10 +11935,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "百慕大",
@@ -11913,10 +11949,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "不丹",
@@ -11927,10 +11963,10 @@
       "priority_rate_cny_per_kg": 11.2,
       "economy_rate_cny_per_kg": 11.2,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "玻利维亚",
@@ -11941,10 +11977,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "博奈尔",
@@ -11955,10 +11991,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "波斯尼亚和黑塞哥维那",
@@ -11969,10 +12005,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "博茨瓦纳",
@@ -11983,10 +12019,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "巴西",
@@ -11997,10 +12033,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "英属维尔京群岛",
@@ -12011,10 +12047,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "文莱",
@@ -12022,13 +12058,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "保加利亚",
@@ -12039,10 +12075,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "布基纳法索",
@@ -12053,10 +12089,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "布隆迪",
@@ -12067,10 +12103,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "柬埔寨",
@@ -12078,13 +12114,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "喀麦隆",
@@ -12095,10 +12131,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "加拿大",
@@ -12109,10 +12145,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "佛得角",
@@ -12123,10 +12159,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "开曼群岛",
@@ -12137,10 +12173,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "乍得",
@@ -12151,10 +12187,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "智利",
@@ -12165,10 +12201,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "哥伦比亚",
@@ -12179,10 +12215,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "刚果",
@@ -12193,10 +12229,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "库克群岛",
@@ -12204,13 +12240,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "哥斯达黎加",
@@ -12221,10 +12257,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "克罗地亚",
@@ -12235,10 +12271,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "库拉索",
@@ -12249,10 +12285,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "塞浦路斯",
@@ -12263,10 +12299,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "捷克共和国",
@@ -12277,10 +12313,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "Côte D'ivoire (Ivory Coast)",
@@ -12291,10 +12327,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "刚果民主共和国",
@@ -12305,10 +12341,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "丹麦",
@@ -12319,10 +12355,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "吉布提",
@@ -12333,10 +12369,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "多米尼加",
@@ -12347,10 +12383,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "多米尼加共和国",
@@ -12361,10 +12397,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "East Timor",
@@ -12372,13 +12408,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "厄瓜多尔",
@@ -12389,10 +12425,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "埃及",
@@ -12403,10 +12439,10 @@
       "priority_rate_cny_per_kg": 11.2,
       "economy_rate_cny_per_kg": 11.2,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "萨尔瓦多",
@@ -12417,10 +12453,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "厄立特里亚",
@@ -12431,10 +12467,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "爱沙尼亚",
@@ -12445,10 +12481,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "埃塞俄比亚",
@@ -12459,10 +12495,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "法罗群岛",
@@ -12473,10 +12509,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "斐济",
@@ -12484,13 +12520,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "芬兰",
@@ -12501,10 +12537,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "法国",
@@ -12515,10 +12551,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "法属圭亚纳",
@@ -12529,10 +12565,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "法属玻利尼西亚",
@@ -12540,13 +12576,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "加蓬",
@@ -12557,10 +12593,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "冈比亚",
@@ -12571,10 +12607,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "格鲁吉亚",
@@ -12585,10 +12621,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "德国",
@@ -12599,10 +12635,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "加纳",
@@ -12613,10 +12649,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "直布罗陀",
@@ -12627,10 +12663,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "希腊",
@@ -12641,10 +12677,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "格陵兰",
@@ -12655,10 +12691,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "Grenada",
@@ -12669,10 +12705,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "Guadeloupe",
@@ -12683,24 +12719,24 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "关岛",
       "country_region_en": "Guam",
-      "demand_region_code": "ASIA",
-      "demand_region_cn": "亚洲区",
-      "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "demand_region_code": "GUAM_JAPAN",
+      "demand_region_cn": "关岛、日本",
+      "demand_region_en": "Guam and Japan",
+      "priority_rate_cny_per_kg": 2.1,
+      "economy_rate_cny_per_kg": 2.1,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "危地马拉",
@@ -12711,10 +12747,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "几内亚",
@@ -12725,10 +12761,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "圭亚那",
@@ -12739,10 +12775,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "海地",
@@ -12753,10 +12789,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "洪都拉斯",
@@ -12767,10 +12803,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "中国香港特别行政区",
@@ -12778,13 +12814,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "匈牙利",
@@ -12795,10 +12831,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "冰岛",
@@ -12809,10 +12845,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "印度",
@@ -12823,10 +12859,10 @@
       "priority_rate_cny_per_kg": 0.0,
       "economy_rate_cny_per_kg": 0.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "印度尼西亚",
@@ -12834,13 +12870,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "伊拉克",
@@ -12851,10 +12887,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "爱尔兰",
@@ -12865,10 +12901,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "以色列",
@@ -12879,10 +12915,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "意大利",
@@ -12893,10 +12929,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "牙买加",
@@ -12907,24 +12943,24 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "日本",
       "country_region_en": "Japan",
-      "demand_region_code": "ASIA",
-      "demand_region_cn": "亚洲区",
-      "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "demand_region_code": "GUAM_JAPAN",
+      "demand_region_cn": "关岛、日本",
+      "demand_region_en": "Guam and Japan",
+      "priority_rate_cny_per_kg": 2.1,
+      "economy_rate_cny_per_kg": 2.1,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "约旦",
@@ -12935,10 +12971,10 @@
       "priority_rate_cny_per_kg": 11.2,
       "economy_rate_cny_per_kg": 11.2,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "哈萨克斯坦",
@@ -12949,10 +12985,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "肯尼亚",
@@ -12963,10 +12999,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "科威特",
@@ -12977,10 +13013,10 @@
       "priority_rate_cny_per_kg": 11.2,
       "economy_rate_cny_per_kg": 11.2,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "吉尔吉斯斯坦",
@@ -12991,10 +13027,10 @@
       "priority_rate_cny_per_kg": 11.2,
       "economy_rate_cny_per_kg": 11.2,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "老挝",
@@ -13002,13 +13038,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "拉脱维亚",
@@ -13019,10 +13055,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "黎巴嫩",
@@ -13033,10 +13069,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "莱索托",
@@ -13047,10 +13083,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "利比里亚",
@@ -13061,10 +13097,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "利比亚",
@@ -13075,10 +13111,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "列支敦士登",
@@ -13089,10 +13125,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "立陶宛",
@@ -13103,10 +13139,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "卢森堡",
@@ -13117,10 +13153,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "中国澳门特别行政区",
@@ -13128,13 +13164,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "马其顿",
@@ -13145,10 +13181,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "马达加斯加",
@@ -13159,10 +13195,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "马拉维",
@@ -13173,24 +13209,24 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "马来西亚",
       "country_region_en": "Malaysia",
-      "demand_region_code": "ASIA",
-      "demand_region_cn": "亚洲区",
-      "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "demand_region_code": "MALAYSIA",
+      "demand_region_cn": "马来西亚",
+      "demand_region_en": "Malaysia",
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "马尔代夫",
@@ -13201,10 +13237,10 @@
       "priority_rate_cny_per_kg": 11.2,
       "economy_rate_cny_per_kg": 11.2,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "马里",
@@ -13215,10 +13251,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "马耳他",
@@ -13229,10 +13265,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "马绍尔群岛",
@@ -13240,13 +13276,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "马提尼克",
@@ -13257,10 +13293,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "毛里塔尼亚",
@@ -13271,10 +13307,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "毛里求斯",
@@ -13285,10 +13321,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "墨西哥",
@@ -13299,10 +13335,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "密克罗尼西亚",
@@ -13310,13 +13346,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "摩纳哥",
@@ -13327,10 +13363,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "蒙古",
@@ -13338,13 +13374,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "Monserrat",
@@ -13355,10 +13391,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "Montenegro",
@@ -13369,10 +13405,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "摩洛哥",
@@ -13383,10 +13419,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "莫桑比克",
@@ -13397,10 +13433,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "纳米比亚",
@@ -13411,10 +13447,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "尼泊尔",
@@ -13425,10 +13461,10 @@
       "priority_rate_cny_per_kg": 11.2,
       "economy_rate_cny_per_kg": 11.2,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "荷兰",
@@ -13439,10 +13475,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "Netherlands Antilles",
@@ -13453,10 +13489,10 @@
       "priority_rate_cny_per_kg": "",
       "economy_rate_cny_per_kg": "",
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "Need Review",
-      "notes": "No exact match in the 2026-06-29 demand surcharge PDF region footnotes; do not guess."
+      "notes": "No exact match in the verified demand-region mapping; do not guess."
     },
     {
       "country_region_cn": "新喀里多尼亚",
@@ -13464,13 +13500,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "新西兰",
@@ -13478,13 +13514,13 @@
       "demand_region_code": "AUNZ",
       "demand_region_cn": "澳大利亚、新西兰",
       "demand_region_en": "Australia and New Zealand",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 2.1,
+      "economy_rate_cny_per_kg": 2.1,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "尼加拉瓜",
@@ -13495,10 +13531,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "尼日尔",
@@ -13509,10 +13545,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "尼日利亚",
@@ -13523,10 +13559,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "北马利安群岛",
@@ -13534,13 +13570,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "挪威",
@@ -13551,10 +13587,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "阿曼",
@@ -13565,10 +13601,10 @@
       "priority_rate_cny_per_kg": 11.2,
       "economy_rate_cny_per_kg": 11.2,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "巴基斯坦",
@@ -13579,10 +13615,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "帕劳",
@@ -13590,13 +13626,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "巴勒斯坦自治区",
@@ -13607,10 +13643,10 @@
       "priority_rate_cny_per_kg": 11.2,
       "economy_rate_cny_per_kg": 11.2,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "巴拿马",
@@ -13621,10 +13657,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "巴布亚新几内亚",
@@ -13632,13 +13668,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "巴拉圭",
@@ -13649,10 +13685,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "秘鲁",
@@ -13663,10 +13699,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "Phillipines",
@@ -13674,13 +13710,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "波兰",
@@ -13691,10 +13727,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "葡萄牙",
@@ -13705,10 +13741,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "波多黎各",
@@ -13719,10 +13755,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "卡塔尔",
@@ -13733,10 +13769,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "Republic of Moldova",
@@ -13747,10 +13783,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "罗马尼亚",
@@ -13761,10 +13797,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "Russian Federation",
@@ -13775,10 +13811,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "卢旺达",
@@ -13789,10 +13825,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "Réunion",
@@ -13803,10 +13839,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "圣路西亚岛",
@@ -13817,10 +13853,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "萨摩亚",
@@ -13828,13 +13864,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "沙特阿拉伯",
@@ -13845,10 +13881,10 @@
       "priority_rate_cny_per_kg": 11.2,
       "economy_rate_cny_per_kg": 11.2,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "塞内加尔",
@@ -13859,10 +13895,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "塞尔维亚",
@@ -13873,10 +13909,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "塞舌尔",
@@ -13887,10 +13923,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "新加坡",
@@ -13898,13 +13934,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "斯洛伐克",
@@ -13915,10 +13951,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "斯洛文尼亚",
@@ -13929,10 +13965,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "南非",
@@ -13943,10 +13979,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "韩国",
@@ -13954,13 +13990,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "西班牙",
@@ -13971,10 +14007,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "斯里兰卡",
@@ -13985,10 +14021,10 @@
       "priority_rate_cny_per_kg": 11.2,
       "economy_rate_cny_per_kg": 11.2,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "St. Kitts and Nevis",
@@ -13999,10 +14035,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "荷属圣马丁",
@@ -14013,10 +14049,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "法属圣马丁",
@@ -14027,10 +14063,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "圣文森特岛和格林纳丁斯",
@@ -14041,10 +14077,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "苏里南",
@@ -14055,10 +14091,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "斯威士兰",
@@ -14069,10 +14105,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "瑞典",
@@ -14083,10 +14119,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "瑞士",
@@ -14097,10 +14133,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "叙利亚",
@@ -14111,10 +14147,10 @@
       "priority_rate_cny_per_kg": "",
       "economy_rate_cny_per_kg": "",
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "Need Review",
-      "notes": "No exact match in the 2026-06-29 demand surcharge PDF region footnotes; do not guess."
+      "notes": "No exact match in the verified demand-region mapping; do not guess."
     },
     {
       "country_region_cn": "中国台湾",
@@ -14122,13 +14158,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "泰国",
@@ -14136,13 +14172,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "多哥",
@@ -14153,10 +14189,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "Tonga",
@@ -14164,13 +14200,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "特立尼达和多巴哥",
@@ -14181,10 +14217,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "突尼斯",
@@ -14195,10 +14231,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "土耳其",
@@ -14209,10 +14245,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "特克斯和凯克斯群岛",
@@ -14223,10 +14259,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "科罗拉多 80000-81699",
@@ -14237,10 +14273,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "爱达荷州 83200-83999",
@@ -14251,10 +14287,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "犹他州 84000-84799",
@@ -14265,10 +14301,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "亚利桑那州 85000-86599",
@@ -14279,10 +14315,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "内华达州 89000-89899",
@@ -14293,10 +14329,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "加利福尼亚州 90000-96699",
@@ -14307,10 +14343,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "俄勒冈州 97000-97999",
@@ -14321,10 +14357,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "华盛顿州 98000-99499",
@@ -14335,10 +14371,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "美属维尔京群岛",
@@ -14349,10 +14385,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "美国其他地区",
@@ -14363,10 +14399,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "乌干达",
@@ -14377,10 +14413,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "乌克兰",
@@ -14391,10 +14427,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "阿拉伯联合酋长国",
@@ -14405,10 +14441,10 @@
       "priority_rate_cny_per_kg": 11.2,
       "economy_rate_cny_per_kg": 11.2,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "United Kingdom (Great Britain)",
@@ -14419,10 +14455,10 @@
       "priority_rate_cny_per_kg": 8.0,
       "economy_rate_cny_per_kg": 8.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "坦桑尼亚",
@@ -14433,10 +14469,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "乌拉圭",
@@ -14447,10 +14483,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "Uzbekistan",
@@ -14461,10 +14497,10 @@
       "priority_rate_cny_per_kg": 11.2,
       "economy_rate_cny_per_kg": 11.2,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "瓦努阿图",
@@ -14472,13 +14508,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "委内瑞拉",
@@ -14489,24 +14525,24 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "越南",
       "country_region_en": "Vietnam",
-      "demand_region_code": "ASIA",
-      "demand_region_cn": "亚洲区",
-      "demand_region_en": "Asia",
+      "demand_region_code": "VIETNAM",
+      "demand_region_cn": "越南",
+      "demand_region_en": "Vietnam",
       "priority_rate_cny_per_kg": 0.0,
       "economy_rate_cny_per_kg": 0.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "瓦利斯群岛和富图那群岛",
@@ -14514,13 +14550,13 @@
       "demand_region_code": "ASIA",
       "demand_region_cn": "亚洲区",
       "demand_region_en": "Asia",
-      "priority_rate_cny_per_kg": 0.0,
-      "economy_rate_cny_per_kg": 0.0,
+      "priority_rate_cny_per_kg": 1.3,
+      "economy_rate_cny_per_kg": 1.3,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "也门",
@@ -14531,10 +14567,10 @@
       "priority_rate_cny_per_kg": "",
       "economy_rate_cny_per_kg": "",
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "Need Review",
-      "notes": "No exact match in the 2026-06-29 demand surcharge PDF region footnotes; do not guess."
+      "notes": "No exact match in the verified demand-region mapping; do not guess."
     },
     {
       "country_region_cn": "赞比亚",
@@ -14545,10 +14581,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "津巴布韦",
@@ -14559,10 +14595,10 @@
       "priority_rate_cny_per_kg": 17.4,
       "economy_rate_cny_per_kg": 17.4,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     },
     {
       "country_region_cn": "美国西部",
@@ -14573,10 +14609,10 @@
       "priority_rate_cny_per_kg": 5.4,
       "economy_rate_cny_per_kg": 4.0,
       "minimum_cny_per_shipment": 1.8,
-      "source": "FEDEX需求附加费-2026.6.29日更新.pdf",
-      "effective_date": "2026-06-29",
+      "source": "需求附加费-2026.9.2生效.pdf",
+      "effective_date": "2026-09-02",
       "review_status": "OK",
-      "notes": "Matched from the 2026-06-29 demand surcharge PDF region footnotes."
+      "notes": "Matched from the verified demand-region mapping and the 2026-09-02 PDF first-page rates."
     }
   ],
   "rates": {

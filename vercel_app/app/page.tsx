@@ -44,6 +44,10 @@ function percent(value: number): string {
   return `${(value * 100).toFixed(2)}%`;
 }
 
+function optionLabel(value: string): string {
+  return value.replace(" - ", " · ");
+}
+
 function todayIso(): string {
   return new Intl.DateTimeFormat("en-CA", {
     timeZone: "Asia/Shanghai",
@@ -81,7 +85,7 @@ export default function Home() {
   const [selectedCountry, setSelectedCountry] = useState(DEFAULT_COUNTRY_LABEL);
   const [manualCountry, setManualCountry] = useState("");
   const [weightInput, setWeightInput] = useState("10.00");
-  const [fuelRate, setFuelRate] = useState(activeFuel.default_fuel_rate);
+  const [fuelRateInput, setFuelRateInput] = useState((activeFuel.default_fuel_rate * 100).toFixed(2));
   const [markup, setMarkup] = useState(DEFAULT_MARKUP);
   const [exchangeRate, setExchangeRate] = useState(config.default_exchange_rate ?? DEFAULT_EXCHANGE_RATE);
   const [exchangeTouched, setExchangeTouched] = useState(false);
@@ -176,6 +180,7 @@ export default function Home() {
 
   const countryInput = manualCountry.trim() || selectedCountry;
   const weightKg = Number(weightInput);
+  const fuelRate = Number(fuelRateInput) / 100;
   const results = (["IP", "IE"] as ServiceType[]).map((serviceType) =>
     calculateQuote(data, {
       serviceType,
@@ -188,6 +193,7 @@ export default function Home() {
   );
   const primaryResult = results[0];
   const allOk = results.every((result) => result.status === "OK");
+  const dataOk = allOk && exchangeMeta.status === "OK";
   const exchangeLabel =
     exchangeMeta.status === "OK"
       ? `${exchangeMeta.sourceDate} · ${exchangeRate.toFixed(2)}`
@@ -215,77 +221,53 @@ export default function Home() {
 
   return (
     <main className="page-shell">
-      <header className="topbar quote-topbar">
-        <div>
-          <h1>FedEx 运费核价助手 3.2</h1>
-        </div>
+      <header className="topbar">
+        <h1>
+          FedEx 运费核价助手 <span className="version-badge">v3.3</span>
+        </h1>
         <div className="header-actions">
-          <details>
-            <summary>更新通知</summary>
-            <div className="popover">
-              <p>
-                <strong>V1.0 · 2026-05-17</strong>：上线 IP 网页试算版，支持目的地、重量、燃油、冗余和汇率输入。
-              </p>
-              <p>
-                <strong>V1.1 · 2026-05-20</strong>：旺季附加费更新至 2026-05-11，燃油费配置化，优化输入区和统计口径。
-              </p>
-              <p>
-                <strong>V2.0 · 2026-05-24</strong>：建立燃油费自动检查链路，使用 EIA 周价格和 FedEx 燃油表计算，并通过 Telegram 通知。
-              </p>
-              <p>
-                <strong>V3.0 · 2026-06-07</strong>：迁移到 Vercel / Next.js，新增 IP / IE 同屏报价、ECB 汇率自动读取和深色重点报价卡。
-              </p>
-              <p>
-                <strong>V3.1 · 2026-06-15</strong>：将 Vercel 网页纳入 GitHub 管理，更新燃油费至 2026-06-15 周，并整理自动更新链路文档。
-              </p>
-              <p>
-                <strong>V3.2 · 2026-06-29</strong>：旺季附加费更新至 2026-06-29，IP / IE 分别使用对应旺季费率，并补充 MEISA 第 1 / 第 2 组识别。
-              </p>
+          <details className="data-reference">
+            <summary>数据参考</summary>
+            <div className="popover data-reference-popover">
+              <div className={dataOk ? "reference-status ok" : "reference-status review"}>
+                <span className="status-dot" aria-hidden="true" />
+                {dataOk ? "数据正常" : "部分数据需要复核"}
+              </div>
+              <div className="reference-list">
+                <AuditRow label="网页版本" value={`v3.3 · ${config.web_version}`} />
+                <AuditRow label="IP / IE 协议价" value={config.ip_rate_effective_date} />
+                <AuditRow label="旺季附加费" value={config.seasonal_surcharge_effective_date} />
+                <AuditRow label="燃油附加费周期" value={activeFuel.fuel_effective_label} />
+                <AuditRow
+                  label="燃油费构成"
+                  value={`${percent(activeFuel.fedex_fuel_rate)} + 冗余 ${(activeFuel.fuel_buffer_rate * 100).toFixed(0)}% = ${percent(activeFuel.default_fuel_rate)}`}
+                />
+                <AuditRow label="汇率日期 / 汇率" value={exchangeLabel} />
+              </div>
+              <p className="reference-note">0.5–20.5kg 向上取整至 0.5kg 查固定费率；21kg 起按实际重量乘每公斤费率。</p>
             </div>
           </details>
           <details>
-            <summary>反馈留言</summary>
-            <div className="popover">
-              <textarea placeholder="例如：某个国家匹配不对、某票价格需要复核..." />
-              <button type="button">发送留言</button>
+            <summary>更新说明</summary>
+            <div className="popover update-history">
+              <p><strong>v3.3 · 2026-08-20</strong><span>更新页面 UI 与数据参考展示。</span></p>
+              <p><strong>v3.2 · 2026-06-22</strong><span>补齐项目结构、数据清单和健康检查。</span></p>
+              <p><strong>v3.1 · 2026-06-15</strong><span>接入 GitHub / Vercel 自动部署与燃油发布链路。</span></p>
+              <p><strong>v3.0 · 2026-06-07</strong><span>上线 IP / IE 同屏核价与云端统计。</span></p>
+              <p><strong>v2.0 · 2026-05-24</strong><span>优化核价页面并加入燃油自动检查。</span></p>
+              <p><strong>v1.1 · 2026-05-20</strong><span>加入旺季附加费和可配置燃油费率。</span></p>
+              <p><strong>v1.0 · 2026-05-17</strong><span>首个网页试算版本上线。</span></p>
             </div>
           </details>
         </div>
       </header>
 
-      <section className="meta-row">
-        <span>
-          网址版本 <strong>{config.web_version}</strong>
-        </span>
-        <span>
-          IP / IE 协议价 <strong>{config.ip_rate_effective_date}</strong>
-        </span>
-        <span>
-          旺季附加费 <strong>{config.seasonal_surcharge_effective_date}</strong>
-        </span>
-        <span>
-          燃油费 <strong>{activeFuel.fuel_effective_label}</strong>
-        </span>
-        <span>
-          燃油费 <strong>{percent(activeFuel.fedex_fuel_rate)}</strong> + 冗余{" "}
-          {(activeFuel.fuel_buffer_rate * 100).toFixed(0)}% = <strong>{percent(activeFuel.default_fuel_rate)}</strong>
-        </span>
-        <span>
-          汇率日期 / 汇率 <strong>{exchangeLabel}</strong>
-        </span>
-      </section>
-
-      <p className="disclaimer">
-        本工具仅用于内部运费快速预估，计算结果不作为最终结算依据；超过 68kg、偏远地区、特殊处理、税费及其他特殊案例需单独复核，实际费用以 FedEx
-        账单和公司正式报价流程为准。
-      </p>
-
       <section className="quote-workbench">
-        <aside className="input-card quote-input-card">
-          <h2>快速试算</h2>
-          <div className="input-stack">
-            <label>
-              <span>目的地</span>
+        <aside className="quote-input-panel" aria-label="核价输入">
+          <section className="input-section destination-section">
+            <h2>目的地</h2>
+            <label className="field-block">
+              <span className="field-label">下拉选择</span>
               <select
                 value={selectedCountry}
                 onChange={(event) => {
@@ -295,25 +277,44 @@ export default function Home() {
               >
                 {options.map((option) => (
                   <option key={option} value={option}>
-                    {option}
+                    {optionLabel(option)}
                   </option>
                 ))}
               </select>
             </label>
-            <label>
-              <span>目的地手输，可选</span>
+            <label className="field-block manual-destination">
+              <span className="field-label">手动输入目的地（可选）</span>
               <input
                 value={manualCountry}
                 onChange={(event) => {
                   setManualCountry(event.target.value);
                   markQuoteChanged();
                 }}
-                placeholder=""
+                placeholder="请输入国家或地区名称"
               />
             </label>
-            <label className="weight-field">
-              <span>实际重量 kg</span>
+            <div className={allOk ? "match-status ok" : "match-status review"}>
+              <div className="match-primary">
+                <span className="status-dot" aria-hidden="true" />
+                {allOk ? (
+                  <>
+                    已匹配：<strong>{primaryResult.matchedCountry}</strong> · Zone {primaryResult.ipZone}
+                  </>
+                ) : (
+                  <>需要复核：国家或地区尚未准确匹配</>
+                )}
+              </div>
+              <div className="match-secondary">
+                {allOk ? `适用${primaryResult.demandRegion}旺季规则` : "请从下拉列表选择，或输入已收录的国家或地区名称"}
+              </div>
+            </div>
+          </section>
+
+          <section className="input-section weight-section">
+            <h2>实际重量</h2>
+            <label className="weight-input-wrap">
               <input
+                aria-label="实际重量 kg"
                 inputMode="decimal"
                 value={weightInput}
                 onBlur={() => {
@@ -326,139 +327,207 @@ export default function Home() {
                   markQuoteChanged();
                 }}
               />
+              <span>kg</span>
             </label>
-            <div className="parameter-row vertical">
-              <label>
+            <div className="weight-presets" aria-label="快捷重量">
+              {[0.5, 1, 5, 10].map((preset) => (
+                <button
+                  key={preset}
+                  type="button"
+                  className={Number(weightInput) === preset ? "active" : ""}
+                  aria-pressed={Number(weightInput) === preset}
+                  onClick={() => {
+                    setWeightInput(preset.toFixed(2));
+                    markQuoteChanged();
+                  }}
+                >
+                  {preset}
+                </button>
+              ))}
+            </div>
+          </section>
+
+          <section className="input-section parameter-section">
+            <h2>计价参数</h2>
+            <div className="parameter-list">
+              <label className="parameter-field">
+                <span>汇率 USD/CNY</span>
+                <span className="compact-input">
+                  <input
+                    aria-label="汇率 USD/CNY"
+                    type="number"
+                    min={0.01}
+                    step={0.01}
+                    value={exchangeRate}
+                    onChange={(event) => {
+                      setExchangeTouched(true);
+                      setExchangeRate(Number(event.target.value));
+                      markQuoteChanged();
+                    }}
+                  />
+                </span>
+              </label>
+              <label className="parameter-field">
                 <span>燃油附加费率</span>
-                <input
-                  type="number"
-                  min={0}
-                  step={0.01}
-                  value={fuelRate}
-                  onChange={(event) => {
-                    setFuelRate(Number(event.target.value));
-                    markQuoteChanged();
-                  }}
-                />
+                <span className="compact-input with-suffix">
+                  <input
+                    aria-label="燃油附加费率百分比"
+                    type="number"
+                    min={0}
+                    step={0.25}
+                    value={fuelRateInput}
+                    onBlur={() => {
+                      const parsed = Number(fuelRateInput);
+                      setFuelRateInput(Number.isFinite(parsed) ? parsed.toFixed(2) : "0.00");
+                      markQuoteChanged();
+                    }}
+                    onChange={(event) => {
+                      setFuelRateInput(event.target.value);
+                      markQuoteChanged();
+                    }}
+                  />
+                  <span>%</span>
+                </span>
               </label>
-              <label>
-                <span>冗余系数</span>
-                <input
-                  type="number"
-                  min={1}
-                  step={0.01}
-                  value={markup}
+              <label className="parameter-field">
+                <span>额外冗余</span>
+                <span className="compact-input with-suffix">
+                  <input
+                    aria-label="额外冗余百分比"
+                    type="number"
+                    min={0}
+                    step={1}
+                    value={Number(((markup - 1) * 100).toFixed(2))}
                   onChange={(event) => {
-                    setMarkup(Number(event.target.value));
-                    markQuoteChanged();
-                  }}
-                />
-              </label>
-              <label>
-                <span>汇率 CNY/USD</span>
-                <input
-                  type="number"
-                  min={0.01}
-                  step={0.01}
-                  value={exchangeRate}
-                  onChange={(event) => {
-                    setExchangeTouched(true);
-                    setExchangeRate(Number(event.target.value));
-                    markQuoteChanged();
-                  }}
-                />
+                    setMarkup(1 + Number(event.target.value) / 100);
+                      markQuoteChanged();
+                    }}
+                  />
+                  <span>%</span>
+                </span>
               </label>
             </div>
-          </div>
+
+          </section>
         </aside>
 
         <section className="comparison-panel">
+          <div className="comparison-heading">
+            <h2>运费估算</h2>
+            <div>
+              {primaryResult.matchedCountry} · {Number.isFinite(weightKg) ? weightKg.toFixed(2) : "0.00"} kg · Zone {primaryResult.ipZone}
+            </div>
+          </div>
+
           <div className="comparison-grid">
             {results.map((result) => (
               <QuoteCard key={result.serviceType} result={result} />
             ))}
           </div>
 
-          <div className="quote-context-card">
-            <div className="context-head">
-              <div>
-                <div className="metric-label">匹配结果</div>
-                <div className="context-title">{primaryResult.matchedCountry}</div>
-              </div>
-              <div className={allOk ? "status-pill ok" : "status-pill"}>{allOk ? "OK" : "Need Review"}</div>
-            </div>
-            <div className="shared-match-grid">
-              <Metric label="IP / IE 分区" value={primaryResult.ipZone} compact />
-              <Metric label="旺季大区" value={primaryResult.demandRegion} compact />
-              <Metric
-                label="查表重量"
-                value={primaryResult.lookupWeight === null ? "Need Review" : `${primaryResult.lookupWeight.toFixed(2)} kg`}
-                compact
-              />
-              <Metric label="汇率日期" value={exchangeMeta.status === "OK" ? exchangeMeta.sourceDate : "Manual"} compact />
-            </div>
-          </div>
-
-          <div className="formula">
-            最终 USD = (基础运费 CNY + 旺季附加费 CNY) × (1 + 燃油附加费率) × 冗余系数 ÷ 汇率
+          <div className="comparison-details">
+            <FeeBreakdown results={results} fuelRate={fuelRate} markup={markup} />
+            <section className="calculation-method">
+              <h3>计算方式</h3>
+              <p>最终 USD = (基础运费 CNY + 旺季附加费 CNY) × (1 + 燃油附加费率) × (1 + 额外冗余) ÷ 汇率</p>
+              <p className="calculation-note">IP / IE 分区、查表重量及旺季规则由系统自动匹配。</p>
+              <dl className="calculation-data">
+                <div>
+                  <dt>旺季附加费</dt>
+                  <dd>{config.seasonal_surcharge_effective_date}</dd>
+                </div>
+                <div>
+                  <dt>燃油周期</dt>
+                  <dd>{activeFuel.fuel_effective_label}</dd>
+                </div>
+                <div>
+                  <dt>燃油构成</dt>
+                  <dd>{percent(activeFuel.fedex_fuel_rate)} + 3% = {percent(activeFuel.default_fuel_rate)}</dd>
+                </div>
+              </dl>
+            </section>
           </div>
         </section>
       </section>
 
-      <footer className="usage-stats">
-        {stats.status === "OK" ? (
-          <>
-            访问人数 {stats.visitors} · 打开次数 {stats.visits} · 试算次数 {stats.quotes}
-          </>
-        ) : (
-          <>统计未启用</>
-        )}
+      <footer className="page-footer">
+        <p className="disclaimer">
+          本工具仅用于内部运费快速预估，计算结果不作为最终结算依据；超过 68kg、偏远地区、特殊处理、税费及其他特殊案例需单独复核，实际费用以 FedEx
+          账单和公司正式报价流程为准。
+        </p>
+        <div className="usage-stats">
+          {stats.status === "OK" ? (
+            <>访问人数 {stats.visitors} · 打开次数 {stats.visits} · 试算次数 {stats.quotes}</>
+          ) : (
+            <>统计未启用</>
+          )}
+        </div>
       </footer>
     </main>
   );
 }
 
 function QuoteCard({ result }: { result: QuoteResult }) {
-  const rateDetail =
-    result.perKgRateCny === null ? result.baseFreightNote : result.baseFreightNote;
-
   return (
-    <article className={`quote-card comparison-card ${result.serviceType.toLowerCase()}-card`}>
-      <div className="quote-card-head">
-        <div>
-          <div className="quote-service">{result.serviceType}</div>
-          <div className="quote-service-label">{result.serviceLabel.replace(`FedEx ${result.serviceType} `, "")}</div>
-        </div>
-        <div className={result.status === "OK" ? "status-pill ok" : "status-pill"}>{result.status}</div>
+    <article className={`quote-summary ${result.serviceType.toLowerCase()}`}>
+      <div className="service-identity">
+        <span>{result.serviceType}</span>
+        <strong>{result.serviceType === "IP" ? "国际优先" : "国际经济"}</strong>
       </div>
       <div className="quote-usd">{money(result.finalUsd)} USD</div>
-      <div className="quote-cny">最终 CNY {money(result.finalCny)} · Zone {result.ipZone}</div>
-      <div className="quote-metrics">
-        <Metric label="基础运费 CNY" value={money(result.baseCny)} />
-        <Metric label="燃油附加费 CNY" value={money(result.fuelCny)} />
-        <Metric label="计费口径" value={result.rateType} note={rateDetail} />
-        <Metric label="旺季附加费 CNY" value={money(result.demandSurchargeCny)} />
-      </div>
+      <div className="quote-cny">≈ CNY {money(result.finalCny)}</div>
     </article>
   );
 }
 
-function Metric({
-  label,
-  value,
-  compact = false,
-  note
-}: {
-  label: string;
-  value: string;
-  compact?: boolean;
-  note?: string;
-}) {
+function FeeBreakdown({ results, fuelRate, markup }: { results: QuoteResult[]; fuelRate: number; markup: number }) {
+  const [ip, ie] = results;
+  const ipRedundancy =
+    ip.baseCny === null || ip.demandSurchargeCny === null || ip.fuelCny === null
+      ? null
+      : (ip.baseCny + ip.demandSurchargeCny + ip.fuelCny) * (markup - 1);
+  const ieRedundancy =
+    ie.baseCny === null || ie.demandSurchargeCny === null || ie.fuelCny === null
+      ? null
+      : (ie.baseCny + ie.demandSurchargeCny + ie.fuelCny) * (markup - 1);
+  const redundancyPercent = Math.max(0, (markup - 1) * 100);
+  const rows = [
+    { label: "基础运费", ipValue: ip.baseCny, ieValue: ie.baseCny, ipNote: ip.baseFreightNote, ieNote: ie.baseFreightNote },
+    { label: `燃油附加费 ${percent(fuelRate)}`, ipValue: ip.fuelCny, ieValue: ie.fuelCny },
+    { label: "旺季附加费", ipValue: ip.demandSurchargeCny, ieValue: ie.demandSurchargeCny },
+    { label: `额外冗余 ${redundancyPercent.toFixed(0)}%`, ipValue: ipRedundancy, ieValue: ieRedundancy },
+    { label: "预计总计", ipValue: ip.finalCny, ieValue: ie.finalCny }
+  ] as const;
+
   return (
-    <div className={compact ? "metric compact" : "metric"}>
-      <div className="metric-label">{label}</div>
-      <div className="metric-value">{value}</div>
-      {note ? <div className="metric-note">{note}</div> : null}
+    <section className="fee-breakdown">
+      <div className="fee-table-head">
+        <span>费用明细</span>
+        <span className="ip-text">IP · CNY</span>
+        <span className="ie-text">IE · CNY</span>
+      </div>
+      {rows.map((row, index) => (
+        <div className={index === rows.length - 1 ? "fee-row total" : "fee-row"} key={row.label}>
+          <span>{row.label}</span>
+          <span className="ip-value">
+            {money(row.ipValue)}
+            {"ipNote" in row && <small>{row.ipNote}</small>}
+          </span>
+          <span className="ie-value">
+            {money(row.ieValue)}
+            {"ieNote" in row && <small>{row.ieNote}</small>}
+          </span>
+        </div>
+      ))}
+    </section>
+  );
+}
+
+function AuditRow({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="audit-row">
+      <span>{label}</span>
+      <strong>{value}</strong>
     </div>
   );
 }

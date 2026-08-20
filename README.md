@@ -1,6 +1,6 @@
 # fedex-freight-checker / 运费核价助手
 
-当前版本：V3.3-fuel-watchdog-2026-06-29
+当前网页版本：UI v3.3 / 数据更新 2026-08-20
 
 这是一个内部 FedEx 运费快速预估工具。当前生产主线是 Vercel / Next.js 网页版；Excel 和 Streamlit 版本保留为历史验证资产，不再作为线上入口。
 
@@ -85,7 +85,7 @@ npm run build
 - `destination`：目的地，下拉或手输
 - `weight_kg`：实际重量 kg，保留两位小数
 - `fuel_surcharge_rate`：燃油附加费率，默认读取配置
-- `markup`：冗余系数，默认 1.1
+- `redundancy_rate`：额外冗余比例，默认 10%，内部等价于乘数 1.1
 - `exchange_rate_cny_usd`：CNY/USD 汇率，默认从汇率接口读取，失败时回退配置值
 
 输出：
@@ -99,6 +99,7 @@ npm run build
 - 基础运费 CNY
 - 旺季附加费 CNY
 - 燃油附加费 CNY
+- 额外冗余 CNY
 - 最终 CNY
 - 最终 USD
 - 状态：`OK` 或 `Need Review`
@@ -106,7 +107,7 @@ npm run build
 计算公式：
 
 ```text
-Final USD = (Base Freight CNY + Seasonal Surcharge CNY) × (1 + Fuel Rate) × Markup / Exchange Rate
+Final USD = (Base Freight CNY + Seasonal Surcharge CNY) × (1 + Fuel Rate) × (1 + Redundancy Rate) / Exchange Rate
 ```
 
 ## 美国逻辑
@@ -118,11 +119,11 @@ Final USD = (Base Freight CNY + Seasonal Surcharge CNY) × (1 + Fuel Rate) × Ma
 
 ## 数据和版本
 
-- 网页版本：2026-06-29
+- 网页版本：UI v3.3 / 2026-08-20
 - IP / IE 协议价：2026-01-05
-- 旺季附加费：2026-06-29
+- 旺季附加费：2026-09-02
 - 燃油冗余：官网燃油费 + 3%
-- 当前燃油费：2026-06-29 至 2026-07-05，FedEx 38.50%，工具 41.50%
+- 当前配置燃油费：2026-08-17 至 2026-08-23，FedEx 43.50%，工具 46.50%
 - 汇率：网页运行时读取 ECB 汇率接口，人工仍可覆盖
 
 网页运行数据：
