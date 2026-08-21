@@ -66,11 +66,11 @@ summary:focus-visible {
   width: min(100%, 1200px);
   min-height: 100dvh;
   margin: 0 auto;
-  padding: 0 32px 20px;
+  padding: 0 32px 24px;
 }
 
 .topbar {
-  min-height: 76px;
+  min-height: 92px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -86,7 +86,7 @@ summary:focus-visible {
   font-size: 34px;
   font-weight: 600;
   line-height: 1.2;
-  transform: translateY(3px);
+  transform: translateY(5px);
 }
 
 .version-badge {
@@ -238,20 +238,20 @@ summary:focus-visible {
 
 .quote-input-panel {
   min-width: 0;
-  padding: 28px 28px 28px 0;
+  padding: 32px 28px 32px 0;
 }
 
 .comparison-panel {
   min-width: 0;
   display: flex;
   flex-direction: column;
-  padding: 28px 0 28px 32px;
+  padding: 32px 0 32px 32px;
   border-left: 1px solid var(--line-strong);
 }
 
 .input-section {
-  padding: 0 0 20px;
-  margin: 0 0 20px;
+  padding: 0 0 23px;
+  margin: 0 0 23px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -263,7 +263,7 @@ summary:focus-visible {
 
 .input-section h2,
 .comparison-heading h2 {
-  margin: 0 0 14px;
+  margin: 0 0 16px;
   font-size: 15px;
   font-weight: 600;
   line-height: 1.3;
@@ -271,7 +271,7 @@ summary:focus-visible {
 
 .field-block {
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .field-label {
@@ -462,7 +462,7 @@ summary:focus-visible {
   align-items: baseline;
   justify-content: space-between;
   gap: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .comparison-heading h2 {
@@ -487,8 +487,8 @@ summary:focus-visible {
 .quote-summary {
   position: relative;
   min-width: 0;
-  min-height: 190px;
-  padding: 22px 12px 28px;
+  min-height: 218px;
+  padding: 25px 12px 32px;
 }
 
 .quote-summary + .quote-summary {
@@ -554,7 +554,7 @@ summary:focus-visible {
 }
 
 .quote-usd {
-  margin-top: 36px;
+  margin-top: 41px;
   color: var(--text);
   font-size: clamp(42px, 3.5vw, 56px);
   font-weight: 600;
@@ -568,7 +568,7 @@ summary:focus-visible {
 }
 
 .quote-cny {
-  margin-top: 14px;
+  margin-top: 16px;
   color: var(--secondary);
   font-size: 16px;
   font-variant-numeric: tabular-nums;
@@ -580,7 +580,7 @@ summary:focus-visible {
   flex: 1;
   align-items: stretch;
   gap: 28px;
-  margin-top: 24px;
+  margin-top: 28px;
 }
 
 .fee-breakdown {
@@ -594,7 +594,7 @@ summary:focus-visible {
   grid-template-columns: minmax(180px, 1.45fr) minmax(110px, 1fr) minmax(110px, 1fr);
   align-items: center;
   gap: 16px;
-  min-height: 44px;
+  min-height: 50px;
   flex: 1 1 0;
   border-bottom: 1px solid var(--line);
 }
@@ -666,7 +666,7 @@ summary:focus-visible {
 }
 
 .calculation-method h3 {
-  margin: 0 0 12px;
+  margin: 0 0 14px;
   font-size: 14px;
   font-weight: 600;
 }
@@ -679,14 +679,14 @@ summary:focus-visible {
 }
 
 .calculation-method .calculation-note {
-  margin-top: 6px;
+  margin-top: 7px;
   color: var(--tertiary);
   font-size: 12px;
 }
 
 .calculation-data {
-  margin: 16px 0 0;
-  padding-top: 12px;
+  margin: 18px 0 0;
+  padding-top: 14px;
   border-top: 1px solid var(--line);
 }
 
@@ -694,7 +694,7 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: 88px minmax(0, 1fr);
   gap: 10px;
-  padding: 4px 0;
+  padding: 5px 0;
   font-size: 11px;
   line-height: 1.5;
 }
@@ -711,7 +711,7 @@ summary:focus-visible {
 }
 
 .page-footer {
-  padding: 14px 0 0;
+  padding: 16px 0 0;
   border-top: 1px solid var(--line);
   color: var(--tertiary);
   font-size: 12px;
@@ -725,7 +725,7 @@ summary:focus-visible {
 }
 
 .usage-stats {
-  margin-top: 6px;
+  margin-top: 7px;
   text-align: center;
   font-variant-numeric: tabular-nums;
 }
@@ -777,7 +777,7 @@ summary:focus-visible {
 @media (max-width: 900px) {
   .topbar {
     align-items: flex-start;
-    padding: 24px 0;
+    padding: 28px 0;
   }
 
   .header-actions {
@@ -791,11 +791,11 @@ summary:focus-visible {
   }
 
   .quote-input-panel {
-    padding: 40px 0;
+    padding: 46px 0;
   }
 
   .comparison-panel {
-    padding: 40px 0;
+    padding: 46px 0;
     border-top: 1px solid var(--line-strong);
     border-left: 0;
   }
@@ -820,7 +820,7 @@ summary:focus-visible {
 
   .header-actions {
     justify-content: flex-start;
-    margin-top: 18px;
+    margin-top: 21px;
   }
 
   .quote-input-panel,
