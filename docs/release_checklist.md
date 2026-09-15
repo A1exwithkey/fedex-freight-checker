@@ -10,6 +10,7 @@
 - [ ] 燃油费显示为当前适用周，且冗余口径为官网燃油费 + 3%。
 - [ ] 汇率日期和汇率数值显示正常。
 - [ ] `vercel_app/data/fedex_ip_ie_data.json` 是网页实际读取的数据。
+- [ ] `vercel_app/data/fedex_ip_data.json` 与 `data_processed/fedex_ip_data.json` 保持一致，不残留旧版附加费。
 - [ ] `vercel_app/data/rate_config.json` 是网页实际读取的版本和费率配置。
 
 ## 业务范围
@@ -34,8 +35,10 @@
 
 - [ ] IP 美国其他地区 10kg。
 - [ ] IE 美国其他地区 10kg。
-- [ ] IE 英国 10kg。
 - [ ] IE 韩国 25kg。
+- [ ] IP / IE 斐济 10kg，旺季附加费均为 35.00 CNY。
+- [ ] IP 印度 0.5kg，旺季附加费按最低收费为 1.80 CNY。
+- [ ] IE 英国 10kg，旺季附加费为 125.00 CNY。
 - [ ] 美国西部 10kg。
 - [ ] 德国 21kg。
 - [ ] 新加坡 500kg。

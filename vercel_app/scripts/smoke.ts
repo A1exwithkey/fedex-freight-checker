@@ -33,11 +33,13 @@ const cases: Array<{
   expectedDemandCny: number;
   expectedFinalUsd?: number;
 }> = [
-  { serviceType: "IP", countryInput: "USA", weightKg: 10, expectedZone: "2", expectedBaseCny: 812.56, expectedDemandCny: 54, expectedFinalUsd: 205.36 },
-  { serviceType: "IE", countryInput: "USA", weightKg: 10, expectedZone: "2", expectedBaseCny: 805.59, expectedDemandCny: 40, expectedFinalUsd: 200.39 },
-  { serviceType: "IE", countryInput: "United Kingdom", weightKg: 10, expectedZone: "K", expectedBaseCny: 502.03, expectedDemandCny: 80 },
+  { serviceType: "IP", countryInput: "USA", weightKg: 10, expectedZone: "2", expectedBaseCny: 812.56, expectedDemandCny: 139, expectedFinalUsd: 233.97 },
+  { serviceType: "IE", countryInput: "USA", weightKg: 10, expectedZone: "2", expectedBaseCny: 805.59, expectedDemandCny: 84, expectedFinalUsd: 218.73 },
+  { serviceType: "IE", countryInput: "United Kingdom", weightKg: 10, expectedZone: "K", expectedBaseCny: 502.03, expectedDemandCny: 125 },
   { serviceType: "IE", countryInput: "South Korea", weightKg: 25, expectedZone: "Z", expectedBaseCny: 571.5, expectedDemandCny: 32.5 },
-  { serviceType: "IP", countryInput: "Australia", weightKg: 10, expectedZone: "U", expectedDemandCny: 21 },
+  { serviceType: "IP", countryInput: "Australia", weightKg: 10, expectedZone: "U", expectedDemandCny: 35 },
+  { serviceType: "IE", countryInput: "Fiji", weightKg: 10, expectedZone: "G", expectedDemandCny: 35 },
+  { serviceType: "IP", countryInput: "India", weightKg: 0.5, expectedZone: "O", expectedDemandCny: 1.8 },
   { serviceType: "IP", countryInput: "Japan", weightKg: 10, expectedZone: "P", expectedDemandCny: 21 },
   { serviceType: "IP", countryInput: "Malaysia", weightKg: 10, expectedZone: "Q", expectedDemandCny: 13 },
   { serviceType: "IP", countryInput: "Vietnam", weightKg: 10, expectedZone: "B", expectedDemandCny: 0 }
